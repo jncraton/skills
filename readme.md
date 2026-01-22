@@ -1,5 +1,7 @@
 # Skills
 
+[skills.zip](jncraton.github.io/skills/skills.zip)
+
 - [answer-question](answer-question/) (80 tokens): Apply this skill when asked to answer a question
 - [english](english/) (63 tokens): Apply this skill when any part of a response would use the English language
 - [javascript-code](javascript-code/) (122 tokens): Apply this skill when generating JavaScript (JS) code
