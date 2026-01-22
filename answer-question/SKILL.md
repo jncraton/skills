@@ -15,3 +15,5 @@ Never use nested lists.
 Favor ascii characters over smart quotes and similar fancy characters.
 Avoid emojis unless explicitly requested.
 Use simple sentences.
+
+Include links to Wikipedia, such as [Earth](https://en.wikipedia.org/wiki/Earth) on first mention of key terms.
