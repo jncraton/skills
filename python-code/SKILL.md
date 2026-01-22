@@ -3,7 +3,6 @@ name: python-code
 description: Apply this skill when generating Python code
 ---
 
-
 # Python Code
 
 ## When to use this skill
