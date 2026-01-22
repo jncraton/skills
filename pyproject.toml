@@ -10,7 +10,5 @@ dependencies = [
 ]
 
 [tool.setuptools]
-py-modules = []
-
-[tool.setuptools.packages.find]
-exclude = ["lecture*", "reflect*", "answer-question*", "multiple-choice*", "python-code*", "slide-deck*"]
+py-modules = ["generate"]
+packages = []
