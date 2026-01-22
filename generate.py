@@ -70,7 +70,7 @@ def generate_index():
 
     skills.sort(key=lambda x: x["name"].lower())
 
-    with open("index.md", "w", encoding="utf-8") as f:
+    with open("readme.md", "w", encoding="utf-8") as f:
         f.write("# Skills\n\n")
         for skill in skills:
             f.write(f"- [{skill['name']}]({skill['name']}/): {skill['description']}\n")
