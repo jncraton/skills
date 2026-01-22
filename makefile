@@ -5,7 +5,7 @@ format:
 	npx prettier@3.8.1 --write .
 
 index.md:
-	python3 gen_index.py
+	python3 generate.py
 
 clean:
 	rm -f index.md *.html **/*.html
