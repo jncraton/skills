@@ -1,6 +1,9 @@
-all: readme.md
+all: skills.zip
 
 .PHONY: readme.md
+
+skills.zip: readme.md
+	zip -9 $@ $< **/*.md
 
 format:
 	uvx black@26.1.0 generate.py
