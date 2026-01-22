@@ -114,7 +114,7 @@ def generate_index():
                 f"- [{skill['name']}]({skill['name']}/){token_info}: {skill['description']}\n"
             )
 
-    print(f"Successfully generated index.md with {len(skills)} skills.")
+    print(f"Successfully generated readme.md with {len(skills)} skills.")
 
 
 if __name__ == "__main__":
