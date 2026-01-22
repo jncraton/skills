@@ -1,6 +1,6 @@
 # Skills
 
-[skills.zip](jncraton.github.io/skills/skills.zip) | [spec](https://agentskills.io/)
+[skills.zip](jncraton.github.io/skills/skills.zip) | [browse html](https://jncraton.github.io/skills/) | [spec](https://agentskills.io/)
 
 - [answer-question](answer-question/) (80 tokens): Apply this skill when asked to answer a question
 - [english](english/) (63 tokens): Apply this skill when any part of a response would use the English language
