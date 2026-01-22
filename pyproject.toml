@@ -13,5 +13,4 @@ dependencies = [
 py-modules = []
 
 [tool.setuptools.packages.find]
-where = ["."]
 exclude = ["lecture*", "reflect*", "answer-question*", "multiple-choice*", "python-code*", "slide-deck*"]
