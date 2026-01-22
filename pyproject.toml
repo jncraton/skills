@@ -8,3 +8,10 @@ dependencies = [
     "markdown>=3.10.1",
     "tokenizers>=0.15.0",
 ]
+
+[tool.setuptools]
+py-modules = []
+
+[tool.setuptools.packages.find]
+where = ["."]
+exclude = ["lecture*", "reflect*", "answer-question*", "multiple-choice*", "python-code*", "slide-deck*"]
