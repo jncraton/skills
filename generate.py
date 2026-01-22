@@ -73,7 +73,7 @@ def generate_index():
     with open("index.md", "w", encoding="utf-8") as f:
         f.write("# Skills\n\n")
         for skill in skills:
-            f.write(f"- {skill['name']}: {skill['description']}\n")
+            f.write(f"- [{skill['name']}]({skill['name']}/): {skill['description']}\n")
 
     print(f"Successfully generated index.md with {len(skills)} skills.")
 
