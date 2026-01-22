@@ -8,3 +8,7 @@ dependencies = [
     "markdown>=3.10.1",
     "tokenizers>=0.15.0",
 ]
+
+[tool.setuptools]
+py-modules = ["generate"]
+packages = []
