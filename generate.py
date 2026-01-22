@@ -103,7 +103,9 @@ def generate_index():
     skills.sort(key=lambda x: x["name"].lower())
 
     with open("readme.md", "w", encoding="utf-8") as f:
-        f.write("# Skills\n\n[skills.zip](jncraton.github.io/skills/skills.zip) | [spec](https://agentskills.io/)\n\n")
+        f.write(
+            "# Skills\n\n[skills.zip](jncraton.github.io/skills/skills.zip) | [spec](https://agentskills.io/)\n\n"
+        )
         for skill in skills:
             token_info = (
                 f" ({skill['token_count']} tokens)"
