@@ -2,3 +2,5 @@ skills.zip
 *.html
 .python-version
 uv.lock
+__pycache__/
+*.pyc
