@@ -19,6 +19,11 @@ def convert_md_to_html(directory):
                     f.write(html)
                 print(f"Converted: {md_path}")
 
+                if file == 'SKILL.md':
+                    with open(os.path.join(root, 'index.html'), "w", encoding="utf-8") as f:
+                        f.write(html)
+                    print(f"Wrote index for {root}")
+
 
 def extract_metadata(file_path):
     """Extracts name and description from YAML frontmatter in a Markdown file."""
