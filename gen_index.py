@@ -1,6 +1,22 @@
 import os
 import re
 from pathlib import Path
+import markdown
+
+def convert_md_to_html(directory):
+    for root, dirs, files in os.walk(directory):
+        for file in files:
+            if file.endswith(".md"):
+                md_path = os.path.join(root, file)
+                html_path = os.path.splitext(md_path)[0] + ".html"
+                
+                with open(md_path, 'r', encoding='utf-8') as f:
+                    text = f.read()
+                    html = markdown.markdown(text)
+                
+                with open(html_path, 'w', encoding='utf-8') as f:
+                    f.write(html)
+                print(f"Converted: {md_path}")
 
 def extract_metadata(file_path):
     """Extracts name and description from YAML frontmatter in a Markdown file."""
@@ -53,3 +69,4 @@ def generate_index():
 
 if __name__ == "__main__":
     generate_index()
+    convert_md_to_html('.')
