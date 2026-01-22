@@ -2,6 +2,7 @@ import os
 import re
 from pathlib import Path
 import markdown
+from tokenizers import Tokenizer
 
 
 def convert_md_to_html(directory):
@@ -51,7 +52,31 @@ def extract_metadata(file_path):
         return None
 
 
+def load_tokenizer():
+    """Load the Gemma 3 tokenizer from Hugging Face."""
+    try:
+        tokenizer = Tokenizer.from_pretrained("google/gemma-3-270m-it")
+        return tokenizer
+    except Exception as e:
+        print(f"Warning: Could not load tokenizer: {e}")
+        return None
+
+
+def count_tokens(text, tokenizer):
+    """Count tokens in the given text using the provided tokenizer."""
+    if tokenizer is None:
+        return 0
+    try:
+        encoding = tokenizer.encode(text)
+        return len(encoding.ids)
+    except Exception as e:
+        print(f"Warning: Could not count tokens: {e}")
+        return 0
+
+
 def generate_index():
+    tokenizer = load_tokenizer()
+
     skills = []
     for path in Path(".").iterdir():
         if path.is_dir():
@@ -62,6 +87,13 @@ def generate_index():
             if skill_file.exists():
                 meta = extract_metadata(skill_file)
                 if meta and "name" in meta and "description" in meta:
+                    # Read the full content of the skill file
+                    with open(skill_file, "r", encoding="utf-8") as f:
+                        content = f.read()
+
+                    # Count tokens in the skill content
+                    token_count = count_tokens(content, tokenizer)
+                    meta["token_count"] = token_count
                     skills.append(meta)
 
     if not skills:
@@ -73,7 +105,14 @@ def generate_index():
     with open("readme.md", "w", encoding="utf-8") as f:
         f.write("# Skills\n\n")
         for skill in skills:
-            f.write(f"- [{skill['name']}]({skill['name']}/): {skill['description']}\n")
+            token_info = (
+                f" ({skill['token_count']} tokens)"
+                if skill.get("token_count", 0) > 0
+                else ""
+            )
+            f.write(
+                f"- [{skill['name']}]({skill['name']}/){token_info}: {skill['description']}\n"
+            )
 
     print(f"Successfully generated index.md with {len(skills)} skills.")
 
