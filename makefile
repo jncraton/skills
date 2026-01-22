@@ -8,4 +8,4 @@ index.md:
 	python3 generate.py
 
 clean:
-	rm -f index.md *.html **/*.html
+	rm -f index.md *.html **/*.html uv.lock .python-version
