@@ -3,12 +3,6 @@ name: python-code
 description: Apply this skill when generating Python code
 ---
 
-# Python Code
-
-## When to use this skill
-
-Apply this skill when generating Python code
-
 ## Style
 
 Python code should generally follow the style conventions of the `black` package.
