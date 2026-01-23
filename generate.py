@@ -80,6 +80,7 @@ def generate_index():
     skills = []
     for path in Path(".").iterdir():
         if path.is_dir():
+            print(f"Found {path} for index")
             skill_file = path / "SKILL.md"
             if not skill_file.exists():
                 skill_file = path / "SKILLS.md"
