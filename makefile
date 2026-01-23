@@ -13,4 +13,4 @@ readme.md:
 	python3 generate.py
 
 clean:
-	rm -rf index.md *.html **/*.html uv.lock .python-version .venv
+	rm -rf skills.zip index.md *.html **/*.html uv.lock .python-version .venv
