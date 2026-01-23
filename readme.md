@@ -9,4 +9,3 @@
 - [creating-slides](creating-slides/) (280 tokens): Use to generate slide decks
 - [generating-multiple-choice-questions](generating-multiple-choice-questions/) (178 tokens): Apply this skill generate multiple choice questions
 - [reflecting](reflecting/) (118 tokens): Apply this skill generate reflection questions
-- [writing-english](writing-english/) (65 tokens): Apply this skill when any part of a response would use the English language
