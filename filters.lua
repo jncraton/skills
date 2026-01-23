@@ -12,4 +12,6 @@ function Div (el)
   if #el.content == 0 then
     return {}
   end
+
+  return el.content
 end
