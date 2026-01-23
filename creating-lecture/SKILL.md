@@ -19,6 +19,8 @@ Do not wrap up with a generic "Questions?" or review slide.
 
 Include exercises and discussion questions throughout the presentation. Do not put them all together.
 
+Include links to Wikipedia, such as [Earth](https://en.wikipedia.org/wiki/Earth) on first mention of key terms.
+
 ## Formatting
 
 Generate markdown to feed to pandoc for a reveal.js presentation.
