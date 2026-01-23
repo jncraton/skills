@@ -21,6 +21,12 @@ Include exercises and discussion questions throughout the presentation. Do not p
 
 Include links to Wikipedia, such as [Earth](https://en.wikipedia.org/wiki/Earth) on first mention of key terms.
 
+## References
+
+Reference the following textbooks for lectures as needed. When using material from textbooks, link back the the domains provided below.
+
+[Python - Python for Everyone (py4e.com)](references/py4e.md)
+
 ## Formatting
 
 Generate markdown to feed to pandoc for a reveal.js presentation.
