@@ -23,9 +23,9 @@ Include links to Wikipedia, such as [Earth](https://en.wikipedia.org/wiki/Earth)
 
 ## References
 
-Reference the following textbooks for lectures as needed. When using material from textbooks, link back the the domains provided below.
+Reference the following textbooks for lectures as needed.
 
-[Python - Python for Everyone (py4e.com)](references/py4e.md)
+- [Python for Everyone](references/py4e.md)
 
 ## Formatting
 
