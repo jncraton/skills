@@ -2,8 +2,12 @@ all: skills.zip
 
 .PHONY: readme.md
 
-skills.zip: readme.md
-	zip -9 $@ **/SKILL.md
+skills.zip:
+	rm -rf skills skills.zip
+	mkdir skills
+	cp -R *ing* skills
+	zip -9 -r $@ skills
+	rm -rf skills
 
 format:
 	uvx black@26.1.0 generate.py
