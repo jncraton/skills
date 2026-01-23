@@ -31,6 +31,10 @@ function remove_attrs(el)
   return el
 end
 
+function Header(el)
+  return remove_attrs(el)
+end
+
 function Code(el)
   return remove_attrs(el)
 end
