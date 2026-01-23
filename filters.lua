@@ -23,3 +23,19 @@ function Div (el)
 
   return el.content
 end
+
+function remove_attrs(el)
+  if el.attr then
+    el.attr.identifier = ""
+    el.attr.classes = {}
+  end
+  return el
+end
+
+function Code(el)
+  return remove_attrs(el)
+end
+
+function CodeBlock(el)
+  return remove_attrs(el)
+end
