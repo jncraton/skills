@@ -26,8 +26,7 @@ end
 
 function remove_attrs(el)
   if el.attr then
-    el.attr.identifier = ""
-    el.attr.classes = {}
+    el.attr = {}
   end
   return el
 end
