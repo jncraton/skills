@@ -9,6 +9,11 @@ skills.zip:
 	zip -9 -r $@ skills
 	rm -rf skills
 
+creating-lecture/references/python.md:
+	wget -O py4e.epub http://do1.dr-chuck.com/pythonlearn/EN_us/pythonlearn.epub
+	pandoc py4e.epub -o $@ --lua-filter=filters.lua
+	rm -f py4e.epub
+
 format:
 	uvx black@26.1.0 generate.py
 	npx prettier@3.8.1 --write .
