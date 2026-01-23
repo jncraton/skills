@@ -87,6 +87,8 @@ def generate_index():
 
             if skill_file.exists():
                 meta = extract_metadata(skill_file)
+                if meta["name"] != str(path):
+                    raise ValueError(f"Skill name does not match path: {path}")
                 if meta and "name" in meta and "description" in meta:
                     # Read the full content of the skill file
                     with open(skill_file, "r", encoding="utf-8") as f:
