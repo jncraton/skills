@@ -1,6 +1,6 @@
 # Skills
 
-[skills.zip](jncraton.github.io/skills/skills.zip) | [spec](https://agentskills.io/)
+[skills.zip](https://jncraton.github.io/skills/skills.zip) | [spec](https://agentskills.io/)
 
 - [answering-questions](answering-questions/) (81 tokens): Apply this skill when asked to answer a question
 - [coding-javascript](coding-javascript/) (123 tokens): Apply this skill when generating JavaScript (JS) code

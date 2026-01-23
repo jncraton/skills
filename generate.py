@@ -108,7 +108,7 @@ def generate_index():
     with open("readme.md", "w", encoding="utf-8") as f:
         f.write(
             "# Skills\n\n"
-            "[skills.zip](jncraton.github.io/skills/skills.zip) | "
+            "[skills.zip](https://jncraton.github.io/skills/skills.zip) | "
             "[spec](https://agentskills.io/)"
             "\n\n"
         )
