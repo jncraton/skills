@@ -1,5 +1,5 @@
 ---
-name: lecture
+name: creating-lecture
 description: Apply this skill when asked to create a classroom lecture or learning activity
 ---
 

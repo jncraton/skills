@@ -1,5 +1,5 @@
 ---
-name: python-code
+name: coding-python
 description: Apply this skill when generating Python code
 ---
 

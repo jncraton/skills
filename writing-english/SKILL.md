@@ -1,5 +1,5 @@
 ---
-name: english
+name: writing-english
 description: Apply this skill when any part of a response would use the English language
 ---
 

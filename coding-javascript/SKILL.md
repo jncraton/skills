@@ -1,5 +1,5 @@
 ---
-name: javascript-code
+name: coding-javascript
 description: Apply this skill when generating JavaScript (JS) code
 ---
 

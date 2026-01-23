@@ -1,5 +1,5 @@
 ---
-name: reflect
+name: reflecting
 description: Apply this skill generate reflection questions
 ---
 

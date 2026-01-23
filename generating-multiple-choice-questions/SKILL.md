@@ -1,5 +1,5 @@
 ---
-name: multiple-choice
+name: generating-multiple-choice-questions
 description: Apply this skill generate multiple choice questions
 ---
 

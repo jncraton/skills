@@ -1,5 +1,5 @@
 ---
-name: answer-question
+name: answering-questions
 description: Apply this skill when asked to answer a question
 ---
 

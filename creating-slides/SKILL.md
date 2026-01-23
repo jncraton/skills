@@ -1,5 +1,5 @@
 ---
-name: slide-deck
+name: creating-slides
 description: Use to generate slide decks
 ---
 
