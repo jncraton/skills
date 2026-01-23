@@ -109,7 +109,6 @@ def generate_index():
         f.write(
             "# Skills\n\n"
             "[skills.zip](jncraton.github.io/skills/skills.zip) | "
-            "[browse html](https://jncraton.github.io/skills/) | "
             "[spec](https://agentskills.io/)"
             "\n\n"
         )
@@ -128,4 +127,3 @@ def generate_index():
 
 if __name__ == "__main__":
     generate_index()
-    convert_md_to_html(".")
