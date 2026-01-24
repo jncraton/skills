@@ -10,6 +10,14 @@ function RawInline(el)
   return {}
 end
 
+function Cite(el)
+  return {}
+end
+
+function Note(el)
+  return {}
+end
+
 function Span (el)
   if #el.content == 0 then
     return {}
