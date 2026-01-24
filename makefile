@@ -13,6 +13,7 @@ creating-lecture/references/py4e.md:
 	wget -O py4e.epub http://do1.dr-chuck.com/pythonlearn/EN_us/pythonlearn.epub
 	# The following is a nasty hack to truncate several chapter from the epub
 	unzip py4e.epub -d py4e
+	truncate --size 0 py4e/EPUB/text/ch001.xhtml # intro
 	truncate --size 0 py4e/EPUB/text/ch012.xhtml # web services
 	truncate --size 0 py4e/EPUB/text/ch013.xhtml # networking
 	truncate --size 0 py4e/EPUB/text/ch015.xhtml # databases
