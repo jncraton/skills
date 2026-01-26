@@ -2,7 +2,7 @@
 
 [skills.zip](https://jncraton.github.io/skills/skills.zip) | [spec](https://agentskills.io/)
 
-- [coding-javascript](coding-javascript/SKILL.md) (123 tokens): Apply this skill when generating JavaScript (JS) code
+- [coding-javascript](coding-javascript/SKILL.md) (122 tokens): Apply this skill when generating JavaScript (JS) code
 - [coding-python](coding-python/SKILL.md) (116 tokens): Apply this skill when generating Python code
 - [creating-lecture](creating-lecture/SKILL.md) (496 tokens): Apply this skill when asked to create a classroom lecture, talk, or learning activity
 - [generating-multiple-choice-questions](generating-multiple-choice-questions/SKILL.md) (178 tokens): Apply this skill generate multiple choice questions
