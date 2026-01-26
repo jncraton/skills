@@ -7,21 +7,23 @@ Hymnary is the source used for worship planning. All hymns and songs should link
 
 ## Hymnary API
 
-Specific hymns matching a query can be retrieved from hymnary using curl.
+Specific hymns matching a query can be retrieved from hymnary using curl as a CSV file.
 
-### Hymns matching a scripture reference
+### Examples
 
-Example:
+Hymns about the topic of heaven:
 
-```sh
-curl https://hymnary.org/api/scripture?reference=Psalm+136 > hymns.json
+```
+curl "https://hymnary.org/search?qu=topics%3Aheaven%20%20media%3Atext%20in%3Atexts&export=csv" > hymns.csv
 ```
 
-### Advanced search
+Hymns about Genesis 1:1:
 
-Advanced search can be used to gather all hymns matching a particular topic and scripture reference as a CSV.
+```
+curl "https://hymnary.org/search?qu=scripture%3AGenesis%201:1%20media%3Atext%20in%3Atexts&export=csv" > hymns.csv
+```
 
-Example:
+Hymns about John 1 and the topic of grace:
 
 ```
 curl "https://hymnary.org/search?qu=topics%3AGrace%20scripture%3AJohn%201%20media%3Atext%20in%3Atexts&export=csv" > hymns.csv
