@@ -14,15 +14,39 @@ Two files are created based on the base name provided by the user. They must be 
 
 ## Text File Format
 
-The output text file should be in this format:
+The output json file should be in this format.
+
+1.  **Quiz Title:** The top-level key.
+2.  **Questions:** Keys inside the object.
+3.  **Answers:** A list of strings. **The first answer is always the correct one.**
 
 ```json
 {
-  "Generated quiz title": {
+  "Basic Math Quiz": {
     "What is 1+1?": ["2", "3", "4", "5"],
     "What is 1+2?": ["3", "4", "5", "6"]
   }
 }
 ```
 
-The correct answer must always be listed first.
+You can include code snippets using markdown-style syntax:
+
+*   **Inline Code:** Wrap text in single backticks (\`).
+*   **Block Code:** Wrap text in triple backticks (\`\`\`).
+
+```json
+{
+  "Python Quiz": {
+    "What does `print('hello')` output?": [
+      "`hello` to stdout",
+      "`hello` to stderr",
+      "Nothing"
+    ],
+    "What does this function do?\n```\ndef add(a, b):\n    return a + b\n```": [
+      "Returns the sum of two numbers",
+      "Returns the product of two numbers",
+      "Prints the numbers"
+    ]
+  }
+}
+```
