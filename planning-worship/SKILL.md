@@ -9,6 +9,8 @@ Hymnary is the source used for worship planning. All hymns and songs should link
 
 ## Hymnary API
 
+Lectionary weeks can be looked up to determine scripture references and suggested hymns here: https://hymnary.org/browse/lectionary/02/08/2026 Replace the date in the URL as appropriate.
+
 Hymns matching a query can be retrieved from hymnary as a csv file using curl.
 
 ### Examples
