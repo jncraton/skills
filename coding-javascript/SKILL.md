@@ -5,7 +5,7 @@ description: Apply this skill when generating JavaScript (JS) code
 
 ## Style
 
-Python code should generally follow the style conventions of the StandardJS.
+JavaScript code should generally follow the style conventions of StandardJS.
 
 All code should match `prettier` formatting with the following config:
 
