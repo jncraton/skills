@@ -26,6 +26,7 @@ creating-lecture/references/py4e.md:
 	rm -f py4e.epub
 	cd py4e && zip -r ../py4e.epub *
 	rm -rf py4e
+	mkdir -p creating-lecture/references
 	# Convert epub to markdown stripping images and html attrs and wrappers
 	pandoc py4e.epub -o $@ --lua-filter=filters.lua
 	sd -f ims "## Exercises.*?\n#" "\n#" $@
