@@ -9,7 +9,7 @@ skills.zip:
 	rm -rf /tmp/sWBy9cxm/skills/.github
 	mv /tmp/sWBy9cxm/skills .
 	zip -9 -r $@ skills
-	rm -rf /tmp/sWBy9cxm
+	rm -rf /tmp/sWBy9cxm skills
 
 creating-lecture/references/py4e.md:
 	wget -O py4e.epub http://do1.dr-chuck.com/pythonlearn/EN_us/pythonlearn.epub
