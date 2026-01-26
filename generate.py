@@ -119,7 +119,7 @@ def generate_index():
                 else ""
             )
             f.write(
-                f"- [{skill['name']}]({skill['name']}/){token_info}: {skill['description']}\n"
+                f"- [{skill['name']}]({skill['name']}/SKILL.md){token_info}: {skill['description']}\n"
             )
 
     print(f"Successfully generated readme.md with {len(skills)} skills.")
