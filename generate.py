@@ -78,7 +78,7 @@ def generate_index():
     tokenizer = load_tokenizer()
 
     skills = []
-    for path in Path(".").iterdir():
+    for path in Path("skills").iterdir():
         if path.is_dir():
             print(f"Found {path} for index")
             skill_file = path / "SKILL.md"
@@ -87,7 +87,7 @@ def generate_index():
 
             if skill_file.exists():
                 meta = extract_metadata(skill_file)
-                if meta["name"] != str(path):
+                if meta["name"] != str(path)[7:]:
                     raise ValueError(f"Skill name does not match path: {path}")
                 if meta and "name" in meta and "description" in meta:
                     # Read the full content of the skill file
@@ -119,7 +119,7 @@ def generate_index():
                 else ""
             )
             f.write(
-                f"- [{skill['name']}]({skill['name']}/SKILL.md){token_info}: {skill['description']}\n"
+                f"- [{skill['name']}](skills/{skill['name']}/SKILL.md){token_info}: {skill['description']}\n"
             )
 
     print(f"Successfully generated readme.md with {len(skills)} skills.")
