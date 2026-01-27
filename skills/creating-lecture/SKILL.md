@@ -49,7 +49,21 @@ The entire response must only the slide deck. Do not include any introductory or
 
 ## Images
 
-Include images if possible. Search for appropriate photos from https://commons.wikimedia.org/w/index.php?title=Special%3AMediaSearch&type=image&assessment=valued-image&search= modifying the search param as needed. Examine result pages for appropriate images, and hotlink the thumbnail used as the link text in the presentation. Download selected images using curl to ensure they work properly.
+Include images if possible. Search for appropriate photos on Wikimedia Commons as follows:
+
+```sh
+curl -G "https://commons.wikimedia.org/w/api.php" \
+    --data-urlencode "action=query" \
+    --data-urlencode "format=json" \
+    --data-urlencode "prop=imageinfo" \
+    --data-urlencode "iiprop=url" \
+    --data-urlencode "iiurlwidth=400" \
+    --data-urlencode "generator=search" \
+    --data-urlencode "gsrsearch={search query}" \
+    --data-urlencode "gsrnamespace=6"
+```
+
+Examine results for appropriate images, and hotlink the image using the `url` in the `imageinfo`.
 
 ## Example
 
@@ -64,6 +78,10 @@ Include images if possible. Search for appropriate photos from https://commons.w
 ---
 
 What do you think of that?
+
+---
+
+![Nebula](https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Eagle_Nebula_M16_and_Comet_C2025_R2_SWAN.png/500px-Eagle_Nebula_M16_and_Comet_C2025_R2_SWAN.png)
 
 ## Slide 2 Title
 
