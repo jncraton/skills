@@ -3,13 +3,13 @@ name: planning-worship
 description: Use this skill to generate a plan for a worship service
 ---
 
-Plan a worship service as instructed by the user. Provide a detailed order of service. Following the order of service, describe reasoning behind song choices, and provide alternatives for each.
+Provide songs selections for a worship service. Describe reasoning behind song choices, and provide alternatives for each.
 
-Hymnary is the source used for worship planning. All hymns and songs should link back to hymnary. Hymnary links should be formatted as https://hymnary.org/text/{textAuthNumber}. Always use the hymn title as the link text. For example: [Blessed Assurance](https://hymnary.org/text/blessed_assurance_jesus_is_mine)
+Always use Hymnary as the source for song information, and always link songs back to Hymnary. Links should be formatted as https://hymnary.org/text/{textAuthNumber}. Always use the song title as the link text. For example: [Blessed Assurance](https://hymnary.org/text/blessed_assurance_jesus_is_mine). Never guess song URLs and only use songs included in responses from Hymnary.
 
 ## Hymnary API
 
-Lectionary weeks can be looked up to determine scripture references and suggested hymns here: https://hymnary.org/browse/lectionary/02/08/2026 Replace the date in the URL as appropriate.
+Lectionary weeks can be looked up to determine scripture references and suggested songs here: https://hymnary.org/browse/lectionary/02/08/2026 Replace the date in the URL as appropriate.
 
 Hymns matching a query can be retrieved from hymnary as a csv file using curl.
 
