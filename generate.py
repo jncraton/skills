@@ -105,11 +105,16 @@ def generate_index():
 
     skills.sort(key=lambda x: x["name"].lower())
 
+    with open("AGENTS.md", "r", encoding="utf-8") as f:
+        agents_content = f.read()
+    agents_tokens = count_tokens(agents_content, tokenizer)
+
     with open("readme.md", "w", encoding="utf-8") as f:
         f.write(
             "# Skills\n\n"
             "[skills.zip](https://jncraton.github.io/skills/skills.zip) | "
-            "[spec](https://agentskills.io/)"
+            "[spec](https://agentskills.io/) | "
+            f"[AGENTS.md](AGENTS.md) ({agents_tokens} tokens)"
             "\n\n"
         )
         for skill in skills:
@@ -122,7 +127,9 @@ def generate_index():
                 f"- [{skill['name']}](skills/{skill['name']}/SKILL.md){token_info}: {skill['description']}\n"
             )
 
-        f.write("\n\n" + """
+        f.write(
+            "\n\n"
+            + """
 ## Setup
 
 opencode:
@@ -131,7 +138,8 @@ opencode:
 ln -s AGENTS.md ~/.config/opencode/AGENTS.md
 ln -s skills ~/.config/opencode/skills
 ```
-""".strip())
+""".strip()
+        )
 
     print(f"Successfully generated readme.md with {len(skills)} skills.")
 
