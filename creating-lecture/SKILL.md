@@ -47,6 +47,10 @@ The deck should include 20 to 30 slides unless a different size is requested.
 
 The entire response must only the slide deck. Do not include any introductory or concluding text.
 
+## Images
+
+Include images as appropriate. Load photos from https://commons.wikimedia.org/w/index.php?title=Special%3AMediaSearch&type=image&assessment=valued-image&search= modifying the search param as needed. Examine result pages for appropriate images, and hotlink the thumbnail used as the link text in the presentation.
+
 ## Example
 
 ```
