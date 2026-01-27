@@ -122,6 +122,17 @@ def generate_index():
                 f"- [{skill['name']}](skills/{skill['name']}/SKILL.md){token_info}: {skill['description']}\n"
             )
 
+        f.write("\n\n" + """
+## Setup
+
+opencode:
+
+```sh
+ln -s AGENTS.md ~/.config/opencode/AGENTS.md
+ln -s skills ~/.config/opencode/skills
+```
+""".strip())
+
     print(f"Successfully generated readme.md with {len(skills)} skills.")
 
 
