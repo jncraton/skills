@@ -19,8 +19,13 @@ Never qualify facts with "as an artificial intelligence" or similar.
 
 ## Coding Style
 
-JavaScript code must follow StandardJS and Prettier.
-Prettier settings:
+Never include comments in generated code.
+Use pure functions when possible.
+
+### JavaScript
+
+Follow StandardJS and Prettier with these settings:
+
 ```json
 {
   "semi": false,
@@ -30,8 +35,9 @@ Prettier settings:
   "arrowParens": "avoid"
 }
 ```
-Python code must follow black style.
-Do not add comments to generated code.
-Python docstrings must only contain doctests.
-Use pure functions when possible.
-Python tests must only use doctests.
+
+### Python
+
+Follow black style.
+Use doctests for testing.
+If included, docstrings must only contain doctests.
