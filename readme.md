@@ -13,6 +13,6 @@
 opencode:
 
 ```sh
-ln -s AGENTS.md ~/.config/opencode/AGENTS.md
-ln -s skills ~/.config/opencode/skills
+ln -s $(realpath AGENTS.md) ~/.config/opencode/AGENTS.md
+ln -s $(realpath skills) ~/.config/opencode/skills
 ```
