@@ -31,10 +31,10 @@ The output json file should be in this format.
 
 You can include code snippets using markdown-style syntax:
 
-*   **Inline Code:** Wrap text in single backticks (\`).
-*   **Block Code:** Wrap text in triple backticks (\`\`\`).
+- **Inline Code:** Wrap text in single backticks (\`).
+- **Block Code:** Wrap text in triple backticks (\`\`\`).
 
-```json
+````json
 {
   "Python Quiz": {
     "What does `print('hello')` output?": [
@@ -49,4 +49,4 @@ You can include code snippets using markdown-style syntax:
     ]
   }
 }
-```
+````

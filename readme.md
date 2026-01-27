@@ -8,7 +8,6 @@
 - [planning-worship](skills/planning-worship/SKILL.md) (424 tokens): Use this skill to generate a plan for a worship service
 - [reflecting](skills/reflecting/SKILL.md) (118 tokens): Apply this skill generate reflection questions
 
-
 ## Setup
 
 opencode:
