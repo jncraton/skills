@@ -67,37 +67,119 @@ Examine results for appropriate images, and hotlink the image using the `url` in
 
 ## Example
 
+```markdown
+# Variables
+
+## Definition
+
+---
+
+A [variable](https://en.wikipedia.org/wiki/Variable_(high-level_programming)) is a named container for a value
+
+## Statements
+
+- A [statement](https://en.wikipedia.org/wiki/Statement_(computer_science)) is a unit of code that the Python interpreter can execute
+- Example: `print("Hello, world")`
+
+## Assignment Statement
+
+- Creates or rebinds a variable
+- Gives the variable a value
+
+```python
+myvar = 42
 ```
-# Title
 
-## Slide 1 Title
+## Variables
 
-- Space is vast
-- [NASA](https://en.wikipedia.org/wiki/NASA) studies space
+- A variable is a named container for a value
+- Useful for organizing data flow
+- Provide human-readable names for values
+- Allow values to be reused
+
+## Example
+
+```python
+>>> base = 5
+>>> height = 6
+>>> area = (1 / 2) * base * height
+>>> area
+15.0
+```
 
 ---
 
-What do you think of that?
+How could variable enhance the readability of programs?
+
+## Variable Names
+
+- Should document what the variable is used for
+- May include letters and numbers
+- Should be lowercase
+- May not begin with a number
+
+## Input Statement
+
+- `input(prompt=None)`
+- Accepts user input as an `str` (string)
+- `prompt` will be shown to user if provided
+- [Documentation for input](https://docs.python.org/3/library/functions.html#input)
+
+## input Example
+
+```python
+user_msg = input("I'm an AI assistant. How may I help you?")
+
+print("It sounds like you'd like help with the following:")
+print(user_msg)
+print("As an AI assistant, I'm not able to help with that.")
+```
+
+## int
+
+- `int` converts strings to integers
+
+## Examples
+
+```python
+>>> '12'
+'12'
+>>> int("12")
+12
+>>> int("Hello world!")
+...ValueError...
+>>> int("12.0")
+...ValueError...
+```
+
+## Comments
+
+- Can be inserted into code as notes for human readers
+- Ignored by Python interpreter
+- Begin with `#` symbol
+
+![Trianlge Area](https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Rectangle2-area-is-bh.svg/500px-Rectangle2-area-is-bh.svg.png)
+
+## Example Program
+
+```python
+# Gather user inputs
+base = input("Base:")
+height = input("Height:")
+
+# Calculate area result
+area = (1 / 2) * int(base) * int(height)
+
+# Display result
+print("Area of the triange:")
+print(area)
+```
+
+## Exercise
+
+Modify the previous example to compute the area of a rectangle.
 
 ---
 
-![Nebula](https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Eagle_Nebula_M16_and_Comet_C2025_R2_SWAN.png/500px-Eagle_Nebula_M16_and_Comet_C2025_R2_SWAN.png)
-
-## Slide 2 Title
-
-- Some info
-- More info
-
-## Exercise
-
-Look under your chairs
-
-## Slide 3 Title
-
-- Some info
-- More info
-
-## Exercise
-
-Discuss the issue with a neighbor
+How could the readability of your program be improved?
 ```
