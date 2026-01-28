@@ -1,20 +1,20 @@
 import urllib.request
 import re
 import html
-
 import sys
 from concurrent.futures import ThreadPoolExecutor
 
 
 def fetch_url(url):
     with urllib.request.urlopen(url) as response:
-        return response.read().decode('utf-8')
+        return response.read().decode("utf-8")
+
 
 def clean_html(text):
-    text = re.sub(r'<h1>(.*?)</h1>', r'# \1\n\n', text, flags=re.S)
-    text = re.sub(r'<p[^>]*>(.*?)</p>', r'\1\n\n', text, flags=re.S)
-    text = re.sub(r'<br\s*/?>', r'\n', text)
-    text = re.sub(r'<[^>]+>', '', text)
+    text = re.sub(r"<h1>(.*?)</h1>", r"# \1\n\n", text, flags=re.S)
+    text = re.sub(r"<p[^>]*>(.*?)</p>", r"\1\n\n", text, flags=re.S)
+    text = re.sub(r"<br\s*/?>", r"\n", text)
+    text = re.sub(r"<[^>]+>", "", text)
     return html.unescape(text).strip()
 
 
@@ -40,7 +40,7 @@ def main():
     base_url = "https://text.npr.org"
     index_url = base_url + "/1001"
     index_html = fetch_url(index_url)
-    
+
     links = re.findall(r'class="topic-title" href="(/[^"]+)"', index_html)
     story_urls = [base_url + link for link in links]
 
