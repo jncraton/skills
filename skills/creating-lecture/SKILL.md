@@ -37,8 +37,7 @@ The deck should begin with a level 1 heading as the title. It must be immediatel
 
 Slide titles should never be more than 3 words.
 
-Favor many small slides over a few large slides. Never include more than 20 words on a slide.
-
+Favor many small slides over a few large slides. Never include more than 20 words on a slide (excluding code examples).
 If a list is used on a slide, do not end list item text with a period.
 
 Properly fence any code examples on slides.
