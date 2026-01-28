@@ -12,7 +12,7 @@ def fetch_url(url):
 
 def clean_html(text):
     text = re.sub(r"<h1>(.*?)</h1>", r"# \1\n\n", text, flags=re.S)
-    text = re.sub(r"<p[^>]*>(.*?)</p>", r"\1\n\n", text, flags=re.S)
+    text = re.sub(r"<p[^>]*>", r"\n\n", text, flags=re.S)
     text = re.sub(r"<br\s*/?>", r"\n", text)
     text = re.sub(r"<[^>]+>", "", text)
     text = html.unescape(text).strip()
