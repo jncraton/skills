@@ -9,7 +9,7 @@ Create curriculum as a professional who specializes in high quality, engaging un
 
 ## Pedagogy
 
-- Use Bloom's revised taxonomy. Complexity should increase as the lecture progresses.
+- Complexity should generally increase through Bloom's as the lecture progresses (remember -> understand -> apply -> analyze -> evaluate -> create)
 - 3-4 discussion questions. One per slide. No title or headings on these slides.
 - 2-3 exercises. End with one. Heading: "## Exercise".
 - No generic "Questions?" or review slides.
