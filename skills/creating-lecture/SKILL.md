@@ -173,4 +173,19 @@ Modify the previous example to compute the area of a rectangle.
 ---
 
 How could the readability of your program be improved?
+
+## Functions and Variables
+
+```python
+def calculate_area(base, height):
+    return 0.5 * base * height
+
+base = int(input("Base: "))
+height = int(input("Height: "))
+print(calculate_area(base, height))
+```
+
+## Exercise
+
+Modify the previous example to compute the area of a rectangle.
 ````
