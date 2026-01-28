@@ -68,8 +68,6 @@ Examine results for appropriate images, and hotlink the image using the `url` in
 
 ## Definition
 
----
-
 A [variable](<https://en.wikipedia.org/wiki/Variable_(high-level_programming)>) is a named container for a value
 
 ## Statements
@@ -85,7 +83,6 @@ A [variable](<https://en.wikipedia.org/wiki/Variable_(high-level_programming)>) 
 ```python
 myvar = 42
 ```
-````
 
 ## Variables
 
@@ -99,14 +96,14 @@ myvar = 42
 ```python
 >>> base = 5
 >>> height = 6
->>> area = (1 / 2) * base * height
+>>> area = 0.5 * base * height
 >>> area
 15.0
 ```
 
 ---
 
-How could variable enhance the readability of programs?
+How could variables enhance the readability of programs?
 
 ## Variable Names
 
@@ -125,11 +122,11 @@ How could variable enhance the readability of programs?
 ## input Example
 
 ```python
-user_msg = input("I'm an AI assistant. How may I help you?")
+user_msg = input("I'm an assistant. How may I help you?")
 
 print("It sounds like you'd like help with the following:")
 print(user_msg)
-print("As an AI assistant, I'm not able to help with that.")
+print("I'm not able to help with that.")
 ```
 
 ## int
@@ -155,20 +152,15 @@ print("As an AI assistant, I'm not able to help with that.")
 - Ignored by Python interpreter
 - Begin with `#` symbol
 
-![Trianlge Area](https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Rectangle2-area-is-bh.svg/500px-Rectangle2-area-is-bh.svg.png)
+![Triangle Area](https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Rectangle2-area-is-bh.svg/500px-Rectangle2-area-is-bh.svg.png)
 
 ## Example Program
 
 ```python
-# Gather user inputs
-base = input("Base:")
-height = input("Height:")
-
-# Calculate area result
-area = (1 / 2) * int(base) * int(height)
-
-# Display result
-print("Area of the triange:")
+base = int(input("Base: "))
+height = int(input("Height: "))
+area = 0.5 * base * height
+print("Area of the triangle:")
 print(area)
 ```
 
@@ -179,7 +171,4 @@ Modify the previous example to compute the area of a rectangle.
 ---
 
 How could the readability of your program be improved?
-
-```
-
-```
+````
