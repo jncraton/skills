@@ -152,6 +152,8 @@ print("I'm not able to help with that.")
 - Ignored by Python interpreter
 - Begin with `#` symbol
 
+---
+
 ![Triangle Area](https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Rectangle2-area-is-bh.svg/500px-Rectangle2-area-is-bh.svg.png)
 
 ## Example Program
