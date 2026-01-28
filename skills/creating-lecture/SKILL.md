@@ -72,8 +72,8 @@ Examine results for appropriate images, and hotlink the image using the `url` in
 
 ## Slide 1 Title
 
-- Some info
-- More info
+- Space is vast
+- [NASA](https://en.wikipedia.org/wiki/NASA) studies space
 
 ---
 
