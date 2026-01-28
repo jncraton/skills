@@ -33,6 +33,8 @@ def fetch_story(story_url):
         if title_match and content_match:
             title = html.unescape(title_match.group(1).strip())
             content = clean_html(content_match.group(1))
+            if "transcript" in content.lower().splitlines():
+                return None
             return f"# {title}\n\n{story_url}\n\n{content}\n\n"
     except Exception as e:
         return f"Error fetching {story_url}: {e}"
