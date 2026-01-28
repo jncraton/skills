@@ -15,7 +15,8 @@ def clean_html(text):
     text = re.sub(r"<p[^>]*>(.*?)</p>", r"\1\n\n", text, flags=re.S)
     text = re.sub(r"<br\s*/?>", r"\n", text)
     text = re.sub(r"<[^>]+>", "", text)
-    return html.unescape(text).strip()
+    text = html.unescape(text).strip()
+    return "\n".join(line.strip() for line in text.splitlines())
 
 
 def fetch_story(story_url):
