@@ -17,7 +17,7 @@ def clean_html(text):
     text = re.sub(r"<[^>]+>", "", text)
     text = html.unescape(text).strip()
     lines = [line.strip() for line in text.splitlines()]
-    lines = [l for l in lines if not l.lower().startswith('related story')]
+    lines = [l for l in lines if not l.lower().startswith("related story")]
     return re.sub("\n\n+", "\n\n", "\n".join(lines))
 
 
