@@ -31,7 +31,7 @@ Reference the following textbooks for lectures as needed.
 
 Generate markdown to feed to pandoc for a reveal.js presentation.
 
-Slides are separated using level 2 headings (`## title`) or horizonal rules (`---`). Never use both.
+Slides are separated using level 2 headings (`## title`) or horizontal rules (`---`). Use `##` to start a slide with a title and `---` to start a slide without a title. Never use both for the same slide break as this creates a blank slide.
 
 The deck should begin with a level 1 heading as the title. It must be immediately followed by a level 2 heading. The title should reflect the content of the presentation and never use the word "lecture" or "presentation".
 
