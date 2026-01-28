@@ -36,18 +36,10 @@ Create curriculum as a professional who specializes in high quality, engaging un
 Search Wikimedia Commons:
 
 ```sh
-curl -G "https://commons.wikimedia.org/w/api.php" \
-    --data-urlencode "action=query" \
-    --data-urlencode "format=json" \
-    --data-urlencode "prop=imageinfo" \
-    --data-urlencode "iiprop=url" \
-    --data-urlencode "iiurlwidth=400" \
-    --data-urlencode "generator=search" \
-    --data-urlencode "gsrsearch={search query}" \
-    --data-urlencode "gsrnamespace=6"
+python3 scripts/image_search.py "{search query}"
 ```
 
-Examine results for appropriate images, and hotlink the image using the `url` in the `imageinfo`.
+Hotlink the image URL.
 
 ## Example
 
