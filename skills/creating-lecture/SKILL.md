@@ -39,11 +39,8 @@ Slide titles should never be more than 3 words.
 
 Favor many small slides over a few large slides. Never include more than 20 words on a slide (excluding code examples).
 If a list is used on a slide, do not end list item text with a period.
-
 Properly fence any code examples on slides.
-
 The deck should include 20 to 30 slides unless a different size is requested.
-
 The entire response must only the slide deck. Do not include any introductory or concluding text.
 
 ## Images
@@ -66,18 +63,18 @@ Examine results for appropriate images, and hotlink the image using the `url` in
 
 ## Example
 
-```markdown
+````markdown
 # Variables
 
 ## Definition
 
 ---
 
-A [variable](https://en.wikipedia.org/wiki/Variable_(high-level_programming)) is a named container for a value
+A [variable](<https://en.wikipedia.org/wiki/Variable_(high-level_programming)>) is a named container for a value
 
 ## Statements
 
-- A [statement](https://en.wikipedia.org/wiki/Statement_(computer_science)) is a unit of code that the Python interpreter can execute
+- A [statement](<https://en.wikipedia.org/wiki/Statement_(computer_science)>) is a unit of code that the Python interpreter can execute
 - Example: `print("Hello, world")`
 
 ## Assignment Statement
@@ -88,6 +85,7 @@ A [variable](https://en.wikipedia.org/wiki/Variable_(high-level_programming)) is
 ```python
 myvar = 42
 ```
+````
 
 ## Variables
 
@@ -181,4 +179,7 @@ Modify the previous example to compute the area of a rectangle.
 ---
 
 How could the readability of your program be improved?
+
+```
+
 ```
