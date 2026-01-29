@@ -33,13 +33,12 @@ Create curriculum as a professional who specializes in high quality, engaging un
 
 ## Images
 
-Search Wikimedia Commons:
-
+Attempt to search Wikimedia Commons for appropriate images:
 ```sh
 python3 scripts/image_search.py "{search query}"
 ```
 
-Hotlink the image URL.
+Hotlink images on their own slide if appropriate images are found. Interleave lots of image slides throughout the presentation if they match the content, or none if there are not strong matches.
 
 ## Example
 
