@@ -9,12 +9,12 @@ Create curriculum as a professional who specializes in high quality, engaging un
 
 ## Pedagogy
 
-- Complexity should generally increase through Bloom's as the lecture progresses (remember -> understand -> apply -> analyze -> evaluate -> create)
-- 3-4 discussion questions. One per slide. No title or headings on these slides.
-- 2-3 exercises. End with one. Heading: "## Exercise".
-- No generic "Questions?" or review slides.
-- Distribute exercises and discussion questions throughout.
 - Link to Wikipedia for first mention of key terms.
+- Complexity should generally increase through Bloom's as the lecture progresses (remember -> understand -> apply -> analyze -> evaluate -> create)
+- 3-4 discussion questions. One per slide. No title or headings on these slides. Discussion questions should follow factual information and promote deeper communal exploration.
+- 2-3 exercises. Heading: "## Exercise". Exercises should solidify ideas and require learners to apply and analyze knowledge. End with an exercise fostering synthesizing the learning and creating something new.
+- Distribute exercises and discussion questions throughout.
+- No generic "Questions?" or review slides.
 
 ## References
 
