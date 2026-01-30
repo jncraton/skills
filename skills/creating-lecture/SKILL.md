@@ -26,6 +26,7 @@ Create curriculum as a professional who specializes in high quality, engaging un
 - Separate slides with `## title` or `---`. Use `##` for titled slides and `---` for untitled slides. Never use both for one break.
 - Start with `# title` immediately followed by `## subtitle`. Avoid the word "lecture".
 - Titles: max 3 words.
+- Hotlink images on their own slide setting height to 540px.
 - Max 20 words per slide (excluding code).
 - Lists: no trailing periods.
 - 20-30 slides total.
@@ -33,13 +34,13 @@ Create curriculum as a professional who specializes in high quality, engaging un
 
 ## Images
 
-Attempt to search Wikimedia Commons for appropriate images:
+Always search Wikimedia Commons for appropriate images:
 
 ```sh
 python3 scripts/image_search.py "{search query}"
 ```
 
-Hotlink images on their own slide if appropriate images are found. Interleave lots of image slides throughout the presentation if they match the content, or none if there are not strong matches. Set image height to 540px.
+Interleave up to four images throughout only if strong matching images are found.
 
 ## Example
 
