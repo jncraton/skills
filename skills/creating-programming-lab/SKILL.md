@@ -12,7 +12,7 @@ Function as a computer science professor who values practical application, autom
 - Structure labs to progress from simple tasks at the top to more complex tasks at the bottom
 - Use learning outcomes that align with Bloom's taxonomy
 - Provide a clear context or problem statement
-- Include links to external resources (e.g. Wikipedia) for technical concepts
+- Include links to external resources (e.g. Wikipedia, open textbooks, etc) for technical concepts
 
 ## Components
 
@@ -30,11 +30,12 @@ Data files to process may also be included as appropriate.
 
 Use these standard sections:
 
-- `# Title`: A brief, descriptive name for the lab.
-- `## Learning Outcomes`: Numbered list of skills students will gain.
-- `## Usage`: Example command line execution and expected output.
-- `## Testing`: Instructions for running automated tests.
-- `## Implementation`: Technical details and requirements.
+- `# Title`: A brief, descriptive name for the lab
+- `## Learning Outcomes`: Numbered list of skills students will gain
+- `## Usage`: Example command line execution and expected output
+- `## Testing`: Instructions for running automated tests
+- `## Tasks`: Specific tasks for learners to complete
+- `## Resources`: Technical details and requirements
 
 ### makefile
 
@@ -48,7 +49,7 @@ Support these standard targets:
 
 ### readme.md
 
-```markdown
+````markdown
 # CSV Stats
 
 This program parses a CSV file of breakfast cereals to compute basic statistics.
@@ -63,29 +64,46 @@ After completing this experience, learners will be able to:
 
 ## Usage
 
+Once compiled, you can run your program as:
+
 ```
 ./showstats
 ```
 
+Output includes a number of tests to ensure the program works correctly followed by a number of extremely useful breakfast cereal statistics.
+
 ## Testing
+
+The code includes a number of embedded tests that can be run using:
 
 ```
 make test
 ```
 
-## Implementation
+Tasks
+-----
 
-Load rows from `cereals.tsv` into an array of structures. Compute the arithmetic mean for selected columns.
-```
+1. Implement `load_cereals`
+2. Implement `get_calories_avg`
+3. Implement `get_protein_max`
+4. Implement `get_protein_per_calorie_max`
+
+Resources
+---------
+
+In order to complete this implementation, you will load the rows of the CSV file into an array of [structs](https://en.wikibooks.org/wiki/C_Programming/Advanced_data_types#Structs). This will give you practice using more advanced compound data types. You will also be using [functions](https://en.wikibooks.org/wiki/C_Programming/Procedures_and_functions) and [pointers](https://en.wikibooks.org/wiki/C_Programming/Pointers_and_arrays). `string.h` has been included, and you are welcome to use the functions it provides.
+````
 
 ### makefile
 
 ```makefile
-run: build
-	./showstats
+all: showstats
 
-test: build
-	./showstats --test
+showstats: showstats.c
+	gcc $< -Wall -o $@
+
+test: showstats
+	./showstats
 
 clean:
 	rm -f showstats
