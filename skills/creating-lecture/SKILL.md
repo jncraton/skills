@@ -25,10 +25,10 @@ Create curriculum as a professional who specializes in high quality, engaging un
 - Generate markdown for reveal.js via pandoc
 - Separate slides with `## title` or `---`. Use `##` for titled slides and `---` for untitled slides. Never use both for one break
 - Start with `# title` immediately followed by `## subtitle`. Avoid the word "lecture"
-- Titles: max 3 words
+- Titles are three words max
 - Hotlink images on their own slide setting height to 540px
 - Max 20 words per slide (excluding code)
-- Lists: no trailing periods
+- No trailing periods on list items
 - 20-30 slides total
 - Response: only the slide deck
 
