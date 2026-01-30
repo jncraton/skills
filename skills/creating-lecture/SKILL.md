@@ -34,11 +34,12 @@ Create curriculum as a professional who specializes in high quality, engaging un
 ## Images
 
 Attempt to search Wikimedia Commons for appropriate images:
+
 ```sh
 python3 scripts/image_search.py "{search query}"
 ```
 
-Hotlink images on their own slide if appropriate images are found. Interleave lots of image slides throughout the presentation if they match the content, or none if there are not strong matches.
+Hotlink images on their own slide if appropriate images are found. Interleave lots of image slides throughout the presentation if they match the content, or none if there are not strong matches. Set image height to 540px.
 
 ## Example
 
@@ -133,7 +134,7 @@ print("I'm not able to help with that.")
 
 ---
 
-![Triangle Area](https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Rectangle2-area-is-bh.svg/500px-Rectangle2-area-is-bh.svg.png)
+![Triangle Area](https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Rectangle2-area-is-bh.svg/500px-Rectangle2-area-is-bh.svg.png){height=540px}
 
 ## Example Program
 
