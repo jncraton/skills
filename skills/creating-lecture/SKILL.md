@@ -30,7 +30,6 @@ Create curriculum as a professional who specializes in high quality, engaging un
 - Max 20 words per slide (excluding code)
 - No trailing periods on list items
 - 20-30 slides total
-- Response: only the slide deck
 
 ## Images
 
