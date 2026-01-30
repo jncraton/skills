@@ -41,6 +41,16 @@ python3 scripts/image_search.py "{search query}"
 
 Interleave up to four images throughout only if strong matching images are found.
 
+## Quotes
+
+Always search for relevant quotes to add to the lecture. Quote search:
+
+```
+rg -i "apples|oranges" ~/personal/quotes/quotes.tsv
+```
+
+Only add relevant quotes.
+
 ## Example
 
 ````markdown
