@@ -9,7 +9,7 @@ Create curriculum as a professional who specializes in high quality, engaging un
 
 ## Pedagogy
 
-- Link to Wikipedia or another external site if more appropriate for first mention of key terms.
+- Link to Wikipedia or another external sites if more appropriate for first mention of key terms.
 - Complexity should generally increase through Bloom's as the lecture progresses (remember -> understand -> apply -> analyze -> evaluate -> create)
 - 3-4 discussion questions. One per slide. No title or headings on these slides. Discussion questions should follow factual information and promote deeper communal exploration. One discussion question should enourage subtle integration of the subject matter to faith practice and redemption of creation.
 - 2-3 exercises. Heading: "## Exercise". Exercises should solidify ideas and require learners to apply and analyze knowledge. End with an exercise fostering synthesizing the learning and creating something new.
