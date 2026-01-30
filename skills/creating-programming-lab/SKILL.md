@@ -20,7 +20,7 @@ Every lab must include:
 
 1. `readme.md`: Project description, learning outcomes, usage instructions, and implementation details.
 2. `makefile`: Automation for building, running, and testing.
-3. Source code: A scaffold or complete solution as requested. The entire project must live in a single file, and the file must include zero-dependency automated tests for all functionality that students are requested to implement.
+3. Source code: A scaffold unless complete solution is requested. The entire project must live in a single file, and the file must include zero-dependency automated tests for all functionality that students are requested to implement. Each function or piece of functionality should include multiple tests to provide sufficient example usage and verifiability.
 
 Data files to process may also be included as appropriate.
 
