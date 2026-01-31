@@ -43,10 +43,12 @@ Interleave up to four images throughout only if strong matching images are found
 
 ## Quotes
 
-Always search for relevant quotes to add to the lecture. Quote search:
+Always search for relevant quotes before creating a lecture:
 
 ```
-rg -i "apples|oranges" ~/personal/quotes/quotes.tsv
+> rg -i "apples|oranges" references/quotes.txt
+3:Plato Apples are good
+7:Socrates I like oranges
 ```
 
 Only add relevant quotes.
