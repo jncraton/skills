@@ -51,7 +51,7 @@ Always search for relevant quotes before creating a lecture:
 7:Socrates I like oranges
 ```
 
-Only add relevant quotes.
+Use as many as five direct quotes, but do not quote irrelevant text.
 
 ## Example
 
