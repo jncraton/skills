@@ -97,6 +97,12 @@ myvar = 42
 
 How can thoughtfully named variables help us demonstrate care for one another?
 
+---
+
+> You shall love your neighbor as yourself.
+>
+> Matthew 22:39 ESV
+
 ## Variable Names
 
 - Should document what the variable is used for
