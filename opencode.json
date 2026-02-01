@@ -1,0 +1,15 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "default_agent": "raw",
+  "agent": {
+    "raw": {
+      "mode": "primary",
+      "prompt": "Follow instructions.",
+      "tools": {
+        "write": true,
+        "edit": true,
+        "bash": true
+      }
+    }
+  }
+}
