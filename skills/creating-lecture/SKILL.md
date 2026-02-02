@@ -9,10 +9,10 @@ Create curriculum as a professional who specializes in high quality, engaging un
 
 ## Pedagogy
 
-- Link to Wikipedia or another external sites if more appropriate for first mention of key terms.
-- Complexity should generally increase through Bloom's as the lecture progresses (remember -> understand -> apply -> analyze -> evaluate -> create)
-- 3-4 discussion questions. One per slide. No title or headings on these slides. Discussion questions should follow factual information and promote deeper communal exploration. One discussion question should enourage subtle integration of the subject matter to faith practice and redemption of creation.
-- 2-3 exercises. Heading: "## Exercise". Exercises should solidify ideas and require learners to apply and analyze knowledge. End with an exercise fostering synthesizing the learning and creating something new.
+- Link to Wikipedia or appropriate external site on first mention of key terms.
+- Complexity should generally increase through Bloom's as lecture progresses (remember -> understand -> apply -> analyze -> evaluate -> create)
+- 3-4 discussion questions. One per slide. No title or headings on these slides. Discussion questions should follow and connect to factual information and promote deeper communal exploration. One discussion question should enourage subtle integration of the subject matter to faith practice or redemption of creation.
+- 2-3 exercises. Heading: "## Exercise". Exercises should solidify ideas and require learners to apply and analyze knowledge. End with an exercise synthesizing the learning and creating something new.
 - Distribute exercises and discussion questions throughout.
 - No generic "Questions?" or review slides.
 
@@ -39,7 +39,7 @@ Always search for matching images and quotes that could be used with this lectur
 python3 scripts/related_content.py "Guido van Rossum" "Triangle Area"
 ```
 
-Interleave up to four images and quotes throughout only if strong matches are found.
+Interleave up to four images and quotes throughout only if appropriate matches are found.
 
 ## Example
 
@@ -83,13 +83,13 @@ myvar = 42
 
 ---
 
-How can thoughtfully named variables help us demonstrate care for one another?
-
----
-
 > You shall love your neighbor as yourself.
 >
 > Matthew 22:39 ESV
+
+---
+
+How can thoughtfully named variables help us demonstrate love for our neighbor?
 
 ## Variable Names
 
