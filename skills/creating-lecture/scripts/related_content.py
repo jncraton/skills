@@ -39,4 +39,4 @@ def search_images(query):
 
 if __name__ == "__main__":
     if len(sys.argv) > 1:
-        search_images(sys.argv[1])
+        search_images(' '.join(sys.argv[1:]))
