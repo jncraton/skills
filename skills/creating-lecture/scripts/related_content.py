@@ -3,7 +3,7 @@ import json
 import urllib.request
 import urllib.parse
 import re
-
+from pathlib import Path
 
 def clean_html(text):
     return re.sub(r"<[^>]*>", "", text).replace("\n", " ")
@@ -37,6 +37,26 @@ def search_images(query):
                 print(f"{thumb_url} {description[:300]}")
 
 
+def search_quotes(query):
+    quote_path = Path(__file__).parent.parent / "references/quotes.txt"
+    keywords = query.split()
+
+    matcher = re.compile("|".join(keywords), flags=re.I)
+
+
+    quotes = []
+    for quote in open(quote_path):
+        matches = len(re.findall(matcher, quote))
+        quality = matches / len(quote.split("\t")[1])
+        if quality > 0:
+            quotes.append((quality, quote))
+
+    print("## Quotes\n")
+    for quote in sorted(quotes, reverse=True)[:5]:
+        print(quote[0], quote[1])
+
 if __name__ == "__main__":
     if len(sys.argv) > 1:
         search_images(' '.join(sys.argv[1:]))
+        search_quotes(' '.join(sys.argv[1:]))
+
