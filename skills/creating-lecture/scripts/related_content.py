@@ -23,6 +23,7 @@ def search_images(query):
     }
     url = f"https://commons.wikimedia.org/w/api.php?{urllib.parse.urlencode(params)}"
     req = urllib.request.Request(url, headers={"User-Agent": "ImageSearchScript/1.0"})
+    print("## Images\n")
     with urllib.request.urlopen(req) as response:
         data = json.loads(response.read().decode())
         pages = data.get("query", {}).get("pages", {})
@@ -53,10 +54,11 @@ def search_quotes(query):
 
     print("## Quotes\n")
     for quote in sorted(quotes, reverse=True)[:5]:
-        print(quote[0], quote[1])
+        print(quote[1])
 
 if __name__ == "__main__":
     if len(sys.argv) > 1:
         search_images(' '.join(sys.argv[1:]))
+        print()
         search_quotes(' '.join(sys.argv[1:]))
 
