@@ -31,27 +31,15 @@ Create curriculum as a professional who specializes in high quality, engaging un
 - No trailing periods on list items
 - 20-30 slides total
 
-## Images
+## Retrieval
 
-Always search Wikimedia Commons for appropriate images:
+Always search for matching images and quotes that could be used with this lecture:
 
 ```sh
-python3 scripts/image_search.py "{search query}"
+python3 scripts/related_content.py "Guido van Rossum" "Triangle Area"
 ```
 
-Interleave up to four images throughout only if strong matching images are found.
-
-## Quotes
-
-Always search for relevant quotes before creating a lecture:
-
-```
-> rg -i "apples|oranges" references/quotes.txt
-3:Plato Apples are good
-7:Socrates I like oranges
-```
-
-Use as many as five direct quotes, but do not quote irrelevant text.
+Interleave up to four images and quotes throughout only if strong matches are found.
 
 ## Example
 
