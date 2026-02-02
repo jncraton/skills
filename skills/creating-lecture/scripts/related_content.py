@@ -17,8 +17,7 @@ def search_images(query):
         "iiprop": "url|extmetadata",
         "iiurlwidth": 500,
         "generator": "search",
-        "gsrsort": "incoming_links_desc",
-        "gsrsearch": query,
+        "gsrsearch": f"{query} incategory:Quality_images",
         "gsrnamespace": 6,
     }
     url = f"https://commons.wikimedia.org/w/api.php?{urllib.parse.urlencode(params)}"
