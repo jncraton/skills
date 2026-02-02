@@ -18,7 +18,7 @@ def search_images(queries):
             "format": "json",
             "prop": "imageinfo",
             "iiprop": "url|extmetadata",
-            "iiurlwidth": 500,
+            "iiurlwidth": 960,
             "generator": "search",
             "gsrsearch": f"{query} incategory:Quality_images",
             "gsrlimit": 10,

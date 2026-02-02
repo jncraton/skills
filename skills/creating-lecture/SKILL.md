@@ -140,7 +140,7 @@ print("I'm not able to help with that.")
 
 ---
 
-![Triangle Area](https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Rectangle2-area-is-bh.svg/500px-Rectangle2-area-is-bh.svg.png){height=540px}
+![Triangle Area](https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Rectangle2-area-is-bh.svg/960px-Rectangle2-area-is-bh.svg.png){height=540px}
 
 ## Example Program
 
