@@ -17,6 +17,7 @@ def search_images(query):
         "iiprop": "url|extmetadata",
         "iiurlwidth": 500,
         "generator": "search",
+        "gsrsort": "incoming_links_desc",
         "gsrsearch": query,
         "gsrnamespace": 6,
     }
