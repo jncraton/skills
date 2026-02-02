@@ -10,7 +10,7 @@ def clean_html(text):
 
 
 def search_images(query):
-    keywords = ' OR '.join(query.split())
+    keywords = ' '.join(query.split())
     params = {
         "action": "query",
         "format": "json",
@@ -18,7 +18,8 @@ def search_images(query):
         "iiprop": "url|extmetadata",
         "iiurlwidth": 500,
         "generator": "search",
-        "gsrsearch": f"({keywords}) incategory:Quality_images",
+        "gsrsearch": f"{keywords} incategory:Quality_images",
+        "gsrlimit": 50,
         "gsrnamespace": 6,
     }
     url = f"https://commons.wikimedia.org/w/api.php?{urllib.parse.urlencode(params)}"
@@ -35,7 +36,8 @@ def search_images(query):
                 metadata = imageinfo.get("extmetadata", {})
                 description = metadata.get("ImageDescription", {}).get("value", title)
                 description = clean_html(description)
-                print(f"{thumb_url} {description[:300]}")
+                if len(description) > 100:
+                    print(f"{thumb_url} {description[:500]}")
 
 
 def search_quotes(query):
