@@ -80,16 +80,14 @@ The code includes a number of embedded tests that can be run using:
 make test
 ```
 
-Tasks
------
+## Tasks
 
 1. Implement `load_cereals`
 2. Implement `get_calories_avg`
 3. Implement `get_protein_max`
 4. Implement `get_protein_per_calorie_max`
 
-Resources
----------
+## Resources
 
 In order to complete this implementation, you will load the rows of the CSV file into an array of [structs](https://en.wikibooks.org/wiki/C_Programming/Advanced_data_types#Structs). This will give you practice using more advanced compound data types. You will also be using [functions](https://en.wikibooks.org/wiki/C_Programming/Procedures_and_functions) and [pointers](https://en.wikibooks.org/wiki/C_Programming/Pointers_and_arrays). `string.h` has been included, and you are welcome to use the functions it provides.
 ````
