@@ -42,6 +42,14 @@ For lectures slides:
 - Distribute exercises and discussion questions throughout.
 - No generic "Questions?" or review slides.
 
+### Presenting
+
+If requested, convert and present the slide deck using the following command after saving the deck as markdown:
+
+```sh
+rm -f {mydeck.html} && pandoc -t revealjs -V theme=white -V revealjs-url=https://unpkg.com/reveal.js -s "mydeck.md" -o {mydeck.html} && firefox {mydeck.html}
+```
+
 ## Retrieval
 
 Always search for matching images and quotes that could be included using the following script:
