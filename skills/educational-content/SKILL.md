@@ -50,7 +50,7 @@ Always search for matching images and quotes that could be included using the fo
 python3 scripts/related_content.py "Guido van Rossum" "Triangle Area" "Variable"
 ```
 
-Interleave up to four images and cited quotes only if appropriate matches are found.
+Interleave up to four images and cited quotes only if appropriate matches are found. Prefer quality and featured images.
 
 ## Example
 
