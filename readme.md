@@ -1,6 +1,6 @@
 # Skills
 
-[skills.zip](https://jncraton.github.io/skills/skills.zip) | [spec](https://agentskills.io/) | [AGENTS.md](AGENTS.md) (136 tokens)
+[skills.zip](https://jncraton.github.io/skills/skills.zip) | [spec](https://agentskills.io/) | [AGENTS.md](AGENTS.md) (155 tokens)
 
 - [creating-lecture](skills/creating-lecture/SKILL.md) (1052 tokens): Apply this skill when asked to create a classroom lecture, talk, or learning activity
 - [creating-programming-lab](skills/creating-programming-lab/SKILL.md) (702 tokens): Use this skill to generate a programming lab
