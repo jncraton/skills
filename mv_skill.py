@@ -1,0 +1,31 @@
+import sys
+from pathlib import Path
+
+
+def main():
+    if len(sys.argv) != 3:
+        return
+
+    old_name = sys.argv[1]
+    new_name = sys.argv[2]
+
+    old_dir = Path("skills") / old_name
+    new_dir = Path("skills") / new_name
+
+    if not old_dir.is_dir() or new_dir.exists():
+        return
+
+    skill_file = old_dir / "SKILL.md"
+    if not skill_file.exists():
+        raise FileNotFoundError(f"SKILL.md not found in {old_dir}")
+
+    old_dir.rename(new_dir)
+
+    skill_file = new_dir / "SKILL.md"
+    content = skill_file.read_text(encoding="utf-8")
+    new_content = content.replace(f"name: {old_name}", f"name: {new_name}")
+    skill_file.write_text(new_content, encoding="utf-8")
+
+
+if __name__ == "__main__":
+    main()
