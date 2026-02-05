@@ -1,5 +1,5 @@
 ---
-name: academic-content
+name: educational-content
 description: Create, evaluate, or refine an educational lecture, learning activity, talk, or blog post
 ---
 
