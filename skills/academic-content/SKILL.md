@@ -1,5 +1,5 @@
 ---
-name: creating-lecture
+name: academic-content
 description: Apply this skill when asked to create a classroom lecture, talk, or learning activity
 ---
 
