@@ -50,7 +50,7 @@ Always search for matching images and quotes that could be used with these mater
 python3 scripts/related_content.py "Guido van Rossum" "Triangle Area"
 ```
 
-Interleave up to four images and quotes throughout only if appropriate matches are found.
+Interleave up to four images and cited quotes throughout only if appropriate matches are found.
 
 ## Example
 
@@ -96,7 +96,7 @@ myvar = 42
 
 > You shall love your neighbor as yourself.
 >
-> Matthew 22:39 ESV
+> [Matthew 22:39 ESV](https://www.biblegateway.com/passage/?search=matthew%2022%3A39&version=ESV)
 
 ---
 
