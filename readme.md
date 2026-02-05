@@ -2,9 +2,9 @@
 
 [skills.zip](https://jncraton.github.io/skills/skills.zip) | [spec](https://agentskills.io/) | [AGENTS.md](AGENTS.md) (155 tokens)
 
-- [academic-content](skills/academic-content/SKILL.md) (1218 tokens): Create, evaluate, or refine a lecture, learning activity, talk, or paper
 - [creating-programming-lab](skills/creating-programming-lab/SKILL.md) (702 tokens): Use this skill to generate a programming lab
+- [educational-content](skills/educational-content/SKILL.md) (1220 tokens): Create, evaluate, or refine an educational lecture, learning activity, talk, or blog post
 - [generating-multiple-choice-questions](skills/generating-multiple-choice-questions/SKILL.md) (178 tokens): Apply this skill generate multiple choice questions
-- [generating-qti](skills/generating-qti/SKILL.md) (412 tokens): Apply this skills to generate a quiz or test for an LMS in QTI format
+- [qti](skills/qti/SKILL.md) (411 tokens): Apply this skills to generate a quiz or test for an LMS in QTI format
 - [reflecting](skills/reflecting/SKILL.md) (118 tokens): Apply this skill generate reflection questions
 - [worship-plan](skills/worship-plan/SKILL.md) (426 tokens): Use this skill to generate, evaluate, or adapt a plan for a worship service
