@@ -44,13 +44,13 @@ For lectures slides:
 
 ## Retrieval
 
-Always search for matching images and quotes that could be used with these materials.
+Always search for matching images and quotes that could be included using the following script:
 
 ```sh
-python3 scripts/related_content.py "Guido van Rossum" "Triangle Area"
+python3 scripts/related_content.py "Guido van Rossum" "Triangle Area" "Variable"
 ```
 
-Interleave up to four images and cited quotes throughout only if appropriate matches are found.
+Interleave up to four images and cited quotes only if appropriate matches are found.
 
 ## Example
 
