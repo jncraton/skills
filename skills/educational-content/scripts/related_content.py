@@ -76,7 +76,7 @@ def search_images(queries):
                 elif "Valued images" in res["categories"]:
                     marker = "[VALUED] "
                 
-                print(f"{res['url']} q:{res['quality']:.01f} {marker}{res['description'][:500]}")
+                print(f"{res['url']}\tq:{res['quality']:.01f}\t{marker}{res['description'][:500]}")
                 count += 1
             print()
 
