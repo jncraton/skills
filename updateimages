@@ -26,15 +26,15 @@ def write_tsv(data, filename):
     dedup = {}
     for alt, url in data:
         if url not in dedup:
-            dedup[url] = set()
+            dedup[url] = {}
         if alt:
-            dedup[url].add(alt)
+            dedup[url][alt.lower()] = alt
 
     with open(filename, "w", newline="", encoding="utf-8") as f:
         writer = csv.writer(f, delimiter="\t")
         writer.writerow(["url", "alt_text"])
         for url in sorted(dedup.keys()):
-            alts = ",".join(sorted(list(dedup[url])))
+            alts = ",".join(sorted(dedup[url].values()))
             writer.writerow([url, alts])
 
 
