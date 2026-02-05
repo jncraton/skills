@@ -1,5 +1,5 @@
 ---
-name: generating-qti
+name: qti
 description: Apply this skills to generate a quiz or test for an LMS in QTI format
 ---
 
