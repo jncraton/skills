@@ -22,16 +22,23 @@ def scan_md_files(root):
     return matches
 
 
+def get_full_url(url):
+    if "/thumb/" in url:
+        return url.replace("/thumb/", "/").rsplit("/", 1)[0]
+    return url
+
+
 def write_tsv(data, filename):
     dedup = {}
     counts = {}
     for alt, url in data:
-        if url not in dedup:
-            dedup[url] = {}
-            counts[url] = 0
+        full_url = get_full_url(url)
+        if full_url not in dedup:
+            dedup[full_url] = {}
+            counts[full_url] = 0
         if alt:
-            dedup[url][alt.lower()] = alt
-        counts[url] += 1
+            dedup[full_url][alt.lower()] = alt
+        counts[full_url] += 1
 
     rows = []
     for url in dedup:
