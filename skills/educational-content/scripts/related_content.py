@@ -50,16 +50,19 @@ def search_images(queries):
                     if len(description) > 5:
                         quality = 0
                         categories = metadata.get("Categories", {}).get("value", "")
-                        if "Quality images" in categories:
-                            quality += 2
                         if "Featured pictures" in categories:
                             quality += 3
+                        if "Quality images" in categories:
+                            quality += 2
+                        if "Valued images" in categories:
+                            quality += 1
                         
                         results.append({
                             "index": page.get("index", 0),
                             "quality": quality,
                             "url": thumb_url,
-                            "description": description
+                            "description": description,
+                            "categories": categories
                         })
             
             # Sort by quality (descending) then by search index (ascending)
@@ -67,10 +70,12 @@ def search_images(queries):
             
             for res in results[:3]:
                 marker = ""
-                if res["quality"] >= 5:
+                if "Featured pictures" in res["categories"]:
                     marker = "[FEATURED] "
-                elif res["quality"] >= 2:
+                elif "Quality images" in res["categories"]:
                     marker = "[QUALITY] "
+                elif "Valued images" in res["categories"]:
+                    marker = "[VALUED] "
                 
                 print(f"{res['url']} {marker}{res['description'][:500]}")
                 count += 1
