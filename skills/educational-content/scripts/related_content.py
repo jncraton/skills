@@ -27,7 +27,8 @@ def search_images(queries):
             "iiprop": "url|extmetadata",
             "iiurlwidth": 960,
             "generator": "search",
-            "gsrsearch": f"{query} incategory:Quality_images",
+            "gsrsearch": query,
+            "gsrsort": "relevance",
             "gsrlimit": 10,
             "gsrnamespace": 6,
         }
@@ -37,6 +38,7 @@ def search_images(queries):
         with urllib.request.urlopen(req) as response:
             data = json.loads(response.read().decode())
             pages = data.get("query", {}).get("pages", {})
+            results = []
             for page in pages.values():
                 title = page.get("title", "")
                 imageinfo = page.get("imageinfo", [{}])[0]
@@ -45,11 +47,33 @@ def search_images(queries):
                     metadata = imageinfo.get("extmetadata", {})
                     description = metadata.get("ImageDescription", {}).get("value", title)
                     description = clean_html(description)
-                    if len(description) > 30:
-                        print(f"{thumb_url} {description[:500]}")
-                        count += 1
-                        if count >= 3:
-                            break
+                    if len(description) > 5:
+                        quality = 0
+                        categories = metadata.get("Categories", {}).get("value", "")
+                        if "Quality images" in categories:
+                            quality += 2
+                        if "Featured pictures" in categories:
+                            quality += 3
+                        
+                        results.append({
+                            "index": page.get("index", 0),
+                            "quality": quality,
+                            "url": thumb_url,
+                            "description": description
+                        })
+            
+            # Sort by quality (descending) then by search index (ascending)
+            results.sort(key=lambda x: (-x["quality"], x["index"]))
+            
+            for res in results[:3]:
+                marker = ""
+                if res["quality"] >= 5:
+                    marker = "[FEATURED] "
+                elif res["quality"] >= 2:
+                    marker = "[QUALITY] "
+                
+                print(f"{res['url']} {marker}{res['description'][:500]}")
+                count += 1
             print()
 
 def search_quotes(query):
