@@ -23,11 +23,19 @@ def scan_md_files(root):
 
 
 def write_tsv(data, filename):
+    dedup = {}
+    for alt, url in data:
+        if url not in dedup:
+            dedup[url] = set()
+        if alt:
+            dedup[url].add(alt)
+
     with open(filename, "w", newline="", encoding="utf-8") as f:
         writer = csv.writer(f, delimiter="\t")
         writer.writerow(["url", "alt_text"])
-        for alt, url in data:
-            writer.writerow([url, alt])
+        for url in sorted(dedup.keys()):
+            alts = ",".join(sorted(list(dedup[url])))
+            writer.writerow([url, alts])
 
 
 def main():
