@@ -57,6 +57,12 @@ Interleave up to four images and cited quotes throughout only if appropriate mat
 ````markdown
 # Variables
 
+---
+
+> One of the most powerful features of a programming language is the ability to manipulate variables.
+>
+> [PY4E](https://openlibrary.org/isbn/9781530051120)
+
 ## Definition
 
 A [variable](<https://en.wikipedia.org/wiki/Variable_(high-level_programming)>) is a named container for a value
