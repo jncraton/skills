@@ -35,4 +35,4 @@ readme.md:
 	python3 generate.py
 
 clean:
-	rm -rf skills.zip index.md *.html **/*.html uv.lock .python-version .venv venv
+	rm -rf skills.zip index.md *.html **/*.html uv.lock .python-version .venv venv .ruff_cache
