@@ -29,7 +29,7 @@ def search_images(queries):
             "generator": "search",
             "gsrsearch": query,
             "gsrsort": "relevance",
-            "gsrlimit": 10,
+            "gsrlimit": 50,
             "gsrnamespace": 6,
         }
         url = f"https://commons.wikimedia.org/w/api.php?{urllib.parse.urlencode(params)}"
@@ -47,23 +47,22 @@ def search_images(queries):
                     metadata = imageinfo.get("extmetadata", {})
                     description = metadata.get("ImageDescription", {}).get("value", title)
                     description = clean_html(description)
-                    if len(description) > 5:
-                        quality = 0
-                        categories = metadata.get("Categories", {}).get("value", "")
-                        if "Featured pictures" in categories:
-                            quality += 3
-                        if "Quality images" in categories:
-                            quality += 2
-                        if "Valued images" in categories:
-                            quality += 1
-                        
-                        results.append({
-                            "index": page.get("index", 0),
-                            "quality": quality,
-                            "url": thumb_url,
-                            "description": description,
-                            "categories": categories
-                        })
+                    quality = min(0.5, len(description) / 30)
+                    categories = metadata.get("Categories", {}).get("value", "")
+                    if "Featured pictures" in categories:
+                        quality += 3
+                    if "Quality images" in categories:
+                        quality += 2
+                    if "Valued images" in categories:
+                        quality += 1
+                    
+                    results.append({
+                        "index": page.get("index", 0),
+                        "quality": quality,
+                        "url": thumb_url,
+                        "description": description,
+                        "categories": categories
+                    })
             
             # Sort by quality (descending) then by search index (ascending)
             results.sort(key=lambda x: (-x["quality"], x["index"]))
@@ -77,7 +76,7 @@ def search_images(queries):
                 elif "Valued images" in res["categories"]:
                     marker = "[VALUED] "
                 
-                print(f"{res['url']} {marker}{res['description'][:500]}")
+                print(f"{res['url']} q:{res['quality']:.01f} {marker}{res['description'][:500]}")
                 count += 1
             print()
 
