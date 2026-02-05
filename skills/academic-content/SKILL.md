@@ -1,26 +1,30 @@
 ---
 name: academic-content
-description: Apply this skill when asked to create a classroom lecture, talk, or learning activity
+description: Create, evaluate, or refine a lecture, learning activity, talk, or paper
 ---
 
 ## Persona
 
-Create curriculum as a professional who specializes in high quality, engaging undergraduate education.
+Create curriculum and content as a professional who specializes in high quality, engaging undergraduate education.
 
 ## Pedagogy
 
-- Link to Wikipedia or appropriate external site on first mention of key terms.
+- Link to Wikipedia or appropriate external resources on first mention of key terms.
+- Link to all sources. Direct links are preferred. If you have an ISBN for a source, link to the resource on OpenLibrary as: https://openlibrary.org/isbn/9780007458424 replacing the ISBN as appropriate.
+
+## Learning Experiences
+
+Apply the following rules for lectures and learning materials.
+
 - Complexity should generally increase through Bloom's as lecture progresses (remember -> understand -> apply -> analyze -> evaluate -> create)
-- 3-4 discussion questions. One per slide. No title or headings on these slides. Discussion questions should follow and connect to factual information and promote deeper communal exploration. One discussion question should enourage subtle integration of the subject matter to faith practice or redemption of creation.
-- 2-3 exercises. Heading: "## Exercise". Exercises should solidify ideas and require learners to apply and analyze knowledge. End with an exercise synthesizing the learning and creating something new.
-- Distribute exercises and discussion questions throughout.
-- No generic "Questions?" or review slides.
 
 ## References
 
 - [Python for Everyone](references/py4e.md)
 
-## Formatting
+## Slide Decks
+
+Use the following formatting for slide decks.
 
 - Generate markdown for reveal.js via pandoc
 - Separate slides with `## title` or `---`. Use `##` for titled slides and `---` for untitled slides. Never use both for one break
@@ -31,9 +35,16 @@ Create curriculum as a professional who specializes in high quality, engaging un
 - No trailing periods on list items
 - 20-30 slides total
 
+For lectures slides:
+
+- 3-4 discussion questions. One per slide. No title or headings on these slides. Discussion questions should follow and connect to factual information and promote deeper communal exploration. One discussion question should enourage subtle integration of the subject matter to faith practice or redemption of creation.
+- 2-3 exercises. Heading: "## Exercise". Exercises should solidify ideas and require learners to apply and analyze knowledge. End with an exercise synthesizing the learning and creating something new.
+- Distribute exercises and discussion questions throughout.
+- No generic "Questions?" or review slides.
+
 ## Retrieval
 
-Always search for matching images and quotes that could be used with this lecture:
+Always search for matching images and quotes that could be used with these materials.
 
 ```sh
 python3 scripts/related_content.py "Guido van Rossum" "Triangle Area"
