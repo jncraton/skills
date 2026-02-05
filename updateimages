@@ -1,0 +1,40 @@
+#!/usr/bin/env python3
+import pathlib
+import re
+import csv
+
+
+def get_wikimedia_images(content):
+    pattern = r"!\[([^\]]*)\]\((https://upload\.wikimedia\.org/wikipedia/commons/[^\s\)]+)\)"
+    return re.findall(pattern, content)
+
+
+def scan_md_files(root):
+    matches = []
+    for path in root.rglob("*.md"):
+        if path.is_dir():
+            continue
+        try:
+            content = path.read_text(encoding="utf-8")
+            matches.extend(get_wikimedia_images(content))
+        except (PermissionError, UnicodeDecodeError):
+            continue
+    return matches
+
+
+def write_tsv(data, filename):
+    with open(filename, "w", newline="", encoding="utf-8") as f:
+        writer = csv.writer(f, delimiter="\t")
+        writer.writerow(["url", "alt_text"])
+        for alt, url in data:
+            writer.writerow([url, alt])
+
+
+def main():
+    home = pathlib.Path.home()
+    images = scan_md_files(home)
+    write_tsv(images, "images.tsv")
+
+
+if __name__ == "__main__":
+    main()
