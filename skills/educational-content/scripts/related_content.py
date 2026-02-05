@@ -1,3 +1,10 @@
+""" Get related content for topics
+
+Example:
+
+> python3 scripts/related_content.py "Guido van Rossum" "Triangle Area" "Variable"
+"""
+
 import sys
 import json
 import urllib.request
