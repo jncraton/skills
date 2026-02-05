@@ -37,7 +37,7 @@ Use the following formatting for slide decks.
 
 For lectures slides:
 
-- 3-4 discussion questions. One per slide. No title or headings on these slides. Discussion questions should follow and connect to factual information and promote deeper communal exploration. One discussion question should enourage subtle integration of the subject matter to faith practice or redemption of creation.
+- 3-4 discussion questions. Only one question per slide with no title or heading on the slide. Questions should follow and connect to factual information and promote deeper communal exploration. One discussion question should enourage subtle integration of the subject matter to faith practice or redemption of creation.
 - 2-3 exercises. Heading: "## Exercise". Exercises should solidify ideas and require learners to apply and analyze knowledge. End with an exercise synthesizing the learning and creating something new.
 - Distribute exercises and discussion questions throughout.
 - No generic "Questions?" or review slides.
