@@ -1,6 +1,6 @@
 ---
 name: academic-content
-description: Create, evaluate, or refine a lecture, learning activity, talk, or paper
+description: Create, evaluate, or refine an educational lecture, learning activity, talk, or blog post
 ---
 
 ## Persona
