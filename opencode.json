@@ -6,6 +6,7 @@
       "mode": "primary",
       "prompt": "Follow instructions.",
       "tools": {
+        "read": true,
         "write": true,
         "edit": true,
         "bash": true
