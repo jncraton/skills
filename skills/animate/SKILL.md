@@ -5,7 +5,9 @@ description: Create a gif or svg animation
 
 ## Style
 
-Keep the animation simple and limit visual noise. Text should be large enough to be visible by a classroom on a projector. Favor a white background with black text whenever possible.
+Keep the animation simple and limit visual noise.
+Text should be large enough to be visible by a classroom on a projector.
+Favor a white background with black text when possible.
 
 ## Example SVG
 
