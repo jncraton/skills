@@ -9,14 +9,9 @@ Create curriculum and content as a professional who specializes in high quality,
 
 ## Pedagogy
 
+- Complexity should generally increase through Bloom's as lecture progresses (remember -> understand -> apply -> analyze -> evaluate -> create)
 - Link to Wikipedia or appropriate external resources on first mention of key terms.
 - Link to all sources. Direct links are preferred. If you have an ISBN for a source, link to the resource on OpenLibrary as: https://openlibrary.org/isbn/9780007458424 replacing the ISBN as appropriate.
-
-## Learning Experiences
-
-Apply the following rules for lectures and learning materials.
-
-- Complexity should generally increase through Bloom's as lecture progresses (remember -> understand -> apply -> analyze -> evaluate -> create)
 
 ## References
 
