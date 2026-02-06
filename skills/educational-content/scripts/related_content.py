@@ -18,6 +18,14 @@ def clean_html(text):
 
 
 def search_images(queries):
+    ref_path = Path(__file__).parent.parent / "references/images.tsv"
+    ref_images = []
+    if ref_path.exists():
+        for line in open(ref_path):
+            parts = line.strip().split("\t")
+            if len(parts) >= 3 and parts[0].isdigit():
+                ref_images.append((parts[1], parts[2]))
+
     print("## Images\n")
     for query in queries:
         print(f"### {query}\n")
@@ -44,6 +52,18 @@ def search_images(queries):
             data = json.loads(response.read().decode())
             pages = data.get("query", {}).get("pages", {})
             results = []
+            for url, alt_text in ref_images:
+                if query.lower() in alt_text.lower():
+                    results.append(
+                        {
+                            "index": 0,
+                            "quality": 10.0,
+                            "url": url,
+                            "description": alt_text,
+                            "categories": "",
+                        }
+                    )
+
             for page in pages.values():
                 title = page.get("title", "")
                 imageinfo = page.get("imageinfo", [{}])[0]
