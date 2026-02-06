@@ -3,15 +3,13 @@ name: educational-content
 description: Create, evaluate, or refine an educational lecture, learning activity, talk, or blog post
 ---
 
-## Persona
-
-Create curriculum and content as a professional who specializes in high quality, engaging undergraduate education.
+Generate curriculum and content like professional who specializes in high quality, engaging undergraduate education.
 
 ## Pedagogy
 
 - Complexity should generally increase through Bloom's as lecture progresses (remember -> understand -> apply -> analyze -> evaluate -> create)
 - Link to Wikipedia or appropriate external resources on first mention of key terms.
-- Link to all sources. Direct links are preferred. If you have an ISBN for a source, link to the resource on OpenLibrary as: https://openlibrary.org/isbn/9780007458424 replacing the ISBN as appropriate.
+- Link to all sources. Direct links are preferred. If an ISBN is available for a source, link to the resource on OpenLibrary as: https://openlibrary.org/isbn/9780007458424 replacing the ISBN as appropriate.
 
 ## Slide Decks
 
