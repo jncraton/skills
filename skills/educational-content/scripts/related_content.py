@@ -1,4 +1,4 @@
-""" Get related content for topics
+"""Get related content for topics
 
 Example:
 
@@ -11,6 +11,7 @@ import urllib.request
 import urllib.parse
 import re
 from pathlib import Path
+
 
 def clean_html(text):
     return re.sub(r"<[^>]*>", "", text).replace("\n", " ")
@@ -32,8 +33,12 @@ def search_images(queries):
             "gsrlimit": 50,
             "gsrnamespace": 6,
         }
-        url = f"https://commons.wikimedia.org/w/api.php?{urllib.parse.urlencode(params)}"
-        req = urllib.request.Request(url, headers={"User-Agent": "ImageSearchScript/1.0"})
+        url = (
+            f"https://commons.wikimedia.org/w/api.php?{urllib.parse.urlencode(params)}"
+        )
+        req = urllib.request.Request(
+            url, headers={"User-Agent": "ImageSearchScript/1.0"}
+        )
         count = 0
         with urllib.request.urlopen(req) as response:
             data = json.loads(response.read().decode())
@@ -45,7 +50,9 @@ def search_images(queries):
                 thumb_url = imageinfo.get("thumburl")
                 if thumb_url:
                     metadata = imageinfo.get("extmetadata", {})
-                    description = metadata.get("ImageDescription", {}).get("value", title)
+                    description = metadata.get("ImageDescription", {}).get(
+                        "value", title
+                    )
                     description = clean_html(description)
                     quality = min(0.5, len(description) / 30)
                     categories = metadata.get("Categories", {}).get("value", "")
@@ -55,18 +62,20 @@ def search_images(queries):
                         quality += 2
                     if "Valued images" in categories:
                         quality += 1
-                    
-                    results.append({
-                        "index": page.get("index", 0),
-                        "quality": quality,
-                        "url": thumb_url,
-                        "description": description,
-                        "categories": categories
-                    })
-            
+
+                    results.append(
+                        {
+                            "index": page.get("index", 0),
+                            "quality": quality,
+                            "url": thumb_url,
+                            "description": description,
+                            "categories": categories,
+                        }
+                    )
+
             # Sort by quality (descending) then by search index (ascending)
             results.sort(key=lambda x: (-x["quality"], x["index"]))
-            
+
             for res in results[:3]:
                 marker = ""
                 if "Featured pictures" in res["categories"]:
@@ -75,17 +84,19 @@ def search_images(queries):
                     marker = "[QUALITY] "
                 elif "Valued images" in res["categories"]:
                     marker = "[VALUED] "
-                
-                print(f"{res['url']}\tq:{res['quality']:.01f}\t{marker}{res['description'][:500]}")
+
+                print(
+                    f"{res['url']}\tq:{res['quality']:.01f}\t{marker}{res['description'][:500]}"
+                )
                 count += 1
             print()
+
 
 def search_quotes(query):
     quote_path = Path(__file__).parent.parent / "references/quotes.txt"
     keywords = query.split()
 
     matcher = re.compile("|".join(keywords), flags=re.I)
-
 
     quotes = []
     for quote in open(quote_path):
@@ -98,9 +109,9 @@ def search_quotes(query):
     for quote in sorted(quotes, reverse=True)[:5]:
         print(quote[1])
 
+
 if __name__ == "__main__":
     if len(sys.argv) > 1:
         search_images(sys.argv[1:])
         print()
-        search_quotes(' '.join(sys.argv[1:]))
-
+        search_quotes(" ".join(sys.argv[1:]))
