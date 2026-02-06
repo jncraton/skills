@@ -13,10 +13,6 @@ Create curriculum and content as a professional who specializes in high quality,
 - Link to Wikipedia or appropriate external resources on first mention of key terms.
 - Link to all sources. Direct links are preferred. If you have an ISBN for a source, link to the resource on OpenLibrary as: https://openlibrary.org/isbn/9780007458424 replacing the ISBN as appropriate.
 
-## References
-
-- [Python for Everyone](references/py4e.md)
-
 ## Slide Decks
 
 Use the following formatting for slide decks.
