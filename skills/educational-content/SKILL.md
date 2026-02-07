@@ -7,7 +7,7 @@ Generate curriculum and content like professional who specializes in high qualit
 
 ## Pedagogy
 
-- Use the Backward-Design framework (Wiggins & McTighe). Use a clear Teaching Goal and 2–3 measurable Learning Objectives, then design assessments and aligned learning activities that ensure students reach the desired understandings. Among other suggestions, summative assessment should end with a three question multiple choice quiz. Only use multiple choice questions with four possible answers. The first answer should always be correct and distractors should be tempting but obviously incorrect if a student understands the material. When generating markdown, save this in the `teaching_goal` string, `learning_objectives` list, `summative_assessments` list, `formative_assessments` list, and `learning_plan` list in the yaml metadata. The `learning_plan` should be a list of objects with `start_time`, `description`, and `objective`. Include activity type, instructor actions, and student actions in the `description`. Include at least two active learning strategies.
+- Use the Backward-Design framework (Wiggins & McTighe). Use a clear Teaching Goal and 2–3 measurable Learning Objectives, then design assessments and aligned learning activities that ensure students reach the desired understandings. Among other suggestions, summative assessment should end with a three question multiple choice quiz. Only use multiple choice questions with four possible answers. The first answer should always be correct and distractors should be tempting but obviously incorrect if a student understands the material. When generating markdown, save this in the `teaching_goal` string, `learning_objectives` list, `summative_assessments` list, `quiz` list, `formative_assessments` list, and `learning_plan` list in the yaml metadata. The `quiz` list should contain objects with `question` and `answers`. The `learning_plan` should be a list of objects with `start_time`, `description`, and `objective`. Include activity type, instructor actions, and student actions in the `description`. Include at least two active learning strategies.
 - Complexity should generally increase through Bloom's as lecture progresses (remember -> understand -> apply -> analyze -> evaluate -> create)
 - Link to Wikipedia or appropriate external resources on first mention of key terms.
 - Link to all sources. Direct links are preferred. If an ISBN is available for a source, link to the resource on OpenLibrary as: https://openlibrary.org/isbn/9780007458424 replacing the ISBN as appropriate.
@@ -62,6 +62,25 @@ learning_objectives:
 summative_assessments:
   - Complete a programming project that implements a basic calculator with multiple operations
   - Final exam module covering variable naming conventions and basic I/O
+quiz:
+  - question: What does an assignment statement do?
+    answers:
+      - Creates or rebinds a variable
+      - Compares two values for equality
+      - Displays a value on screen
+      - Requests input from user
+  - question: What does input() return?
+    answers:
+      - String
+      - Integer
+      - Float
+      - Boolean
+  - question: Which name is valid?
+    answers:
+      - my_variable
+      - 2nd_variable
+      - my-variable
+      - my variable
 formative_assessments:
   - Practice identifying valid and invalid variable names
   - Write a program that takes a name and prints a greeting
