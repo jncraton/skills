@@ -1,6 +1,6 @@
 ---
 name: qti
-description: Apply this skills to generate a quiz or test for an LMS in QTI format
+description: Generate a quiz or test for an LMS in QTI format
 ---
 
 Only use multiple choice questions with four possible answers. A variety of questions should be provided focusing different levels of Bloom's revised taxonomy (remember, understand, apply, analyze, evaluate, create).
