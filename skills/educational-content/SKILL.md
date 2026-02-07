@@ -54,8 +54,11 @@ Interleave up to four images and cited quotes only if appropriate matches are fo
 
 ````markdown
 ---
-teaching_goal:
+teaching_goal: Students will understand the purpose and usage of variables and basic input/output in Python.
 learning_objectives:
+  - Define and assign values to variables using descriptive names
+  - Collect and process user input using input() and type conversion functions
+  - Implement a simple program that calculates and displays a result based on user input
 ---
 
 # Variables
