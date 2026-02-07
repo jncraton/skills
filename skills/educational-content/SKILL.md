@@ -7,7 +7,7 @@ Generate curriculum and content like professional who specializes in high qualit
 
 ## Pedagogy
 
-- Use the Backward-Design framework (Wiggins & McTighe). Use a clear Teaching Goal and 2–3 measurable Learning Objectives, then design assessments and aligned learning activities that ensure students reach the desired understandings. When generating markdown, save this in the `teaching_goal` string and `learning_objectives` list in the yaml metadata.
+- Use the Backward-Design framework (Wiggins & McTighe). Use a clear Teaching Goal and 2–3 measurable Learning Objectives, then design assessments and aligned learning activities that ensure students reach the desired understandings. When generating markdown, save this in the `teaching_goal` string, `learning_objectives` list, and `formative_assessments` list in the yaml metadata.
 - Complexity should generally increase through Bloom's as lecture progresses (remember -> understand -> apply -> analyze -> evaluate -> create)
 - Link to Wikipedia or appropriate external resources on first mention of key terms.
 - Link to all sources. Direct links are preferred. If an ISBN is available for a source, link to the resource on OpenLibrary as: https://openlibrary.org/isbn/9780007458424 replacing the ISBN as appropriate.
@@ -59,6 +59,10 @@ learning_objectives:
   - Define and assign values to variables using descriptive names
   - Collect and process user input using input() and type conversion functions
   - Implement a simple program that calculates and displays a result based on user input
+formative_assessments:
+  - Practice identifying valid and invalid variable names
+  - Write a program that takes a name and prints a greeting
+  - Modify an area calculation program to use different dimensions
 ---
 
 # Variables
