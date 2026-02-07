@@ -7,7 +7,7 @@ Generate curriculum and content like professional who specializes in high qualit
 
 ## Pedagogy
 
-- Use the Backward-Design framework (Wiggins & McTighe). Use a clear Teaching Goal and 2–3 measurable Learning Objectives, then design assessments and aligned learning activities that ensure students reach the desired understandings. When generating markdown, save this in the `teaching_goal` string, `learning_objectives` list, `summative_assessments` list, and `formative_assessments` list in the yaml metadata.
+- Use the Backward-Design framework (Wiggins & McTighe). Use a clear Teaching Goal and 2–3 measurable Learning Objectives, then design assessments and aligned learning activities that ensure students reach the desired understandings. When generating markdown, save this in the `teaching_goal` string, `learning_objectives` list, `summative_assessments` list, `formative_assessments` list, and `learning_plan` list in the yaml metadata. The `learning_plan` should be a list of objects with `start_time`, `description`, and `objective`. Include activity type, instructor actions, and student actions in the `description`. Include at least two active learning strategies.
 - Complexity should generally increase through Bloom's as lecture progresses (remember -> understand -> apply -> analyze -> evaluate -> create)
 - Link to Wikipedia or appropriate external resources on first mention of key terms.
 - Link to all sources. Direct links are preferred. If an ISBN is available for a source, link to the resource on OpenLibrary as: https://openlibrary.org/isbn/9780007458424 replacing the ISBN as appropriate.
@@ -66,6 +66,22 @@ formative_assessments:
   - Practice identifying valid and invalid variable names
   - Write a program that takes a name and prints a greeting
   - Modify an area calculation program to use different dimensions
+learning_plan:
+  - start_time: 0
+    description: Think-Pair-Share. Instructor asks "What is a variable in math vs programming?". Students discuss with neighbor then share with class.
+    objective: Define and assign values to variables using descriptive names
+  - start_time: 5
+    description: Mini-lecture. Instructor explains assignment and naming. Students listen and take notes.
+    objective: Define and assign values to variables using descriptive names
+  - start_time: 15
+    description: Interactive demonstration. Instructor live codes input and conversion, asking "What happens if we omit int()?". Students predict results and observe error.
+    objective: Collect and process user input using input() and type conversion functions
+  - start_time: 25
+    description: Peer programming. Instructor circulates and provides feedback. Students work in pairs to implement area calculator.
+    objective: Implement a simple program that calculates and displays a result based on user input
+  - start_time: 45
+    description: Reflection. Instructor asks "How do clear names serve future readers?". Students write brief response.
+    objective: Define and assign values to variables using descriptive names
 ---
 
 # Variables
