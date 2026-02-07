@@ -77,14 +77,19 @@ learning_plan:
     description: Interactive demonstration. Instructor live codes input and conversion, asking "What happens if we omit int()?". Students predict results and observe error.
     objective: Collect and process user input using input() and type conversion functions
   - start_time: 25
-    description: Peer programming. Instructor circulates and provides feedback. Students work in pairs to implement area calculator.
+    description: Peer programming. Instructor circulates and provides feedback. Students work in pairs to implement triangle area calculator.
     objective: Implement a simple program that calculates and displays a result based on user input
+  - start_time: 35
+    description: Code Review. Instructor displays student solutions. Class discusses readability and naming choices.
+    objective: Define and assign values to variables using descriptive names
   - start_time: 45
     description: Reflection. Instructor asks "How do clear names serve future readers?". Students write brief response.
     objective: Define and assign values to variables using descriptive names
 ---
 
 # Variables
+
+## Named Containers
 
 ---
 
@@ -110,9 +115,8 @@ A [variable](<https://en.wikipedia.org/wiki/Variable_(high-level_programming)>) 
 myvar = 42
 ```
 
-## Variables
+## Usage
 
-- A variable is a named container for a value
 - Useful for organizing data flow
 - Provide human-readable names for values
 - Allow values to be reused
@@ -198,24 +202,9 @@ print("Area of the triangle:")
 print(area)
 ```
 
-## Exercise
-
-Modify the previous example to compute the area of a rectangle.
-
 ---
 
-How could the readability of your program be improved?
-
-## Functions and Variables
-
-```python
-def calculate_area(base, height):
-    return 0.5 * base * height
-
-base = int(input("Base: "))
-height = int(input("Height: "))
-print(calculate_area(base, height))
-```
+How could the readability of this program be improved?
 
 ## Exercise
 
