@@ -37,11 +37,7 @@ You can include code snippets using markdown-style syntax:
 ````json
 {
   "Python Quiz": {
-    "What does `print('hello')` output?": [
-      "`hello` to stdout",
-      "`hello` to stderr",
-      "Nothing"
-    ],
+    "What does `print('hello')` output?": ["`hello` to stdout", "`hello` to stderr", "Nothing"],
     "What does this function do?\n```\ndef add(a, b):\n    return a + b\n```": [
       "Returns the sum of two numbers",
       "Returns the product of two numbers",
