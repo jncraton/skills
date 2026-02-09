@@ -1,5 +1,5 @@
 ---
-name: creating-programming-lab
+name: coding-lab
 description: Use this skill to generate a programming lab
 ---
 
