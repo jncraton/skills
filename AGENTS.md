@@ -8,6 +8,6 @@ Make only required, focused, and surgical changes.
 ## Coding
 
 Never comment generated code. Favor pure functions.
-JS: Follow StandardJS and Prettier with {"semi":false,"singleQuote":true,"printWidth":120,"bracketSameLine":true,"arrowParens":"avoid"}.
+JS: Prefer single quotes. Avoid semicolons.
 Python: Follow black. Docstrings are optional and must contain only doctests. If testing, use doctest.
 Never commit changes unless explicitly asked.
