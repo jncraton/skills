@@ -1,6 +1,6 @@
 # Skills
 
-[skills.zip](https://jncraton.github.io/skills/skills.zip) | [spec](https://agentskills.io/) | [AGENTS.md](AGENTS.md) (127 tokens)
+[skills.zip](https://jncraton.github.io/skills/skills.zip) | [spec](https://agentskills.io/) | [AGENTS.md](AGENTS.md) (124 tokens)
 
 - [animate](skills/animate/SKILL.md) (827 tokens): Create a gif or svg animation
 - [coding-lab](skills/coding-lab/SKILL.md) (702 tokens): Use this skill to generate, review or refine a programming lab
