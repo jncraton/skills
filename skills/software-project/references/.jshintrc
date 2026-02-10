@@ -4,7 +4,4 @@
   "asi": true,
   "undef": true,
   "unused": true,
-  "exported": {
-    "ugfm": true
-  }
 }
