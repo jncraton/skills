@@ -54,3 +54,23 @@ end
 function CodeBlock(el)
   return remove_attrs(el)
 end
+
+function Para(el)
+  -- Remove trailing period on paragraphs
+  local inls = el.content
+  if #inls == 0 then
+    return nil
+  end
+
+  local last = inls[#inls]
+
+  if last.t == "Str" then
+    local s = last.text
+    if s:match("%.$") then
+      last.text = s:sub(1, -2)
+      inls[#inls] = last
+    end
+  end
+
+  return pandoc.Para(inls)
+end
