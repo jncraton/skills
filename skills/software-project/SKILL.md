@@ -51,10 +51,9 @@ readme.md
 .jshintrc
 makefile
 test_index.py
-demo.html
 .gitignore
 .github/workflows/release.yml
 .github/workflows/lint.yml
 .github/workflows/deploy.yml
 .github/workflows/test.yml
-ugfm.js
+index.html
