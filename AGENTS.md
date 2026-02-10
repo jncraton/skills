@@ -7,8 +7,8 @@ Make only required, focused, and surgical changes.
 
 ## Coding
 
-Never comment generated code. Favor pure functions.
-Never commit changes unless explicitly asked.
+Never comment generated code. Favor pure functions. Never commit changes unless explicitly asked
 
-JS: Prefer single quotes. Avoid semicolons.
-Python: Follow black. Docstrings are optional and must contain only doctests. If testing, use doctest.
+JS: Prefer single quotes. Avoid semicolons
+
+Python: Follow black. Docstrings are optional and must contain only doctests. If testing, use doctest
