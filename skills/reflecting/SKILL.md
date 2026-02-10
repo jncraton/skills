@@ -1,6 +1,6 @@
 ---
 name: reflecting
-description: Apply this skill generate reflection questions
+description: Generate reflection questions
 ---
 
 Refection questions should focus on the upper levels of Bloom's revised taxonomy (apply, analyze, evaluate, and create) while having less focus on the lower levels (remember and understand).
