@@ -14,6 +14,12 @@ Minimize dependencies. Pin all versions
 - Use `npx` for tools. Download external deps with `wget` in makefile.
 - Quality: Semantic HTML, responsive design, system fonts, accessibility.
 
+Test with pytest and playwright:
+
+```sh
+pipx run --spec pytest-playwright==1.58.0 playwright install chromium firefox && pipx run --spec pytest-playwright==1.58.0 pytest --browser firefox --browser chromium
+```
+
 ## Python
 
 - Use `uv` for all tasks. Minimal or no `pyproject.toml`.
@@ -22,18 +28,6 @@ Minimize dependencies. Pin all versions
 ## Testing
 
 Prefer minimalistic testing. Test code is still technical debt. Only include meaningful tests.
-
-## Web
-
-If browser testing is needed, prefer pytest and playwright. This command is preferred for installing browsers and running tests:
-
-```sh
-pipx run --spec pytest-playwright==1.58.0 playwright install chromium firefox && pipx run --spec pytest-playwright==1.58.0 pytest --browser firefox --browser chromium
-```
-
-Use vanilla Javascript and css. Never use a build system. When external dependencies are needed, and them to the makefile to be downloaded with wget before deployment.
-
-For web projects, favor static deployment whenever possible. The default makefile task should build all static 
 
 ## Commits
 
