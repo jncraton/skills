@@ -16,7 +16,8 @@ Minimize dependencies. Pin all versions
 
 ## Python
 
-Use uv for Python projects. Keep pyproject.toml as minimal as possible. Prefer eliminating it entirely if not needed. Use uv to run development tools. Use black for code formatting.
+- Use `uv` for all tasks. Minimal or no `pyproject.toml`.
+- Format with `black`.
 
 ## Testing
 
