@@ -17,7 +17,7 @@ Minimize dependencies. Pin all versions
 Test with pytest and playwright:
 
 ```sh
-pipx run --spec pytest-playwright==1.58.0 playwright install chromium firefox && pipx run --spec pytest-playwright==1.58.0 pytest --browser firefox --browser chromium
+uvx --with pytest-playwright==0.7.2 playwright install chromium firefox && uvx --with pytest-playwright==0.7.2 pytest --browser chromium --browser firefox
 ```
 
 ## Python
