@@ -17,5 +17,7 @@ test:
 	uvx --with pytest-playwright==0.7.2 playwright install chromium firefox
 	uvx --with pytest-playwright==0.7.2 pytest --browser chromium --browser firefox
 
+deploy: dep.css
+
 clean:
 	rm -rf .pytest_cache __pycache__ dep.css
