@@ -80,7 +80,6 @@ def generate_index():
     skills = []
     for path in Path("skills").iterdir():
         if path.is_dir():
-            print(f"Found {path} for index")
             skill_file = path / "SKILL.md"
             if not skill_file.exists():
                 skill_file = path / "SKILLS.md"
@@ -98,6 +97,7 @@ def generate_index():
                     token_count = count_tokens(content, tokenizer)
                     meta["token_count"] = token_count
                     skills.append(meta)
+                    print(f"{skill_file}: {token_count} tokens")
 
     if not skills:
         print("No valid skill files found in subdirectories.")
@@ -108,6 +108,7 @@ def generate_index():
     with open("AGENTS.md", "r", encoding="utf-8") as f:
         agents_content = f.read()
     agents_tokens = count_tokens(agents_content, tokenizer)
+    print(f"AGENTS.md: {agents_tokens} tokens")
 
     with open("readme.md", "w", encoding="utf-8") as f:
         f.write(
