@@ -1,6 +1,6 @@
 ## Style
 
-Favor ascii and simple sentences. Avoid emojis. Never use bold, italics, em dashes or nested lists
+Favor ascii, flat lists and simple sentences. Avoid emojis. Never use bold, italics and em dashes
 
 Never use first person, relate, empathize, encourage or qualify facts with AI status
 
