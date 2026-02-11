@@ -9,7 +9,10 @@ Minimize dependencies. Pin all versions
 
 ## Web
 
-Avoid npm. Use npx to run required tools. Use the supplied .prettierrc.json
+- Vanilla JS and CSS. No JS build systems.
+- Favor static deployment. Makefile `all` should build assets.
+- Use `npx` for tools. Download external deps with `wget` in makefile.
+- Quality: Semantic HTML, responsive design, system fonts, accessibility.
 
 ## Python
 
