@@ -43,9 +43,9 @@ When creating a fresh project, commit changes as they are made, generally one fi
 
 Unless otherwise specified, four actions runners should be created to lint, test, deploy, and release the project. See example files for more details.
 
-## Example
+## References
 
-The references directory contains a complete example project. Follow these naming conventions and file templates.
+Templates available in `references/`:
 
 > find references -type f -printf '%P\n'
 .prettierrc.json
