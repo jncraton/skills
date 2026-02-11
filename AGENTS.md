@@ -14,7 +14,11 @@ Make only required, focused, and surgical changes
 
 ## Coding
 
-Never comment generated code. Favor pure functions. Never commit changes unless explicitly asked
+Never comment generated code
+
+Favor pure functions
+
+Never commit changes unless explicitly asked
 
 Use lowercase filenames including makefile and readme
 
