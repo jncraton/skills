@@ -14,12 +14,7 @@ Minimize dependencies. Pin all versions
 - Use `npx` for tools. Download external deps with `wget` in makefile.
 - Quality: Semantic HTML, responsive design, system fonts, accessibility.
 - Always copy the included .prettierrc.json
-
-Test with pytest and playwright:
-
-```sh
-uvx --with pytest-playwright==0.7.2 playwright install chromium firefox && uvx --with pytest-playwright==0.7.2 pytest --browser chromium --browser firefox
-```
+- Test with pytest and playwright as shown in makefile
 
 ## Python
 
