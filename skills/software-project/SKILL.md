@@ -13,6 +13,7 @@ Minimize dependencies. Pin all versions
 - Favor static deployment. Makefile `all` should build assets.
 - Use `npx` for tools. Download external deps with `wget` in makefile.
 - Quality: Semantic HTML, responsive design, system fonts, accessibility.
+- Always copy the included .prettierrc.json
 
 Test with pytest and playwright:
 
