@@ -4,5 +4,5 @@
   "asi": true,
   "esversion": 11,
   "undef": true,
-  "unused": true,
+  "unused": true
 }
