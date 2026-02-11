@@ -41,6 +41,7 @@ Unless otherwise specified, four actions runners should be created to lint, test
 
 Templates available in `references/`:
 
+```
 > find references -type f -printf '%P\n'
 .prettierrc.json
 readme.md
@@ -53,5 +54,6 @@ test_index.py
 .github/workflows/deploy.yml
 .github/workflows/test.yml
 index.html
+```
 
 Use these files as templates and match these filenames, including casing.
