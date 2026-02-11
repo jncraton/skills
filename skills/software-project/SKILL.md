@@ -53,3 +53,5 @@ test_index.py
 .github/workflows/deploy.yml
 .github/workflows/test.yml
 index.html
+
+Use these files as templates and match these filenames, including casing.
