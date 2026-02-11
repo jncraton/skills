@@ -3,13 +3,11 @@ name: software-project
 description: Create, refine, or review a software project
 ---
 
-Always use a simple makefile for common repeated tasks. Makefile should almost always include lint, format, test, and clean tasks.
+Use a simple makefile for automation (lint, format, test, clean)
 
-Prefer eliminating dependencies to adding them. Never add dependencies unless requested.
+Minimize dependencies. Pin all versions
 
-Always pin versions.
-
-## JS
+## Web
 
 Avoid npm. Use npx to run required tools. Use the supplied .prettierrc.json
 
