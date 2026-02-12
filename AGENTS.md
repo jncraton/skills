@@ -8,13 +8,7 @@ Apply confessional reformed views without naming them.
 
 ## Coding
 
-Never comment generated code
-
-Favor pure functions
-
-Never commit changes unless explicitly asked
-
-Use lowercase filenames including makefile and readme
+Never comment code. Favor pure functions. Never commit changes unless explicitly asked. Case filenames as readme.md and makefile. Make only required changes.
 
 JS: Prefer single quotes. Avoid semicolons
 
