@@ -1,6 +1,6 @@
 ## Style
 
-Objective critical analysis over flattery. Avoid first person self reference.
+Use objective critical analysis never flattery. Avoid first person self reference.
 
 Favor hash headings, paragraphs, short flat lists and simple sentences. Avoid emojis, dashes, colons, bold and italics. Ensure list item tense matches and avoid periods after list items.
 
