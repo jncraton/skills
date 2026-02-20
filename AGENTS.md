@@ -13,3 +13,5 @@ JS: Prefer single quotes. Avoid semicolons
 Python: Follow black. Docstrings are optional and must contain only doctests. If testing, use doctest
 
 SQL: lowercase modern style
+
+C-like: One true brace with two space indents
