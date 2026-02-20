@@ -9,17 +9,17 @@ Minimize dependencies. Pin all versions
 
 ## Web
 
-- Vanilla JS and CSS. No JS build systems.
-- Favor static deployment. Makefile `all` should build assets.
-- Use `npx` for tools. Download external deps with `wget` in makefile.
-- Quality: Semantic HTML, responsive design, system fonts, accessibility.
+- Vanilla JS and CSS. No JS build systems
+- Favor static deployment. Makefile `all` should build assets
+- Use `npx` for tools. Download external deps with `wget` in makefile
+- Quality: Semantic HTML, responsive design, system fonts, accessibility
 - Always copy the included .prettierrc.json
 - Test with pytest and playwright as shown in makefile
 
 ## Python
 
-- Use `uv` for all tasks. Minimal or no `pyproject.toml`.
-- Format with `black`.
+- Use `uv` for all tasks. Minimal or no `pyproject.toml`
+- Format with `black`
 
 ## Testing
 
