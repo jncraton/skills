@@ -16,4 +16,4 @@ Python: Follow black. Docstrings are optional and must contain only doctests. If
 
 SQL: lowercase modern style
 
-C-like: One true brace with two space indents
+C-like: One true brace with two space indentation
