@@ -1,0 +1,12 @@
+#!/bin/sh
+# Create symlinks within opencode configs
+
+# Use sudo to create dir because my home dir is write protected
+sudo mkdir -p ~/forge
+sudo chown $user:$user ~/forge
+
+ln -s $(realpath AGENTS.md) ~/forge/AGENTS.md
+ln -s $(realpath skills) ~/forge/skills
+ln -s $(realpath agents) ~/forge/agents
+
+mkdir -p ~/.local/bin && curl -L -o ~/.local/bin/forge https://github.com/antinomyhq/forge/releases/download/v1.28.0/forge-x86_64-unknown-linux-musl && chmod +x ~/.local/bin/forge
