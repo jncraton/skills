@@ -3,7 +3,7 @@
 
 # Use sudo to create dir because my home dir is write protected
 sudo mkdir -p ~/forge
-sudo chown $user:$user ~/forge
+sudo chown jncraton:jncraton ~/forge
 
 ln -s $(realpath AGENTS.md) ~/forge/AGENTS.md
 ln -s $(realpath skills) ~/forge/skills
