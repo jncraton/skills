@@ -5,9 +5,9 @@ description: Use this skill to generate, evaluate, or adapt a plan for a worship
 
 ## Songs
 
-When providing songs selections for a worship service. Describe reasoning behind song choices, and provide alternatives for each.
+Always use Hymnary as the source for song information, and always link songs back to Hymnary. Links should be formatted as https://hymnary.org/text/{textAuthNumber}. Always use the song title as the link text. For example: [Blessed Assurance](https://hymnary.org/text/blessed_assurance_jesus_is_mine). Only use songs included in responses from Hymnary. textAuthNumber is subject to change, and the only valid values are those just directly returned from live queries to Hymnary.
 
-Always use Hymnary as the source for song information, and always link songs back to Hymnary. Links should be formatted as https://hymnary.org/text/{textAuthNumber}. Always use the song title as the link text. For example: [Blessed Assurance](https://hymnary.org/text/blessed_assurance_jesus_is_mine). Never guess song URLs and only use songs included in responses from Hymnary.
+Describe reasoning behind song choices, and provide alternatives.
 
 ## Hymnary API
 
