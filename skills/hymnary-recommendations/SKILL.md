@@ -24,7 +24,7 @@ Useful query filters include:
 List of ~300 most popular songs:
 
 ```
-curl "https://hymnary.org/search?qu=all%253Accli+in%253Atexts&export=csv" > popular.csv
+curl "https://hymnary.org/search?qu=all%3Accli+in%3Atexts&export=csv" > popular.csv
 ```
 
 Most popular worship songs for a given year:
@@ -36,19 +36,19 @@ curl "https://hymnary.org/search?qu=hymnalNumber%3Accli2025+in%3Atext&export=csv
 Popular songs about the topic of heaven:
 
 ```
-curl "https://hymnary.org/search?qu=topics%253Aheaven+all%253Accli+in%253Atexts&export=csv" > hymns.csv
+curl "https://hymnary.org/search?qu=topics%3Aheaven+all%3Accli+in%3Atexts&export=csv" > hymns.csv
 ```
 
 Songs about Genesis 1:1:
 
 ```
-curl "https://hymnary.org/search?qu=scripture%253AGenesis+1%253A1+in%253Atexts&export=csv" > hymns.csv
+curl "https://hymnary.org/search?qu=scripture%3AGenesis+1%253A1+in%3Atexts&export=csv" > hymns.csv
 ```
 
 Songs about John 1 and the topic of grace:
 
 ```
-curl "https://hymnary.org/search?qu=topics%3AGrace%20scripture%3AJohn%201%20media%3Atext%20in%3Atexts&export=csv" > hymns.csv
+curl "https://hymnary.org/search?qu=topics%3AGrace%20scripture%3AJohn%201%20in%3Atexts&export=csv" > hymns.csv
 ```
 
 ## Lectionary
