@@ -26,11 +26,12 @@ Use this skill to transform raw midterm or semester student feedback into a stru
 3. **Select representative quotes**:
    - Pick 3-5 quotes that illustrate the most common student perspectives.
    - Prioritize quotes that offer specific evidence of learning or engagement.
-   - Always cite the source file and line number using the format `file.csv:line`.
+   - Cite individual responses using the format `[row_number]` (e.g., `[3]` or `[12-13]`).
 
 4. **Map to instructor strengths**:
    - Create a concluding section that explicitly maps student feedback to recognized instructional strengths.
    - Translate student praise (e.g., "I like the quizzes") into professional educator skills (e.g., "Effective use of low-stakes formative assessment to support retrieval").
+   - Include citations in the format `[row_number]` for each point.
 
 5. **Identify opportunities for growth**:
    - Note any constructive suggestions or recurring pain points (e.g., exam preparation, clarity of instructions, or pacing).
@@ -53,4 +54,4 @@ The resulting `summary.md` should follow this structure:
 - Use professional, academic language when describing instructional practices.
 - Focus on highlights and actionable insights that support instructor growth.
 - Ensure all percentages are accurate based on the total number of valid responses.
-- Maintain citations for every quote to allow for verification.
+- Maintain simple row citations (e.g., `[row_number]`) for every quote to allow for verification without cluttering the output.
