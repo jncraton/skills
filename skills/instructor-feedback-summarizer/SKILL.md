@@ -5,6 +5,10 @@ description: Transform student course evaluations into professional reports high
 
 Use this skill to convert raw midterm or semester evaluations into summary reports for university instructors.
 
+## Statistical analysis
+
+Use python3 and pandas to create and run scripts to perform statistical analysis as needed.
+
 ## Sentiment quantification
 
 - Identify all Likert scale questions
