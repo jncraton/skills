@@ -5,9 +5,9 @@
 - [animate](skills/animate/SKILL.md) (870 tokens): Create a gif or svg animation
 - [coding-lab](skills/coding-lab/SKILL.md) (745 tokens): Use this skill to generate, review or refine a programming lab
 - [educational-content](skills/educational-content/SKILL.md) (2088 tokens): Create, evaluate, or refine an educational lecture, learning activity, talk, or blog post
+- [hymnary-recommendations](skills/hymnary-recommendations/SKILL.md) (454 tokens): Use this skill to generate, evaluate, or adapt a plan for a worship service
 - [instructor-feedback-summarizer](skills/instructor-feedback-summarizer/SKILL.md) (299 tokens): Transform student course evaluations into professional reports highlighting pedagogical strengths and growth areas.
 - [objective-questions](skills/objective-questions/SKILL.md) (374 tokens): Generate objective questions
 - [qti](skills/qti/SKILL.md) (432 tokens): Generate a quiz or test for an LMS in QTI format
 - [reflecting](skills/reflecting/SKILL.md) (121 tokens): Generate reflection questions
 - [software-project](skills/software-project/SKILL.md) (372 tokens): Create, refine, or review a software project
-- [worship-plan](skills/worship-plan/SKILL.md) (452 tokens): Use this skill to generate, evaluate, or adapt a plan for a worship service
