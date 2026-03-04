@@ -1,5 +1,5 @@
 ---
-name: worship-plan
+name: hymnary-recommendations
 description: Use this skill to generate, evaluate, or adapt a plan for a worship service
 ---
 
