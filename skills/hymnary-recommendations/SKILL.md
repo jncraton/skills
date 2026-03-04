@@ -24,8 +24,15 @@ Useful query filters include:
 List of ~300 most popular songs:
 
 ```
-curl "https://hymnary.org/search?qu=all%3Accli+in%3Atexts&export=csv" > popular.csv
+curl "https://hymnary.org/search?qu=all%3Accli+in%3Atexts&export=csv"
 ```
+
+Most popular songs matching Messiah in title, fist words, or last words:
+
+```
+curl "https://hymnary.org/search?qu=all%3Accli+in%3Atexts&export=csv" | grep Messiah
+```
+
 
 Most popular worship songs for a given year:
 
