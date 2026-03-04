@@ -1,9 +1,12 @@
-all: skills.zip
+all: skills.zip hymnary-recommendations.skill
 
 .PHONY: readme.md
 
 skills.zip:
 	zip -9 -r $@ skills
+
+%.skill:
+	zip -9 -r $@ skills/$*
 
 creating-lecture/references/py4e.md:
 	wget -O py4e.epub http://do1.dr-chuck.com/pythonlearn/EN_us/pythonlearn.epub
@@ -35,4 +38,4 @@ readme.md:
 	python3 generate.py
 
 clean:
-	rm -rf skills.zip index.md *.html **/*.html uv.lock .python-version .venv venv .ruff_cache
+	rm -rf skills.zip *.skill index.md *.html **/*.html uv.lock .python-version .venv venv .ruff_cache
