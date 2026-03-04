@@ -6,7 +6,7 @@ skills.zip:
 	zip -9 -r $@ skills
 
 %.skill:
-	zip -9 -r $@ skills/$*
+	cd skills/$* && zip -9 -r ../../$@ *
 
 creating-lecture/references/py4e.md:
 	wget -O py4e.epub http://do1.dr-chuck.com/pythonlearn/EN_us/pythonlearn.epub
