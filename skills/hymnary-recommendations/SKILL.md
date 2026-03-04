@@ -11,26 +11,46 @@ Describe reasoning behind song choices, and provide alternatives.
 
 ## Hymnary API
 
-Lectionary weeks can be looked up to determine scripture references and suggested songs here: https://hymnary.org/browse/lectionary/02/08/2026 Replace the date in the URL as appropriate.
+Hymns matching a query can be retrieved from hymnary as a csv file. Use curl to access these resources. Only recommend hymns that have be returned from a query to ensure they are fresh and accurate.
 
-Hymns matching a query can be retrieved from hymnary as a csv file using curl.
+Useful query filters include:
+
+- `in:text` - Return songs texts rather than instances withing song books to limit search space
+- `all:ccli` - Limit results to only popular songs that have appeared in the CCLI top 100
+- `hymnalNumber:ccli2025` - Limit results to CCLI top 100 for a given year
 
 ### Examples
 
-Hymns about the topic of heaven:
+List of ~300 most popular songs:
 
 ```
-curl "https://hymnary.org/search?qu=topics%3Aheaven%20%20media%3Atext%20in%3Atexts&export=csv" > hymns.csv
+curl "https://hymnary.org/search?qu=all%253Accli+in%253Atexts&export=csv" > popular.csv
 ```
 
-Hymns about Genesis 1:1:
+Most popular worship songs for a given year:
 
 ```
-curl "https://hymnary.org/search?qu=scripture%3AGenesis%201:1%20media%3Atext%20in%3Atexts&export=csv" > hymns.csv
+curl "https://hymnary.org/search?qu=hymnalNumber%3Accli2025+in%3Atext&export=csv" > ccli100.csv
 ```
 
-Hymns about John 1 and the topic of grace:
+Popular songs about the topic of heaven:
+
+```
+curl "https://hymnary.org/search?qu=topics%253Aheaven+all%253Accli+in%253Atexts&export=csv" > hymns.csv
+```
+
+Songs about Genesis 1:1:
+
+```
+curl "https://hymnary.org/search?qu=scripture%253AGenesis+1%253A1+in%253Atexts&export=csv" > hymns.csv
+```
+
+Songs about John 1 and the topic of grace:
 
 ```
 curl "https://hymnary.org/search?qu=topics%3AGrace%20scripture%3AJohn%201%20media%3Atext%20in%3Atexts&export=csv" > hymns.csv
 ```
+
+## Lectionary
+
+Lectionary weeks can be looked up to determine scripture references and suggested songs here: https://hymnary.org/browse/lectionary/02/08/2026 Replace the date in the URL as appropriate.
