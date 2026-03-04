@@ -5,9 +5,8 @@ description: Transform student course evaluations into professional reports high
 
 # Instructor Feedback Summarizer
 
-Use this skill to convert raw midterm or semester evaluations into a high-impact `summary.md` report for university instructors.
+Use this skill to convert raw midterm or semester evaluations into summary reports for university instructors.
 
-## Process
 ## Process
 
 1.  Quantify sentiment:
