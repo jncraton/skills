@@ -62,7 +62,7 @@ curl "https://hymnary.org/search?qu=topics%3AGrace%20scripture%3AJohn%201%20in%3
 
 ## Alternate Hymnary Access
 
-Network filters may prevent access to certain Hymnary endpoints directly. Use multiple web searches to compile results as needed. User queries such as "site:hymnary.org topic hope", "site:hymnary.org genesis 1", or "site:hymnary.org ccli top 100".
+Network filters may prevent access to certain Hymnary endpoints directly. Use multiple web searches to compile results as needed. User queries such as "site:hymnary.org topic hope", "site:hymnary.org genesis 1", or "site:hymnary.org ccli top 100". Always follow the text authority URL and confirm the page title/first line matches before using that URL.
 
 ## Lectionary
 
