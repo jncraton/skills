@@ -11,7 +11,7 @@ Create correct hymnary.org backlinks for every song. URLs should be formatted as
 
 ## Hymnary CSV API
 
-Hymns can be retrieved from hymnary as csv files. Use curl to access these resources.
+Hymns can be retrieved from hymnary as csv files. Use curl or another tool to access these resources.
 
 All queries are against the `hymnary.org/search` endpoint and must include `&export=csv` to produce csv output. Query filters are passed via the `qu` query param and are separated by `+`.
 
@@ -59,6 +59,10 @@ Songs about John 1 and the topic of grace:
 ```
 curl "https://hymnary.org/search?qu=topics%3AGrace%20scripture%3AJohn%201%20in%3Atexts&export=csv"
 ```
+
+## Alternate Hymnary Access
+
+Network filters may prevent access to certain Hymnary endpoints directly. Use multiple web searches to compile results as needed. User queries such as "site:hymnary.org topic hope", "site:hymnary.org genesis 1", or "site:hymnary.org ccli top 100".
 
 ## Lectionary
 
