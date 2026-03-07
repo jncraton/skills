@@ -14,39 +14,33 @@ Prefer `<style>` block using tag oriented rather than class oriented rules. Use 
 ```svg
 <svg width="540" height="540" viewBox="0 0 540 540" xmlns="http://www.w3.org/2000/svg">
   <style>
-    * { font-family: monospace; font-size: 24px; animation: 15s step-end infinite; }
-    text { fill: black;  }
-    rect { fill: none; stroke: black; stroke-width: 4; }
+    * {font-family:monospace; font-size:24px; animation:15s step-end infinite;}
+    text {fill:black;}
+    rect {fill:none; stroke:black; stroke-width:4;}
 
-    @keyframes line1 { 
-      0%, 20%, 40%, 60%, 80% { opacity: 0; }
-      10%, 30%, 50%, 70% { opacity: 1; }
-    }
-    @keyframes line2 { 
-      0%, 30%, 50%, 70%, 90% { opacity: 0; }
-      20%, 40%, 60%, 80% { opacity: 1; }
-    }
-    
-    @keyframes out0 { 0% {opacity: 0;} 20% {opacity: 1;} }
-    @keyframes out1 { 0% {opacity: 0;} 40% {opacity: 1;} }
-    @keyframes out2 { 0% {opacity: 0;} 60% {opacity: 1;} }
-    @keyframes out3 { 0% {opacity: 0;} 80% {opacity: 1;} }
+    @keyframes line1 {0%,20%,40%,60%,80% {opacity:0;} 10%,30%,50%,70% {opacity:1;}}
+    @keyframes line2 {0%,30%,50%,70%,90% {opacity:0;} 20%,40%,60%,80% {opacity:1;}}
 
-    @keyframes i0 { 0%, 30% {opacity: 0;} 10% {opacity: 1;} }
-    @keyframes i1 { 0%, 50% {opacity: 0;} 30% {opacity: 1;} }
-    @keyframes i2 { 0%, 70% {opacity: 0;} 50% {opacity: 1;} }
-    @keyframes i3 { 0% {opacity: 0;} 70% { opacity: 1; } }
+    @keyframes out0 {0% {opacity:0;} 20% {opacity:1;}}
+    @keyframes out1 {0% {opacity:0;} 40% {opacity:1;}}
+    @keyframes out2 {0% {opacity:0;} 60% {opacity:1;}}
+    @keyframes out3 {0% {opacity:0;} 80% {opacity:1;}}
 
-    .line1 { animation-name: line1; }
-    .line2 { animation-name: line2; }
-    .i0 { animation-name: i0; }
-    .i1 { animation-name: i1; }
-    .i2 { animation-name: i2; }
-    .i3 { animation-name: i3; }
-    .out0 { animation-name: out0; }
-    .out1 { animation-name: out1; }
-    .out2 { animation-name: out2; }
-    .out3 { animation-name: out3; }
+    @keyframes i0 {0%,30% {opacity:0;} 10% {opacity:1;}}
+    @keyframes i1 {0%,50% {opacity:0;} 30% {opacity:1;}}
+    @keyframes i2 {0%,70% {opacity:0;} 50% {opacity:1;}}
+    @keyframes i3 {0% {opacity:0;} 70% {opacity:1;}}
+
+    .line1 {animation-name:line1;}
+    .line2 {animation-name:line2;}
+    .i0 {animation-name:i0;}
+    .i1 {animation-name:i1;}
+    .i2 {animation-name:i2;}
+    .i3 {animation-name:i3;}
+    .out0 {animation-name:out0;}
+    .out1 {animation-name:out1;}
+    .out2 {animation-name:out2;}
+    .out3 {animation-name:out3;}
   </style>
 
   <text x="40" y="80">for i in range(2):</text>
