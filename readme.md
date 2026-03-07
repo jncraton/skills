@@ -5,7 +5,7 @@
 - [coding-lab.skill](https://jncraton.github.io/skills/coding-lab.skill) [SKILL.md](skills/coding-lab/SKILL.md) (745 tokens): Use this skill to generate, review or refine a programming lab
 - [diagram.skill](https://jncraton.github.io/skills/diagram.skill) [SKILL.md](skills/diagram/SKILL.md) (1026 tokens): Create an svg digram or animation
 - [educational-content.skill](https://jncraton.github.io/skills/educational-content.skill) [SKILL.md](skills/educational-content/SKILL.md) (2088 tokens): Create, evaluate, or refine an educational lecture, learning activity, talk, or blog post
-- [hymnary-recommendations.skill](https://jncraton.github.io/skills/hymnary-recommendations.skill) [SKILL.md](skills/hymnary-recommendations/SKILL.md) (1534 tokens): Use this skill for song recommendations or worship planning
+- [hymnary-recommendations.skill](https://jncraton.github.io/skills/hymnary-recommendations.skill) [SKILL.md](skills/hymnary-recommendations/SKILL.md) (669 tokens): Use this skill for song recommendations or worship planning
 - [instructor-feedback-summarizer.skill](https://jncraton.github.io/skills/instructor-feedback-summarizer.skill) [SKILL.md](skills/instructor-feedback-summarizer/SKILL.md) (299 tokens): Transform student course evaluations into professional reports highlighting pedagogical strengths and growth areas.
 - [objective-questions.skill](https://jncraton.github.io/skills/objective-questions.skill) [SKILL.md](skills/objective-questions/SKILL.md) (374 tokens): Generate objective questions
 - [preaching.skill](https://jncraton.github.io/skills/preaching.skill) [SKILL.md](skills/preaching/SKILL.md) (1573 tokens): >
