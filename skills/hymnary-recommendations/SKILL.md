@@ -13,7 +13,7 @@ Create correct hymnary.org backlinks for every song. URLs should be formatted as
 
 Do not use a song unless it is present in a query from Hymnary or references/songs.jsonl. Confirm the title or first line matches the song. Discard URLs that can't be confirmed.
 
-## Quick Search
+## References
 
 A list of popular songs is included in references/songs.jsonl. Songs that appear earlier in the file are generally more popular. Use grep or other tools to find appropriate songs and confirm matching songs based on textAuthNumber, title, and first lines.
 
