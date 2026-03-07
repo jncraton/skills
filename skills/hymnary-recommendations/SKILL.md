@@ -11,11 +11,11 @@ If Hymnary is unreachable, apologize and refuse assistance.
 
 Create correct hymnary.org backlinks for every song. URLs should be formatted as https://hymnary.org/text/{textAuthNumber}. Always use the song title as the link text. For example: "Blessed Assurance"(https://hymnary.org/text/blessed_assurance_jesus_is_mine).
 
-Do not use a song unless it is present in a query from Hymnary. Before including any song, you MUST fetch its text authority URL (e.g. https://hymnary.org/text/{slug}) and confirm the page title or first line matches the song. If the fetch fails or the title doesn't match, discard that URL entirely. Never guess or construct a slug. Only use URLs returned directly by a Hymnary search or page result. Do not include a song if verification cannot be completed.
+Do not use a song unless it is present in a query from Hymnary of references/songs.json. Confirm the title or first line matches the song. Discard that URLs that can't be confirmed.
 
 ## Quick Search
 
-A list of popular songs is included in references/songs.jsonl. Use grep or other tools to lookup appropriate songs and confirm matching songs based on textAuthNumber, title, and first lines.
+A list of popular songs is included in references/songs.jsonl. Songs that appear earlier in the file are generally more popular. Use grep or other tools to find appropriate songs and confirm matching songs based on textAuthNumber, title, and first lines.
 
 ## Hymnary CSV API
 
