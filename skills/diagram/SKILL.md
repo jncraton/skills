@@ -14,7 +14,7 @@ Prefer `<style>` block using tag oriented rather than class oriented rules. Use 
 ```svg
 <svg width="540" height="540" viewBox="0 0 540 540" xmlns="http://www.w3.org/2000/svg">
   <style>
-    * { font-family: monospace; font-size: 24px; animation: 10s step-end infinite; }
+    * { font-family: monospace; font-size: 24px; animation: 15s step-end infinite; }
     text { fill: black;  }
     rect { fill: none; stroke: black; stroke-width: 4; }
 
@@ -27,17 +27,14 @@ Prefer `<style>` block using tag oriented rather than class oriented rules. Use 
       20%, 40%, 60%, 80% { opacity: 1; }
     }
     
-    @keyframes out0 { 
-      0%, {opacity: 0; } 
-      20%, { opacity: 1; }
-    }
-    @keyframes out1 { 0% {opacity: 0;} 40% { opacity: 1; } }
-    @keyframes out2 { 0% {opacity: 0;} 60% { opacity: 1; } }
-    @keyframes out3 { 0% {opacity: 0;} 80% { opacity: 1; } }
+    @keyframes out0 { 0% {opacity: 0;} 20% {opacity: 1;} }
+    @keyframes out1 { 0% {opacity: 0;} 40% {opacity: 1;} }
+    @keyframes out2 { 0% {opacity: 0;} 60% {opacity: 1;} }
+    @keyframes out3 { 0% {opacity: 0;} 80% {opacity: 1;} }
 
-    @keyframes i0 { 0%,30% {opacity: 0;} 10% { opacity: 1; } }
-    @keyframes i1 { 0%,50% {opacity: 0;} 30% { opacity: 1; } }
-    @keyframes i2 { 0%,70% {opacity: 0;} 50% { opacity: 1; } }
+    @keyframes i0 { 0%, 30% {opacity: 0;} 10% {opacity: 1;} }
+    @keyframes i1 { 0%, 50% {opacity: 0;} 30% {opacity: 1;} }
+    @keyframes i2 { 0%, 70% {opacity: 0;} 50% {opacity: 1;} }
     @keyframes i3 { 0% {opacity: 0;} 70% { opacity: 1; } }
 
     .line1 { animation-name: line1; }
