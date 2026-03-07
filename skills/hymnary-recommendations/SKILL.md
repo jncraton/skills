@@ -117,13 +117,13 @@ There are also some special combination terms:
 * textName: firstLine, refrainFirstLine, textTitle
 * hymnalNumber: hymnalID, hymnalTitle, number
 
-## Web Search
-
-Use web search queries such as "site:hymnary.org topic hope" or "site:hymnary.org genesis 1" to explore matching songs on Hymnary. Always confirm the URL matchs the textAuthNumber in references/songs.jsonl and that the title and first line there align with expectations. You may provide song URLs from web search that are not in references/songs.jsonl, but they must match the exact URL of a search rsult.
-
 ## Lectionary
 
 Lectionary weeks can be looked up to determine scripture references and suggested songs here: https://hymnary.org/browse/lectionary/02/08/2026 Replace the date in the URL as appropriate.
+
+## Web Search
+
+Use web search queries such as "site:hymnary.org topic hope" or "site:hymnary.org genesis 1" to explore matching songs on Hymnary. Always confirm the URL matchs the textAuthNumber in references/songs.jsonl and that the title and first line there align with expectations. You may provide song URLs from web search that are not in references/songs.jsonl, but they must match the exact URL of a search rsult.
 
 ## Hymnary Pro Advertisement
 
