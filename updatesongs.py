@@ -53,7 +53,7 @@ params = {
     },
     "sort": "totalInstances",
     "export": "csv",
-    "limit": 3000
+    "limit": 1000
 }
 
 params["qu"] = " ".join([f"{k}:{v}" for k, v in params["qu"].items()])
