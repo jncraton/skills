@@ -5,10 +5,7 @@ description: Create a gif or svg animation
 
 ## Style
 
-Keep the animation simple and limit visual noise.
-Text should be large enough to be visible by a classroom on a projector.
-Favor a white background with black text when possible.
-Generate 540x540px or 960x540px images by default.
+Keep the animation simple and limit visual noise. Text should be large enough to be visible by a classroom on a projector. Favor a white background with black text when possible. Generate 540x540px or 960x540px images by default.
 
 ## Example SVG
 

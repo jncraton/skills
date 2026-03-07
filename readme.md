@@ -2,7 +2,7 @@
 
 [skills.zip](https://jncraton.github.io/skills/skills.zip) | [spec](https://agentskills.io/) | [AGENTS.md](AGENTS.md) (147 tokens)
 
-- [animate](skills/animate/SKILL.md) (870 tokens): Create a gif or svg animation
+- [animate](skills/animate/SKILL.md) (867 tokens): Create a gif or svg animation
 - [coding-lab](skills/coding-lab/SKILL.md) (745 tokens): Use this skill to generate, review or refine a programming lab
 - [educational-content](skills/educational-content/SKILL.md) (2088 tokens): Create, evaluate, or refine an educational lecture, learning activity, talk, or blog post
 - [hymnary-recommendations](skills/hymnary-recommendations/SKILL.md) (889 tokens): Use this skill for song recommendations or worship planning
