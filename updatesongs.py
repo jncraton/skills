@@ -87,8 +87,9 @@ def export_hymns(df, path):
         for _, row in df.iterrows():
             refrain = f' and includes the refrain "{row["refrainFirstLine"]}"' if row['firstLine'] else ""
             
-            f.write(f"[{row['displayTitle']} by {row['authors']}]"
+            f.write(f"[{row['displayTitle']}]"
                     f"(https://hymnary.org/text/{row['textAuthNumber']})"
+                    f" by {row['authors']}"
                     f' (begins with "{row["firstLine"]}"{refrain})\n\n')
 
 export_hymns(hymns, 'skills/hymnary-recommendations/references/songs.md')
