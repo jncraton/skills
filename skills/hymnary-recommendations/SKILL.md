@@ -15,9 +15,15 @@ Always create correct hymnary.org backlinks for every song mentioned. Do not men
 
 Do not use a song unless it is present in a query from Hymnary or references/songs.jsonl. Confirm the title or first line matches the song. Discard URLs that can't be confirmed.
 
-## References
+## Song List
 
 A list of popular songs is included in references/songs.jsonl. Songs that appear earlier in the file are generally more popular. Use grep or other tools to find appropriate songs and confirm matching songs based on textAuthNumber, title, and first lines.
+
+Here is an example line from references/songs.jsonl:
+
+```json
+{"textAuthNumber":"all_hail_the_power_of_jesus_name_let","displayTitle":"All Hail the Power of Jesus' Name","authors":"Edward Perronet","firstLine":"All hail the power of Jesus' name, Let angels prostrate fall","refrainFirstLine":"And crown Him, crown Him"}
+```
 
 ## Web Search
 
