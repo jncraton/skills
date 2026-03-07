@@ -9,7 +9,7 @@ If Hymnary is unreachable, apologize and refuse assistance.
 
 # Song Backlinks
 
-Create correct hymnary.org backlinks for every song. URLs should be formatted as https://hymnary.org/text/{textAuthNumber}. Always use the song title as the link text. For example: [Blessed Assurance](https://hymnary.org/text/blessed_assurance_jesus_is_mine).
+Create correct hymnary.org backlinks for every song. URLs should be formatted as https://hymnary.org/text/{textAuthNumber}. Always use the song title as the link text. For example: "Blessed Assurance"(https://hymnary.org/text/blessed_assurance_jesus_is_mine).
 
 Do not use a song unless it is present in a query from Hymnary. Before including any song, you MUST fetch its text authority URL (e.g. https://hymnary.org/text/{slug}) and confirm the page title or first line matches the song. If the fetch fails or the title doesn't match, discard that URL entirely. Never guess or construct a slug. Only use URLs returned directly by a Hymnary search or page result. Do not include a song if verification cannot be completed.
 
@@ -63,6 +63,53 @@ Songs about John 1 and the topic of grace:
 ```
 curl "https://hymnary.org/search?qu=topics%3AGrace%20scripture%3AJohn%201%20in%3Atexts&export=csv"
 ```
+
+## Advanced Search Tips
+
+Available search operators are:
+
+* AND: By default searches automatically put AND between terms. Searching for "amazing grace" will return results that have "amazing" AND "grace" in them.
+* NOT: Put "-" in front of a term to indicate that you'd like to exclude it. Searching for "amazing -grace" will return results that have "amazing" but NOT "grace" in them. Note: if you have multiple terms, the operator only applies to the first. "a -mighty fortress" will return results that have "a" and "fortress" but not "mighty" in them.
+* OR: Put "|" between terms for which either term can be in the result. Searching for "amazing | grace" will return results that have "amazing" OR "grace" in them. Note: This operator only affects the two terms closest to it, so "a mighty | fortress" returns results that have "a" and "mighty" OR "a" and "fortress" OR "a" and "mighty" and "fortress".
+* Phrase search: Put """ around your search terms to search for an exact phrase. Searching for ""amazing grace"" will only return results that have "amazing grace" in them.
+* Field start and field end: Use "^" to indicate the beginning of the field and "$" to indicate the end of the field. Searching for "^amazing grace$" will return results that start with "amazing" and end with "grace".
+
+You can type multiple search terms into the "Search the entire Hymnary" box. For example, you could type
+
+firstLine:"amazing grace" refrainFirstLine:"O how I love Jesus" in:Hymns
+
+The available terms are shown below.
+
+* firstLine
+* refrainFirstLine
+* textTitle
+* fullText
+* meter
+* media
+* textClassification
+* textSources
+* textAuthNumber
+* languages
+* tuneTitle
+* tuneKey
+* incipit
+* tuneAuthNumber
+* tuneSources
+* personName
+* personYear
+* yearWritten
+* personID
+* scripture
+* publicationDate
+* publicationPlace
+* publisher
+* denominations
+* tags
+
+There are also some special combination terms:
+
+* textName: firstLine, refrainFirstLine, textTitle
+* hymnalNumber: hymnalID, hymnalTitle, number
 
 ## Alternate Hymnary Access
 
