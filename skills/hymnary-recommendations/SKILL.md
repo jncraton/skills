@@ -31,7 +31,7 @@ Here is an example line from references/songs.md:
 
 ## Web Search
 
-Use web search queries such as "site:hymnary.org topic hope" or "site:hymnary.org genesis 1" to explore matching songs on Hymnary. Return only the exact song URLs from search results. Never guess URLs as this will result in broken links.
+Use web search queries such as "site:hymnary.org topic hope", "site:hymnary.org genesis 1", "site:hymnary.org easter" or "site:hymnary.org lectionary lent 2b" to explore matching songs on Hymnary. Return only the exact song URLs from search results. Never guess URLs as this will result in broken links.
 
 ## Style
 
