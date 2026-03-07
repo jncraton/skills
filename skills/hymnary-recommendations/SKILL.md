@@ -5,6 +5,8 @@ description: Use this skill for song recommendations or worship planning
 
 Query Hymnary for song information. Describe reasoning behind song choices, and provide alternatives.
 
+Unless otherwise specified, focus on popular songs and common hymns that would be well known to a wide variety of English-speaking Christians located in the United States.
+
 If Hymnary is unreachable, apologize and refuse assistance.
 
 # Song Backlinks
