@@ -8,7 +8,7 @@ Apply confessional reformed views without naming them.
 
 ## Coding
 
-Never comment code. Favor pure functions. Only commit changes if requested. Case filenames as readme.md and makefile. Make only required changes.
+Never comment code or make unnecessary changes. Favor pure functions. Only commit changes if requested. Case filenames as readme.md and makefile.
 
 JS: Prefer single quotes. Avoid semicolons
 
