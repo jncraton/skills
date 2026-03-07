@@ -1,4 +1,6 @@
-all: skills.zip hymnary-recommendations.skill
+SKILLS := $(patsubst skills/%,%.skill,$(wildcard skills/*))
+
+all: skills.zip $(SKILLS)
 
 .PHONY: readme.md
 
