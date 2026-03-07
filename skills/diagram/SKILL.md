@@ -14,44 +14,62 @@ Prefer `<style>` block using tag oriented rather than class oriented rules. Use 
 ```svg
 <svg width="540" height="540" viewBox="0 0 540 540" xmlns="http://www.w3.org/2000/svg">
   <style>
-    * { font-family: monospace; font-size: 24px; animation: 8s step-end infinite; }
+    * { font-family: monospace; font-size: 24px; animation: 10s step-end infinite; }
     text { fill: black;  }
     rect { fill: none; stroke: black; stroke-width: 4; }
-    .high { opacity: 0; }
-    .val { opacity: 0; }
-    .out { opacity: 0; }
 
-    @keyframes h1 { 0%, 50% { opacity: 1; } 25%, 75% { opacity: 0; } }
-    @keyframes h2 { 25%, 75% { opacity: 1; } 50%, 100% { opacity: 0; } }
+    @keyframes line1 { 
+      0%, 20%, 40%, 60%, 80% { opacity: 0; }
+      10%, 30%, 50%, 70% { opacity: 1; }
+    }
+    @keyframes line2 { 
+      0%, 30%, 50%, 70%, 90% { opacity: 0; }
+      20%, 40%, 60%, 80% { opacity: 1; }
+    }
     
-    @keyframes v0 { 5%, 45% { opacity: 1; } 55%, 100% { opacity: 0; } }
-    @keyframes v1 { 0%, 45% { opacity: 0; } 55%, 95% { opacity: 1; } }
-    
-    @keyframes o0 { 35%, 100% { opacity: 1; } }
-    @keyframes o1 { 85%, 100% { opacity: 1; } }
+    @keyframes out0 { 
+      0%, {opacity: 0; } 
+      20%, { opacity: 1; }
+    }
+    @keyframes out1 { 0% {opacity: 0;} 40% { opacity: 1; } }
+    @keyframes out2 { 0% {opacity: 0;} 60% { opacity: 1; } }
+    @keyframes out3 { 0% {opacity: 0;} 80% { opacity: 1; } }
 
-    .h1 { animation-name: h1; }
-    .h2 { animation-name: h2; }
-    .var0 { animation-name: v0; }
-    .var1 { animation-name: v1; }
-    .out0 { animation-name: o0; }
-    .out1 { animation-name: o1; }
+    @keyframes i0 { 0%,30% {opacity: 0;} 10% { opacity: 1; } }
+    @keyframes i1 { 0%,50% {opacity: 0;} 30% { opacity: 1; } }
+    @keyframes i2 { 0%,70% {opacity: 0;} 50% { opacity: 1; } }
+    @keyframes i3 { 0% {opacity: 0;} 70% { opacity: 1; } }
+
+    .line1 { animation-name: line1; }
+    .line2 { animation-name: line2; }
+    .i0 { animation-name: i0; }
+    .i1 { animation-name: i1; }
+    .i2 { animation-name: i2; }
+    .i3 { animation-name: i3; }
+    .out0 { animation-name: out0; }
+    .out1 { animation-name: out1; }
+    .out2 { animation-name: out2; }
+    .out3 { animation-name: out3; }
   </style>
 
   <text x="40" y="80">for i in range(2):</text>
   <text x="100" y="130">print(i)</text>
 
-  <rect x="30" y="45" width="340" height="50" class="high h1" />
-  <rect x="30" y="95" width="340" height="50" class="high h2" />
+  <rect x="30" y="45" width="340" height="50" class="line1" />
+  <rect x="30" y="95" width="340" height="50" class="line2" />
 
   <text x="40" y="240">Variable i:</text>
-  <text x="220" y="240" class="val var0">0</text>
-  <text x="220" y="240" class="val var1">1</text>
+  <text x="220" y="240" class="i0">0</text>
+  <text x="220" y="240" class="i1">1</text>
+  <text x="220" y="240" class="i2">2</text>
+  <text x="220" y="240" class="i3">3</text>
 
   <text x="40" y="360">Terminal Output</text>
   <rect x="30" y="380" width="480" height="120" />
   
-  <text x="60" y="450" class="out out0">0</text>
-  <text x="100" y="450" class="out out1">1</text>
+  <text x="60" y="450" class="out0">0</text>
+  <text x="100" y="450" class="out1">1</text>
+  <text x="140" y="450" class="out2">2</text>
+  <text x="180" y="450" class="out3">3</text>
 </svg>
 ```
