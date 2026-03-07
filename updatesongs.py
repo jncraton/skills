@@ -80,3 +80,15 @@ hymns.replace({np.nan: None}, inplace=True)
 
 # export to json
 hymns.to_json("skills/hymnary-recommendations/references/songs.jsonl", orient="records", lines=True)
+
+# export to custom line-oriented markdown format
+def export_hymns(df, path):
+    with open(path, 'w') as f:
+        for _, row in df.iterrows():
+            refrain = f' and includes the refrain "{row["refrainFirstLine"]}"' if row['firstLine'] else ""
+            
+            f.write(f"[{row['displayTitle']} by {row['authors']}]"
+                    f"(https://hymnary.org/text/{row['textAuthNumber']})"
+                    f' (begins with "{row["firstLine"]}"{refrain})\n')
+
+export_hymns(hymns, 'skills/hymnary-recommendations/references/songs.txt')
