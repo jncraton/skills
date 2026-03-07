@@ -113,7 +113,7 @@ There are also some special combination terms:
 
 ## Alternate Hymnary Access
 
-Network filters may prevent access to certain Hymnary endpoints directly. Use multiple web searches to compile results as needed. User queries such as "site:hymnary.org topic hope", "site:hymnary.org genesis 1", or "site:hymnary.org ccli top 100". Always follow the text authority URL and confirm the page title/first line matches before using that URL.
+Network filters may prevent access to certain Hymnary endpoints directly. Use multiple web searches to compile results as needed. Use queries such as "site:hymnary.org topic hope", "site:hymnary.org genesis 1", or "site:hymnary.org ccli top 100". Always follow the text authority URL and confirm the page title/first line matches before using that URL.
 
 ## Lectionary
 
