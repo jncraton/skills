@@ -62,15 +62,5 @@ function Para(el)
     return nil
   end
 
-  local last = inls[#inls]
-
-  if last.t == "Str" then
-    local s = last.text
-    if s:match("%.$") then
-      last.text = s:sub(1, -2)
-      inls[#inls] = last
-    end
-  end
-
   return pandoc.Para(inls)
 end
