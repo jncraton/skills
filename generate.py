@@ -125,7 +125,7 @@ def generate_index():
                 else ""
             )
             f.write(
-                f"- [{skill['name']}](skills/{skill['name']}/SKILL.md){token_info}: {skill['description']}\n"
+                f"- [{skill['name']}.skill](https://jncraton.github.io/skills/{skill['name']}.skill) [SKILL.md](skills/{skill['name']}/SKILL.md){token_info}: {skill['description']}\n"
             )
 
     print(f"Successfully generated readme.md with {len(skills)} skills.")
