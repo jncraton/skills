@@ -11,9 +11,9 @@ Unless otherwise specified, focus on popular songs and common hymns that would b
 
 # Song Backlinks
 
-Always create correct hymnary.org backlinks for every song mentioned. Do not mention a song unless a correct backlink is provided. URLs should be formatted as https://hymnary.org/text/{textAuthNumber}. Always use the song title as the link text. For example: "Blessed Assurance"(https://hymnary.org/text/blessed_assurance_jesus_is_mine).
+Always create correct hymnary.org backlinks for every song mentioned. Do not mention a song unless a correct backlink is provided. Always use the correct song title as the link text. For example: [Blessed Assurance](https://hymnary.org/text/blessed_assurance_jesus_is_mine).
 
-Do not use a song unless it is present in a query from Hymnary or references/songs.jsonl. Confirm the title or first line matches the song. Discard URLs that can't be confirmed.
+Do not use a song unless its exact URL is present in data within this skill, a query from Hymnary, or search results.
 
 ## Song List
 
