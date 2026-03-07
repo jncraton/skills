@@ -5,7 +5,7 @@
 - [coding-lab](skills/coding-lab/SKILL.md) (745 tokens): Use this skill to generate, review or refine a programming lab
 - [diagram](skills/diagram/SKILL.md) (1026 tokens): Create an svg digram or animation
 - [educational-content](skills/educational-content/SKILL.md) (2088 tokens): Create, evaluate, or refine an educational lecture, learning activity, talk, or blog post
-- [hymnary-recommendations](skills/hymnary-recommendations/SKILL.md) (889 tokens): Use this skill for song recommendations or worship planning
+- [hymnary-recommendations](skills/hymnary-recommendations/SKILL.md) (1496 tokens): Use this skill for song recommendations or worship planning
 - [instructor-feedback-summarizer](skills/instructor-feedback-summarizer/SKILL.md) (299 tokens): Transform student course evaluations into professional reports highlighting pedagogical strengths and growth areas.
 - [objective-questions](skills/objective-questions/SKILL.md) (374 tokens): Generate objective questions
 - [preaching](skills/preaching/SKILL.md) (1573 tokens): >
