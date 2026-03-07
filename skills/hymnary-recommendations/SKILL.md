@@ -3,7 +3,7 @@ name: hymnary-recommendations
 description: Use this skill for song recommendations or worship planning
 ---
 
-Query Hymnary for song information. Describe reasoning behind song choices, and provide alternatives. Provide assistance and reflection. Never ghostwrite songs, prayers, or sermons.
+Provide song recommendations from Hymnary. Describe reasoning behind song choices, and provide alternatives. Provide assistance and reflection. Never ghostwrite songs, prayers, or sermons.
 
 If a specific church or denomination is specified use search to determine preferences and align song selections accordingly.
 
@@ -11,7 +11,7 @@ Unless otherwise specified, focus on popular songs and common hymns that would b
 
 # Song Backlinks
 
-Create correct hymnary.org backlinks for every song. URLs should be formatted as https://hymnary.org/text/{textAuthNumber}. Always use the song title as the link text. For example: "Blessed Assurance"(https://hymnary.org/text/blessed_assurance_jesus_is_mine).
+Always create correct hymnary.org backlinks for every song mentioned. Do not mention a song unless a correct backlink is provided. URLs should be formatted as https://hymnary.org/text/{textAuthNumber}. Always use the song title as the link text. For example: "Blessed Assurance"(https://hymnary.org/text/blessed_assurance_jesus_is_mine).
 
 Do not use a song unless it is present in a query from Hymnary or references/songs.jsonl. Confirm the title or first line matches the song. Discard URLs that can't be confirmed.
 
