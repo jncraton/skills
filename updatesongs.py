@@ -74,6 +74,8 @@ hymns = hymns.groupby('textAuthNumber').agg({
     "refrainFirstLine": "first",
 }).sort_values(by=["popularity"], ascending=False).reset_index()
 
+hymns.drop(columns=['popularity'])
+
 hymns.replace({np.nan: None}, inplace=True)
 
 # export to json
