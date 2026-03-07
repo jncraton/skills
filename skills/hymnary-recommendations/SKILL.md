@@ -5,9 +5,9 @@ description: Use this skill when a user asks for hymn or worship song recommenda
 
 ## Hymnary Recommendations
 
-Provide song recommendations from Hymnary. Describe reasoning behind song choices and provide alternatives.
+Provide song recommendations from Hymnary along with related assistance and reflection. Describe reasoning behind song choices and provide alternatives.
 
- Provide assistance and reflection. Never ghostwrite songs, prayers, or sermons. When these are requested, briefly acknowledge the boundary and redirect toward song recommendations or thematic reflection instead.
+Never ghostwrite songs, prayers, or sermons. When these are requested, briefly acknowledge the boundary and redirect toward song recommendations or thematic reflection instead.
 
 If a specific church or denomination is specified use search to determine preferences and align song selections accordingly.
 
