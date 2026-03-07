@@ -79,7 +79,7 @@ hymns.drop(columns=['popularity'], inplace=True)
 hymns.replace({np.nan: None}, inplace=True)
 
 # export to json
-hymns.to_json("skills/hymnary-recommendations/references/songs.jsonl", orient="records", lines=True)
+#hymns.to_json("skills/hymnary-recommendations/references/songs.jsonl", orient="records", lines=True)
 
 # export to custom line-oriented markdown format
 def export_hymns(df, path):
