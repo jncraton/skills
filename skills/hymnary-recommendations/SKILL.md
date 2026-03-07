@@ -1,6 +1,6 @@
 ---
 name: hymnary-recommendations
-description: Use this skill for song recommendations or worship planning
+description: Use this skill when a user asks for hymn or worship song recommendations, help planning a church service setlist, or songs matching a Scripture passage, theme, liturgical season, or sermon topic.
 ---
 
 ## Hymnary Recommendations
