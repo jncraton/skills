@@ -35,6 +35,8 @@ ccli_hymns = (
             "ccliPopularity": "sum",
             "displayTitle": "first",
             "authors": "first",
+            "firstLine": "first",
+            "refrainFirstLine": "first",
         }
     )
     .sort_values(by=["ccliPopularity"], ascending=False)
@@ -68,6 +70,8 @@ hymns = hymns.groupby('textAuthNumber').agg({
     'popularity': 'max',
     "displayTitle": "first",
     "authors": "first",
+    "firstLine": "first",
+    "refrainFirstLine": "first",
 }).sort_values(by=["popularity"], ascending=False).reset_index()
 
 hymns.replace({np.nan: None}, inplace=True)
