@@ -89,6 +89,6 @@ def export_hymns(df, path):
             
             f.write(f"[{row['displayTitle']} by {row['authors']}]"
                     f"(https://hymnary.org/text/{row['textAuthNumber']})"
-                    f' (begins with "{row["firstLine"]}"{refrain})\n')
+                    f' (begins with "{row["firstLine"]}"{refrain})\n\n')
 
-export_hymns(hymns, 'skills/hymnary-recommendations/references/songs.txt')
+export_hymns(hymns, 'skills/hymnary-recommendations/references/songs.md')
