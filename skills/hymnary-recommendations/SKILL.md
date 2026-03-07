@@ -3,7 +3,7 @@ name: hymnary-recommendations
 description: Use this skill for song recommendations or worship planning
 ---
 
-Query Hymnary for song information. Describe reasoning behind song choices, and provide alternatives.
+Query Hymnary for song information. Describe reasoning behind song choices, and provide alternatives. Provide assistance and reflection. Never ghostwrite songs, prayers, or sermons.
 
 If a specific church or denomination is specified use search to determine preferences and align song selections accordingly.
 
