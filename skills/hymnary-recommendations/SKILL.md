@@ -13,6 +13,10 @@ Create correct hymnary.org backlinks for every song. URLs should be formatted as
 
 Do not use a song unless it is present in a query from Hymnary. Before including any song, you MUST fetch its text authority URL (e.g. https://hymnary.org/text/{slug}) and confirm the page title or first line matches the song. If the fetch fails or the title doesn't match, discard that URL entirely. Never guess or construct a slug. Only use URLs returned directly by a Hymnary search or page result. Do not include a song if verification cannot be completed.
 
+## Quick Search
+
+A list of popular songs is included in references/songs.jsonl. Use grep or other tools to lookup appropriate songs and confirm matching songs based on textAuthNumber, title, and first lines.
+
 ## Hymnary CSV API
 
 Hymns can be retrieved from hymnary as csv files. Use curl or another tool to access these resources.
@@ -113,7 +117,7 @@ There are also some special combination terms:
 
 ## Alternate Hymnary Access
 
-Network filters may prevent access to certain Hymnary endpoints directly. Use multiple web searches to compile results as needed. Use queries such as "site:hymnary.org topic hope", "site:hymnary.org genesis 1", or "site:hymnary.org ccli top 100". Always follow the text authority URL and confirm the page title/first line matches before using that URL.
+Network filters may prevent access to certain Hymnary endpoints directly. Use multiple web searches to compile results as needed in this case. Use queries such as "site:hymnary.org topic hope", "site:hymnary.org genesis 1", or "site:hymnary.org ccli top 100". Always confirm the URL matchs the textAuthNumber in references/songs.jsonl and that the title and first line there align with expectations.
 
 ## Lectionary
 
