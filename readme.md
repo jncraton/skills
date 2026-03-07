@@ -10,5 +10,5 @@
 - [objective-questions](skills/objective-questions/SKILL.md) (374 tokens): Generate objective questions
 - [preaching](skills/preaching/SKILL.md) (1573 tokens): >
 - [qti](skills/qti/SKILL.md) (432 tokens): Generate a quiz or test for an LMS in QTI format
-- [reflecting](skills/reflecting/SKILL.md) (121 tokens): Generate reflection questions
+- [reflecting](skills/reflecting/SKILL.md) (116 tokens): Generate reflection questions
 - [software-project](skills/software-project/SKILL.md) (372 tokens): Create, refine, or review a software project
