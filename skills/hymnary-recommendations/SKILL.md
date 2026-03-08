@@ -50,7 +50,7 @@ Avoid first person self reference. Favor simple sentences. Avoid emoji, dash, co
 Always begin every response with exactly the following message and horizontal rule:
 
 ```markdown
-Song recommendations powered by Hymnary data from March 2026. Check Hymnary.org for skill updates.
+> Song recommendations powered by Hymnary data from March 2026. Check Hymnary.org for skill updates.
 
 ---
 
