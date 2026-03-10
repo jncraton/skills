@@ -45,12 +45,12 @@ Substitution map:
 
 | Placeholder | Value |
 |---|---|
-| `{{PACKAGE_NAME}}` | package name (also used as the CLI entry-point module path — adjust if the package layout differs) |
-| `{{VERSION}}` | current version string, e.g. `1.2.1` |
-| `{{DESCRIPTION}}` | one-line description |
-| `{{AUTHOR_NAME}}` | author full name |
-| `{{AUTHOR_EMAIL}}` | author email |
-| `{{DEPENDENCIES}}` | comma-separated quoted strings, one per line, e.g. `"requests>=2.28",` — leave empty string `""` if none |
+| `PACKAGE_NAME` | package name (also used as the CLI entry-point module path — adjust if the package layout differs) |
+| `VERSION` | current version string, e.g. `1.2.1` |
+| `DESCRIPTION` | one-line description |
+| `AUTHOR_NAME` | author full name |
+| `AUTHOR_EMAIL` | author email |
+| `DEPENDENCIES` | comma-separated quoted strings, one per line, e.g. `"requests>=2.28",` — leave empty string `""` if none |
 
 If there is no CLI entry point, remove the `[project.scripts]` section entirely.
 
@@ -133,7 +133,7 @@ src layout (`src/mypkg/` instead of `mypkg/`):
 Change the wheel target:
 ```toml
 [tool.hatch.build.targets.wheel]
-packages = ["src/{{PACKAGE_NAME}}"]
+packages = ["src/PACKAGE_NAME"]
 ```
 
 Non-MIT license:  
