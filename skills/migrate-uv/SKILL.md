@@ -4,7 +4,7 @@ description: Migrate Python Package to Modern uv Tooling
 ---
 
 ## Purpose
-This skill converts legacy Python packages (using `setup.py`, `setup.cfg`, `requirements.txt`, `twine`, `pip`, etc.) to a modern stack based on **uv**, **hatchling**, and **GitHub Actions**.
+This skill converts legacy Python packages (using `setup.py`, `setup.cfg`, `requirements.txt`, `twine`, `pip`, etc.) to a modern stack based on uv, hatchling, and GitHub Actions.
 
 ---
 
@@ -27,14 +27,14 @@ This skill converts legacy Python packages (using `setup.py`, `setup.cfg`, `requ
 ### 1. Analyse the existing package
 Collect the following from the old files before writing anything:
 
-- **Package name** — from `setup.py` (`name=`), `setup.cfg` (`[metadata] name =`), or directory name
-- **Version** — same sources, or from `__version__` in source
-- **Description** — `description=` field
-- **Author name + email**
-- **Dependencies** — `install_requires` in setup.py / `[options] install_requires` in setup.cfg / `requirements.txt`
-- **Python version floor** — `python_requires` or lowest version tested
-- **Entry points / scripts** — `entry_points` or `scripts` keys
-- **Any extra classifiers** the user wants to keep
+- Package name — from `setup.py` (`name=`), `setup.cfg` (`[metadata] name =`), or directory name
+- Version — same sources, or from `__version__` in source
+- Description — `description=` field
+- Author name + email
+- Dependencies — `install_requires` in setup.py / `[options] install_requires` in setup.cfg / `requirements.txt`
+- Python version floor — `python_requires` or lowest version tested
+- Entry points / scripts — `entry_points` or `scripts` keys
+- Any extra classifiers the user wants to keep
 
 If any of these are ambiguous, ask the user before proceeding.
 
@@ -52,7 +52,7 @@ Substitution map:
 | `{{AUTHOR_EMAIL}}` | author email |
 | `{{DEPENDENCIES}}` | comma-separated quoted strings, one per line, e.g. `"requests>=2.28",` — leave empty string `""` if none |
 
-If there is **no CLI entry point**, remove the `[project.scripts]` section entirely.
+If there is no CLI entry point, remove the `[project.scripts]` section entirely.
 
 If the package layout is not `packagename/cli.py:main`, adjust the entry point accordingly.
 
@@ -67,11 +67,11 @@ Only modify it if:
 
 Create these two files (creating `.github/workflows/` if needed):
 
-**`.github/workflows/pypi.yml`** — copy from `templates/.github/workflows/pypi.yml` verbatim.
+`.github/workflows/pypi.yml` — copy from `templates/.github/workflows/pypi.yml` verbatim.
 - Triggers on version tags (`v*.*.*`)
 - Uses OIDC trusted publishing (no API token needed — user must configure this in PyPI project settings)
 
-**`.github/workflows/release.yml`** — copy from `templates/.github/workflows/release.yml` verbatim.
+`.github/workflows/release.yml` — copy from `templates/.github/workflows/release.yml` verbatim.
 - Triggers on version tags (`v*.*.*`)  
 - Runs tests then creates a GitHub Release with auto-generated notes
 
@@ -87,12 +87,12 @@ Tell the user to delete these if they exist:
 Remind the user to configure OIDC trusted publishing on PyPI so `uv publish` works without a token:
 
 1. Go to `https://pypi.org/manage/project/<package-name>/settings/`
-2. Under **Trusted Publishers**, add a new publisher:
-   - **Publisher**: GitHub Actions
-   - **Owner**: their GitHub org/username
-   - **Repository**: repo name
-   - **Workflow name**: `pypi.yml`
-   - **Environment**: *(leave blank)*
+2. Under Trusted Publishers, add a new publisher:
+   - Publisher: GitHub Actions
+   - Owner: their GitHub org/username
+   - Repository: repo name
+   - Workflow name: `pypi.yml`
+   - Environment: *(leave blank)*
 
 ---
 
@@ -111,10 +111,10 @@ After completing the migration, confirm each item:
 
 ## Common Edge Cases
 
-**No CLI entry point** (library-only package):  
+No CLI entry point (library-only package):  
 Remove `[project.scripts]` from `pyproject.toml`. The `Makefile` and workflows are unchanged.
 
-**Multiple entry points**:  
+Multiple entry points:  
 Add additional lines under `[project.scripts]`, e.g.:
 ```toml
 [project.scripts]
@@ -122,22 +122,22 @@ tool-a = "mypkg.a:main"
 tool-b = "mypkg.b:main"
 ```
 
-**Extras / optional dependencies**:  
+Extras / optional dependencies:  
 Add an `[project.optional-dependencies]` section:
 ```toml
 [project.optional-dependencies]
 dev = ["pytest", "black"]
 ```
 
-**src layout** (`src/mypkg/` instead of `mypkg/`):  
+src layout (`src/mypkg/` instead of `mypkg/`):  
 Change the wheel target:
 ```toml
 [tool.hatch.build.targets.wheel]
 packages = ["src/{{PACKAGE_NAME}}"]
 ```
 
-**Non-MIT license**:  
+Non-MIT license:  
 Update the classifier in `pyproject.toml` and add a `license = {text = "..."}` field.
 
-**Private / internal packages (no PyPI publish)**:  
+Private / internal packages (no PyPI publish):  
 Omit `pypi.yml` entirely. Keep `release.yml` for GitHub Releases only.
