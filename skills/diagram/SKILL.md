@@ -5,9 +5,9 @@ description: Create an svg digram or animation
 
 ## Style
 
-Keep the animation simple and limit visual noise. Text should be large enough to be visible by a classroom on a projector. Favor a white background with black text when possible. Generate 540 by 540 images by default.
+Keep the animation simple and limit visual noise. Favor a white background with black text when possible. Generate 540 by 540 images by default.
 
-Prefer `<style>` block using tag oriented rather than class oriented rules. Use 24px monospace font. Use stroke-width: 4 for lines.
+Prefer a `<style>` block using tag oriented rather than class oriented rules. Use 24px monospace font. Use stroke-width: 4 for lines. Favor simple graphical elements such as solid straight lines, circles, and rectangles. Favor right angles over curved elements.
 
 ## Example SVG
 
