@@ -1,5 +1,12 @@
 #!/bin/sh
 # Create symlinks within pi agent configs
 
-ln -s $(realpath AGENTS.md) ~/.pi/agent/AGENTS.md
-ln -s $(realpath skills) ~/.pi/agent/skills
+user=$(whoami)
+
+sudo mkdir -p ~/.pi
+sudo chown $user:$user ~/.pi
+mkdir -p ~/.pi/agent
+
+ln -snf $(realpath AGENTS.md) ~/.pi/agent/AGENTS.md
+ln -snf $(realpath skills) ~/.pi/agent/skills
+ln -snf $(realpath pi/settings.json) ~/.pi/agent/settings.json
