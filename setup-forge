@@ -5,8 +5,8 @@
 sudo mkdir -p ~/forge
 sudo chown jncraton:jncraton ~/forge
 
-ln -s $(realpath AGENTS.md) ~/forge/AGENTS.md
-ln -s $(realpath skills) ~/forge/skills
-ln -s $(realpath agents) ~/forge/agents
+ln -snf $(realpath AGENTS.md) ~/forge/AGENTS.md
+ln -snf $(realpath skills) ~/forge/skills
+ln -snf $(realpath agents) ~/forge/agents
 
 mkdir -p ~/.local/bin && curl -L -o ~/.local/bin/forge https://github.com/antinomyhq/forge/releases/download/v2.3.2/forge-x86_64-unknown-linux-musl && chmod +x ~/.local/bin/forge
