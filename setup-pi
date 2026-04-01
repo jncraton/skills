@@ -1,0 +1,5 @@
+#!/bin/sh
+# Create symlinks within pi agent configs
+
+ln -s $(realpath AGENTS.md) ~/.pi/agent/AGENTS.md
+ln -s $(realpath skills) ~/.pi/agent/skills
