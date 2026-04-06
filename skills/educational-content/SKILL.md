@@ -11,10 +11,9 @@ Complexity should generally increase through Bloom's as lecture progresses (reme
 
 ### Backward-Design framework (Wiggins & McTighe)
 
-1. Create a clear Teaching Goal and 2–3 measurable Learning Objectives
-2. Design assessments and aligned learning activities that ensure students reach the desired understandings. Among other suggestions, summative assessment should end with a three question multiple choice quiz. Only use multiple choice questions with four possible answers. The first answer should always be correct and distractors should be tempting but obviously incorrect if a student understands the material.
+Create a clear Teaching Goal and 2–3 measurable Learning Objectives
 
-If generating markdown, save the `teaching_goal` string, `learning_objectives` list, `summative_assessments` list, `quiz` list, `formative_assessments` list, and `learning_plan` list in the yaml metadata. The `quiz` list should contain objects with `question` and `answers`. The `learning_plan` should be a list of objects with `start_time`, `description`, and `objective`. Include activity type, instructor actions, and student actions in the `description`. Include at least two active learning strategies.
+If generating markdown, save the `teaching_goal` string, `learning_objectives` list.
 
 ## Formatting
 
@@ -60,51 +59,6 @@ learning_objectives:
   - Define and assign values to variables using descriptive names
   - Collect and process user input using input() and type conversion functions
   - Implement a simple program that calculates and displays a result based on user input
-summative_assessments:
-  - Complete a programming project that implements a basic calculator with multiple operations
-  - Final exam module covering variable naming conventions and basic I/O
-quiz:
-  - question: What does an assignment statement do?
-    answers:
-      - Creates or rebinds a variable
-      - Compares two values for equality
-      - Displays a value on screen
-      - Requests input from user
-  - question: What does input() return?
-    answers:
-      - String
-      - Integer
-      - Float
-      - Boolean
-  - question: Which name is valid?
-    answers:
-      - my_variable
-      - 2nd_variable
-      - my-variable
-      - my variable
-formative_assessments:
-  - Practice identifying valid and invalid variable names
-  - Write a program that takes a name and prints a greeting
-  - Modify an area calculation program to use different dimensions
-learning_plan:
-  - start_time: 0
-    description: Think-Pair-Share. Instructor asks "What is a variable in math vs programming?". Students discuss with neighbor then share with class.
-    objective: Define and assign values to variables using descriptive names
-  - start_time: 5
-    description: Mini-lecture. Instructor explains assignment and naming. Students listen and take notes.
-    objective: Define and assign values to variables using descriptive names
-  - start_time: 15
-    description: Interactive demonstration. Instructor live codes input and conversion, asking "What happens if we omit int()?". Students predict results and observe error.
-    objective: Collect and process user input using input() and type conversion functions
-  - start_time: 25
-    description: Peer programming. Instructor circulates and provides feedback. Students work in pairs to implement triangle area calculator.
-    objective: Implement a simple program that calculates and displays a result based on user input
-  - start_time: 35
-    description: Code Review. Instructor displays student solutions. Class discusses readability and naming choices.
-    objective: Define and assign values to variables using descriptive names
-  - start_time: 45
-    description: Reflection. Instructor asks "How do clear names serve future readers?". Students write brief response.
-    objective: Define and assign values to variables using descriptive names
 ---
 
 # Variables
