@@ -12,7 +12,7 @@ skills.zip:
 
 format:
 	uvx black@26.1.0 generate.py skills/*/scripts/*.py
-	npx prettier@3.8.1 --write .
+	npx --yes prettier@3.8.1 --write .
 
 readme.md:
 	python3 generate.py
