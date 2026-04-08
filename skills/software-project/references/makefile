@@ -1,13 +1,13 @@
 all: deploy
 
 lint:
-	npx prettier@3.6.2 --check .
+	npx --yes prettier@3.6.2 --check .
 	
 format:
-	npx prettier@3.6.2 --write .
+	npx --yes prettier@3.6.2 --write .
 
 %.min.js: %.js
-	npx uglify-js@3.19.3 --compress --mangle -- $< > $@
+	npx --yes uglify-js@3.19.3 --compress --mangle -- $< > $@
 
 dep.css:
 	wget -O dep.css https://example.com/dep.css
