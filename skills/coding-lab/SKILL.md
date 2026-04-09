@@ -107,4 +107,4 @@ clean:
 
 ### Examples
 
-Complete examples are available arranged by language in references/examples/{language}.
+If available, review the example provided for the appropriate language before beginning from references/examples/{language}.
