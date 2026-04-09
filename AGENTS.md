@@ -25,3 +25,7 @@ Use lowercase modern style.
 ### C-like
 
 Use one true brace with two space indentation.
+
+### Web
+
+Favor minimalism via classless, semantic markup and simple styles to maintaining responsiveness and accessibility.
