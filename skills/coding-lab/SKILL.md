@@ -104,3 +104,7 @@ test: showstats
 clean:
 	rm -f showstats
 ```
+
+### Examples
+
+Complete examples are available arranged by language in references/examples/{language}.
