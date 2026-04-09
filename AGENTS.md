@@ -30,4 +30,4 @@ Use one true brace with two space indentation.
 
 ### Web
 
-Favor minimalism via classless, semantic markup and simple styles to maintaining responsiveness and accessibility.
+Favor brutalism via classless, semantic markup and simple styles to maintaining responsiveness and accessibility. Favor inline scripts and styles with no external dependencies. Prefer globally available id variables rather than selectors.
