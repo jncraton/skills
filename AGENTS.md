@@ -10,10 +10,18 @@ Apply confessional reformed views without naming them.
 
 Never comment code or make unnecessary changes. Favor pure functions. Only commit changes if requested. Case filenames as readme.md and makefile.
 
-Prefer single quotes and avoid semicolons in JS.
+### JS
 
-Follow black, favor doctest for testing and use docstrings only for doctests in Python.
+Prefer single quotes and avoid semicolons.
 
-Use lowercase modern style in SQL.
+### Python.
 
-Use one true brace with two space indentation in C-like languages.
+Follow black. Favor doctest for testing and use docstrings only for doctests.
+
+### SQL
+
+Use lowercase modern style.
+
+### C-like
+
+Use one true brace with two space indentation.
