@@ -9,4 +9,4 @@ ln -snf $(realpath AGENTS.md) ~/forge/AGENTS.md
 ln -snf $(realpath skills) ~/forge/skills
 ln -snf $(realpath agents) ~/forge/agents
 
-mkdir -p ~/.local/bin && curl -L -o ~/.local/bin/forge https://github.com/tailcallhq/forgecode/releases/download/v2.9.8/forge-x86_64-unknown-linux-musl && chmod +x ~/.local/bin/forge
+mkdir -p ~/.local/bin && curl -L -o ~/.local/bin/forge https://github.com/tailcallhq/forgecode/releases/download/v2.11.5/forge-x86_64-unknown-linux-musl && chmod +x ~/.local/bin/forge
