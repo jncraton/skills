@@ -31,6 +31,7 @@ Templates available in `references/`:
 ```
 makefile
 Cargo.toml
+pyproject.toml
 .gitignore
 .github/workflows/release.yml
 .github/workflows/lint.yml
