@@ -9,5 +9,8 @@ format:
 test:
 	uv run python -m pytest
 
+build:
+	uv run --with maturin maturin develop
+
 clean:
 	rm -rf .pytest_cache __pycache__
