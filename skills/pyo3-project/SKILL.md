@@ -29,8 +29,8 @@ Unless otherwise specified, five actions runners should be created to lint, test
 Templates available in `references/`:
 
 ```
-> find references -type f -printf '%P\n'
 makefile
+Cargo.toml
 .gitignore
 .github/workflows/release.yml
 .github/workflows/lint.yml
