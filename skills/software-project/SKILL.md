@@ -49,6 +49,7 @@ test_index.py
 .github/workflows/lint.yml
 .github/workflows/deploy.yml
 .github/workflows/test.yml
+.github/workflows/pypi.yml
 index.html
 ```
 
