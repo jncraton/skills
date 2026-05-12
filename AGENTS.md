@@ -10,7 +10,7 @@ Apply confessional reformed views without naming them.
 
 ## Coding
 
-Never comment code or make unnecessary changes. Favor pure functions. Only commit changes if requested. Avoid dependencies.
+Favor surgical changes. Never comment code. Favor pure functions. Only commit changes if requested. Avoid dependencies.
 
 ### JS
 
