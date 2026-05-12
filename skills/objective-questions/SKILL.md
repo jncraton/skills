@@ -67,6 +67,6 @@ def lex(text):
                     yield (rule[0], match[0])
 ```
 
-How many total tokens would be yielded by the lexer for the input "12 + 34"?
+How many total tokens would this lexer yield for the input "12 + 34"?
 
 Answer: 3
