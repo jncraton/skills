@@ -1,0 +1,12 @@
+#!/bin/sh
+# Create symlinks in "standardized" locations
+# https://github.com/agentsmd/agents.md/issues/91
+# https://agentskills.io/client-implementation/adding-skills-support#where-to-scan
+
+# Use sudo to create dir because my home dir is write protected
+sudo mkdir -p ~/.agents
+sudo chown $USER:$USER ~/.agents
+
+ln -snf $(realpath AGENTS.md) ~/.agents/AGENTS.md
+ln -snf $(realpath skills) ~/.agents/skills
+ln -snf $(realpath agents) ~/.agents/agents
