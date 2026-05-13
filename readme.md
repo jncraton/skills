@@ -9,7 +9,7 @@
 - [instructor-feedback-summarizer.skill](https://jncraton.github.io/skills/instructor-feedback-summarizer.skill) [SKILL.md](skills/instructor-feedback-summarizer/SKILL.md) (299 tokens): Transform student course evaluations into professional reports highlighting pedagogical strengths and growth areas.
 - [migrate-uv.skill](https://jncraton.github.io/skills/migrate-uv.skill) [SKILL.md](skills/migrate-uv/SKILL.md) (1398 tokens): Migrate Python Package to Modern uv Tooling
 - [objective-questions.skill](https://jncraton.github.io/skills/objective-questions.skill) [SKILL.md](skills/objective-questions/SKILL.md) (375 tokens): Generate objective questions
-- [preaching.skill](https://jncraton.github.io/skills/preaching.skill) [SKILL.md](skills/preaching/SKILL.md) (1573 tokens): >
+- [preaching.skill](https://jncraton.github.io/skills/preaching.skill) [SKILL.md](skills/preaching/SKILL.md) (1456 tokens): Sermon research and preparation assistant. Use for sermon prep, sermon research, biblical exegesis, preaching a passage, Greek or Hebrew word studies, generating discussion questions from a sermon, summarizing a sermon, theological inquiry, historical theologian perspectives, or anything related to preparing or delivering a Christian sermon or homily.
 - [pyo3-project.skill](https://jncraton.github.io/skills/pyo3-project.skill) [SKILL.md](skills/pyo3-project/SKILL.md) (282 tokens): Create, refine, or review a pyo3 Python/Rust package
 - [qti.skill](https://jncraton.github.io/skills/qti.skill) [SKILL.md](skills/qti/SKILL.md) (432 tokens): Generate a quiz or test for an LMS in QTI format
 - [reflecting.skill](https://jncraton.github.io/skills/reflecting.skill) [SKILL.md](skills/reflecting/SKILL.md) (116 tokens): Generate reflection questions
