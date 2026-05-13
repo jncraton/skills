@@ -7,6 +7,6 @@
 sudo mkdir -p ~/.agents
 sudo chown $USER:$USER ~/.agents
 
-ln -snf $(realpath AGENTS.md) ~/.agents/AGENTS.md
+ln -nf $(realpath AGENTS.md) ~/.agents/AGENTS.md
 ln -snf $(realpath skills) ~/.agents/skills
 ln -snf $(realpath agents) ~/.agents/agents
