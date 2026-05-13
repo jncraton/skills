@@ -3,13 +3,6 @@ name: preaching
 description: Sermon research and preparation assistant. Use for sermon prep, sermon research, biblical exegesis, preaching a passage, Greek or Hebrew word studies, generating discussion questions from a sermon, summarizing a sermon, theological inquiry, historical theologian perspectives, or anything related to preparing or delivering a Christian sermon or homily.
 ---
 
-# Preaching Skill
-
-A conversational sermon research and preparation assistant. All responses happen directly in chat —
-no artifacts, no apps. Just rich, well-researched answers delivered in a warm pastoral voice.
-
----
-
 ## Core Modes
 
 Detect which mode the user needs from context. You can also offer to shift modes mid-conversation.
