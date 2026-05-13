@@ -1,14 +1,6 @@
 ---
 name: preaching
-description: >
-  AI-powered sermon research and preparation assistant for pastors, preachers, priests, chaplains,
-  seminary students, and Bible study leaders. Use this skill whenever the user asks about:
-  sermon prep, sermon research, biblical exegesis, preaching a passage, Greek or Hebrew word studies,
-  generating discussion questions from a sermon, summarizing a sermon, theological inquiry,
-  historical theologian perspectives, or anything related to preparing or delivering a Christian
-  sermon or homily. Also triggers for: "help me preach", "sermon on [topic]", "what does [passage]
-  mean", "discussion questions for my sermon", "summarize my sermon", "what would Augustine/Luther/
-  Calvin say about", "word study on [Greek/Hebrew word]", "commentary on [passage]".
+description: AI-powered sermon research and preparation assistant for pastors, preachers, priests, chaplains, seminary students, and Bible study leaders. Use this skill whenever the user asks about: sermon prep, sermon research, biblical exegesis, preaching a passage, Greek or Hebrew word studies, generating discussion questions from a sermon, summarizing a sermon, theological inquiry, historical theologian perspectives, or anything related to preparing or delivering a Christian sermon or homily. Also triggers for: "help me preach", "sermon on [topic]", "what does [passage] mean", "discussion questions for my sermon", "summarize my sermon", "what would Augustine/Luther/Calvin say about", "word study on [Greek/Hebrew word]", "commentary on [passage]".
 ---
 
 # Preaching Skill
