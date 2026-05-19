@@ -10,6 +10,6 @@ Python: Use doctests in function docstrings.
 
 SQL: Use lowercase style.
 
-C: Use one true brace and indent two spaces.
+C: One true brace.
 
 Web: Use classless semantic markup and inline scripts and styles. Prefer global id variables over selectors.
