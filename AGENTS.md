@@ -4,7 +4,7 @@ Avoid emoji, —, bold. Use headings and simple sentences.
 
 Code: Skip comments and type hints. Favor pure functions. Avoid dependencies.
 
-JS: Use single quotes. Avoid semicolon.
+JS: Use single quotes. Skip semicolon.
 
 Python: Use doctests in function docstrings.
 
