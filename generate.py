@@ -109,14 +109,14 @@ def generate_index():
     with open("AGENTS.md", "r", encoding="utf-8") as f:
         agents_content = f.read()
     agents_tokens = count_tokens(agents_content, tokenizer)
-    print(f"AGENTS.md: {agents_tokens} tokens")
+    print(f"AGENTS.md: {agents_tokens} tokens, {len(agents_content)} bytes")
 
     with open("readme.md", "w", encoding="utf-8") as f:
         f.write(
             "# Skills\n\n"
             "[skills.zip](https://jncraton.github.io/skills/skills.zip) | "
             "[spec](https://agentskills.io/) | "
-            f"[AGENTS.md](AGENTS.md) ({agents_tokens} tokens)"
+            f"[AGENTS.md](AGENTS.md) ({agents_tokens} tokens, {len(agents_content)} bytes)"
             "\n\n"
         )
         for skill in skills:
