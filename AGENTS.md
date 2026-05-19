@@ -6,7 +6,7 @@ Never comment code. Favor pure functions. Avoid dependencies.
 
 JS: Use single quotes. Avoid semicolon.
 
-Python: Use docsting only for doctests.
+Python: Use doctests in function docstrings.
 
 SQL: Use lowercase style.
 
