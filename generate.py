@@ -96,6 +96,7 @@ def generate_index():
                     # Count tokens in the skill content
                     token_count = count_tokens(content, tokenizer)
                     meta["token_count"] = token_count
+                    meta["byte_count"] = len(content)
                     skills.append(meta)
                     print(f"{skill_file}: {token_count} tokens")
 
@@ -120,7 +121,7 @@ def generate_index():
         )
         for skill in skills:
             token_info = (
-                f" ({skill['token_count']} tokens)"
+                f" ({skill['token_count']} tokens, {skill['byte_count']} bytes)"
                 if skill.get("token_count", 0) > 0
                 else ""
             )
