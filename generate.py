@@ -115,7 +115,7 @@ def generate_index():
         f.write("The following agent skill files are available and should be read when they are related to a user request.\n\n")
         for skill in skills:
             f.write(
-                f"- ~/.agents/skills/{skill['name']}/SKILL.md {skill['description']}\n"
+                f"- /home/jncraton/.agents/skills/{skill['name']}/SKILL.md {skill['description']}\n"
             )
 
     with open("system.md", "r", encoding="utf-8") as f:
