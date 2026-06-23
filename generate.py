@@ -111,12 +111,25 @@ def generate_index():
     agents_tokens = count_tokens(agents_content, tokenizer)
     print(f"AGENTS.md: {agents_tokens} tokens, {len(agents_content)} bytes")
 
+    with open("system.md", "w", encoding="utf-8") as f:
+        f.write("The following agent skill files are available and should be read when they are related to a user request.\n\n")
+        for skill in skills:
+            f.write(
+                f"- ~/.agents/skills/{skill['name']}/SKILL.md {skill['description']}\n"
+            )
+
+    with open("system.md", "r", encoding="utf-8") as f:
+        system_content = f.read()
+    system_tokens = count_tokens(system_content, tokenizer)
+    print(f"system.md: {system_tokens} tokens, {len(system_content)} bytes")
+        
     with open("readme.md", "w", encoding="utf-8") as f:
         f.write(
             "# Skills\n\n"
             "[skills.zip](https://jncraton.github.io/skills/skills.zip) | "
             "[spec](https://agentskills.io/) | "
-            f"[AGENTS.md](AGENTS.md) ({agents_tokens} tokens, {len(agents_content)} bytes)"
+            f"[AGENTS.md](AGENTS.md) ({agents_tokens} tokens, {len(agents_content)} bytes) | "
+            f"[system.md](system.md) ({system_tokens} tokens, {len(system_content)} bytes)"
             "\n\n"
         )
         for skill in skills:
