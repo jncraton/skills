@@ -40,7 +40,6 @@ Use these standard sections:
 Support these standard targets:
 
 - `test`: Run automated tests.
-- `run`: Build and execute the program.
 - `clean`: Remove build artifacts.
 
 ## Example
