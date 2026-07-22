@@ -9,10 +9,7 @@
  * @return True if prime, false otherwise.
  */
 bool is_prime(int n) {
-    if (n <= 1) return false;
-    for (int i = 2; i * i <= n; ++i) {
-        if (n % i == 0) return false;
-    }
+    // TODO: Check primality
     return true;
 }
 
@@ -24,13 +21,7 @@ bool is_prime(int n) {
  */
 std::vector<int> get_primes(int n) {
     std::vector<int> primes;
-    int num = 2;
-    while (primes.size() < static_cast<size_t>(n)) {
-        if (is_prime(num)) {
-            primes.push_back(num);
-        }
-        num++;
-    }
+    // TODO: Build list of primes
     return primes;
 }
 
@@ -65,8 +56,7 @@ int main() {
     std::println("First 100 primes:");
     std::vector<int> primes = get_primes(100);
     for (size_t i = 0; i < primes.size(); ++i) {
-        std::println("{}", primes[i]);
-        if ((i + 1) % 10 == 0) std::println("");
+        // TODO: Print the primes
     }
 
     return 0;
