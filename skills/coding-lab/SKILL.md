@@ -40,6 +40,7 @@ Use these standard sections:
 Support these standard targets:
 
 - `test`: Run automated tests.
+- `format`: Auto-format code
 - `clean`: Remove build artifacts.
 
 ## Example
@@ -96,6 +97,9 @@ all: showstats
 
 showstats: showstats.c
 	gcc $< -Wall -o $@
+
+format:
+  clang-format -style google -i *.c
 
 test: showstats
 	./showstats
