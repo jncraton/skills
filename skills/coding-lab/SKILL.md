@@ -98,7 +98,7 @@ showstats: showstats.c
 	gcc $< -Wall -o $@
 
 format:
-  clang-format -style google -i *.c
+  clang-format -i *.c
 
 test: showstats
 	./showstats
