@@ -9,6 +9,9 @@ primes: primes.cpp
 test: primes
 	./primes
 
+format:
+	clang-format -style google -i *.cpp
+
 clean:
 	rm -f primes
 ````
