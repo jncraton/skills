@@ -9,6 +9,8 @@ def write_ctx(directory, outfile):
             syntax = "python"
         if file.endswith(".md"):
             syntax = "markdown"
+        if file.endswith(".cpp"):
+            syntax = "c++"
         elif file == "makefile":
             syntax = "makefile"
         else:
