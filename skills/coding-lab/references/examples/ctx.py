@@ -24,3 +24,4 @@ def get_ctx(directory, outfile):
 
 if __name__ == "__main__":
     get_ctx("python", "python.md")
+    get_ctx("cpp", "cpp.md")
