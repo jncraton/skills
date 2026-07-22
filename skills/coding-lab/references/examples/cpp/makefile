@@ -7,7 +7,7 @@ test: primes
 	./primes
 
 format:
-	clang-format -style google -i *.cpp
+	clang-format -i *.cpp
 
 clean:
 	rm -f primes
