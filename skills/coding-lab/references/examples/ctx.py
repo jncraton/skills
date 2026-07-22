@@ -1,7 +1,7 @@
 import os
 
 
-def get_ctx(directory, outfile):
+def write_ctx(directory, outfile):
     files = []
 
     for file in os.listdir(directory):
@@ -23,5 +23,5 @@ def get_ctx(directory, outfile):
 
 
 if __name__ == "__main__":
-    get_ctx("python", "python.md")
-    get_ctx("cpp", "cpp.md")
+    write_ctx("python", "python.md")
+    write_ctx("cpp", "cpp.md")
