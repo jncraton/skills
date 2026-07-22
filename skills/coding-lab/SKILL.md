@@ -108,5 +108,5 @@ clean:
 
 If available, review the example provided for the appropriate language before beginning:
 
-- references/examples/python.md
-- references/examples/cpp.md
+- Python: references/examples/python.md
+- C++: references/examples/cpp.md
