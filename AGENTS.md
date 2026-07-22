@@ -12,6 +12,6 @@ SQL: Use lowercase style.
 
 C: One true brace.
 
-C++: Use C++23 and println over streams.
+C++: Prefer println over streams.
 
 Web: Use classless semantic markup and inline scripts and styles. Prefer global id variables over selectors.
