@@ -107,4 +107,7 @@ clean:
 
 ### Examples
 
-If available, review the example provided for the appropriate language before beginning from references/examples/{language}.
+If available, review the example provided for the appropriate language before beginning:
+
+- references/examples/python.md
+- references/examples/cpp.md
