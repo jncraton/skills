@@ -106,7 +106,7 @@ clean:
 
 ### Examples
 
-If a matching language-specific example is provided, always read it right away:
+If a matching language-specific summary is provided, always read it before reading any other files:
 
 - Python: references/examples/python.md
 - C++: references/examples/cpp.md
