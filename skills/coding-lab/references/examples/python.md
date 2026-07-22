@@ -1,6 +1,6 @@
 ## makefile
 
-```````makefile
+````makefile
 test:
 	python3 resistors.py
 
@@ -9,11 +9,11 @@ run: test
 clean:
 	rm -f __pycache__
 
-```````
+````
 
 ## readme.md
 
-```````markdown
+````markdown
 # Mutable References
 
 ![Parallel resistors](https://upload.wikimedia.org/wikipedia/commons/0/09/Resistors_in_parallel.svg)
@@ -54,4 +54,4 @@ The repository contains a single Python file `resistors.py` with built-in tests.
 - [Why are default values shared between objects?](https://docs.python.org/3/faq/programming.html#why-are-default-values-shared-between-objects)
 - [Series and parallel resistor formulas](https://en.wikipedia.org/wiki/Series_and_parallel_circuits)
 
-```````
+````

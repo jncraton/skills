@@ -1,6 +1,6 @@
 ## readme.md
 
-```````markdown
+````markdown
 # Primes
 
 This lab introduces C++ programming through the task of generating the first 100 prime numbers.
@@ -35,11 +35,11 @@ The output should show the first 100 prime numbers and the results of the automa
 - [std::vector](https://en.cppreference.com/cpp/container/vector)
 - [std::println](https://en.cppreference.com/cpp/io/basic_ostream/println)
 
-```````
+````
 
 ## makefile
 
-```````makefile
+````makefile
 all: test
 
 primes: primes.cpp
@@ -50,4 +50,4 @@ test: primes
 
 clean:
 	rm -f primes
-```````
+````

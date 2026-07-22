@@ -16,7 +16,7 @@ def write_ctx(directory, outfile):
 
         if syntax:
             with open(os.path.join(directory, file)) as f:
-                files.append(f"## {file}\n\n```````{syntax}\n{f.read()}\n```````")
+                files.append(f"## {file}\n\n````{syntax}\n{f.read()}\n````")
 
     with open(outfile, "w") as out:
         out.write("\n\n".join(files))
