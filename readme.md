@@ -1,6 +1,6 @@
 # Skills
 
-[skills.zip](https://jncraton.github.io/skills/skills.zip) | [spec](https://agentskills.io/) | [AGENTS.md](AGENTS.md) (114 tokens, 493 bytes) | [system.md](system.md) (425 tokens, 1621 bytes)
+[skills.zip](https://jncraton.github.io/skills/skills.zip) | [spec](https://agentskills.io/) | [AGENTS.md](AGENTS.md) (109 tokens, 486 bytes) | [system.md](system.md) (425 tokens, 1621 bytes)
 
 - [coding-lab.skill](https://jncraton.github.io/skills/coding-lab.skill) [SKILL.md](skills/coding-lab/SKILL.md) (784 tokens, 3344 bytes): Use this skill to generate, review or refine a programming lab
 - [diagram.skill](https://jncraton.github.io/skills/diagram.skill) [SKILL.md](skills/diagram/SKILL.md) (1034 tokens, 2440 bytes): Create an svg digram or animation
