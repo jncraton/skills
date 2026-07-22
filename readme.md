@@ -2,7 +2,7 @@
 
 [skills.zip](https://jncraton.github.io/skills/skills.zip) | [spec](https://agentskills.io/) | [AGENTS.md](AGENTS.md) (114 tokens, 493 bytes) | [system.md](system.md) (425 tokens, 1621 bytes)
 
-- [coding-lab.skill](https://jncraton.github.io/skills/coding-lab.skill) [SKILL.md](skills/coding-lab/SKILL.md) (777 tokens, 3329 bytes): Use this skill to generate, review or refine a programming lab
+- [coding-lab.skill](https://jncraton.github.io/skills/coding-lab.skill) [SKILL.md](skills/coding-lab/SKILL.md) (780 tokens, 3349 bytes): Use this skill to generate, review or refine a programming lab
 - [diagram.skill](https://jncraton.github.io/skills/diagram.skill) [SKILL.md](skills/diagram/SKILL.md) (1034 tokens, 2440 bytes): Create an svg digram or animation
 - [educational-content.skill](https://jncraton.github.io/skills/educational-content.skill) [SKILL.md](skills/educational-content/SKILL.md) (1329 tokens, 5202 bytes): Create, evaluate, or refine an educational lecture, learning activity, talk, or blog post
 - [instructor-feedback-summarizer.skill](https://jncraton.github.io/skills/instructor-feedback-summarizer.skill) [SKILL.md](skills/instructor-feedback-summarizer/SKILL.md) (299 tokens, 1640 bytes): Transform student course evaluations into professional reports highlighting pedagogical strengths and growth areas.
