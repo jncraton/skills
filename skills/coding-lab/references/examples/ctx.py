@@ -1,8 +1,9 @@
 import os
 
+
 def get_ctx(directory, outfile):
     files = []
-    
+
     for file in os.listdir(directory):
         if file.endswith(".py"):
             syntax = "python"
@@ -17,8 +18,9 @@ def get_ctx(directory, outfile):
             with open(os.path.join(directory, file)) as f:
                 files.append(f"## {file}\n\n```````{syntax}\n{f.read()}\n```````")
 
-    with open(outfile, 'w') as out:
+    with open(outfile, "w") as out:
         out.write("\n\n".join(files))
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     get_ctx("python", "python.md")
