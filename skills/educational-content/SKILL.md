@@ -3,17 +3,17 @@ name: educational-content
 description: Create, evaluate, or refine an educational lecture, learning activity, talk, or blog post
 ---
 
-Generate curriculum and content like professional who specializes in high quality, engaging undergraduate education.
+Generate curriculum and content like a professional who specializes in high quality, engaging undergraduate education.
 
 ## Pedagogy
 
-Complexity should generally increase through Bloom's as lecture progresses (remember -> understand -> apply -> analyze -> evaluate -> create)
+Complexity should generally increase through Bloom's as content progresses (remember -> understand -> apply -> analyze -> evaluate -> create)
 
 ### Backward-Design framework (Wiggins & McTighe)
 
-Create a clear Teaching Goal and 2–3 measurable Learning Objectives
+Create a clear Teaching Goal and 2 or 3 measurable Learning Objectives
 
-If generating markdown, save the `teaching_goal` string, `learning_objectives` list.
+If generating markdown, save the `teaching_goal` string, and `learning_objectives` list.
 
 ## Formatting
 
