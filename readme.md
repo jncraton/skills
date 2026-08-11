@@ -4,7 +4,7 @@
 
 - [coding-lab.skill](https://jncraton.github.io/skills/coding-lab.skill) [SKILL.md](skills/coding-lab/SKILL.md) (781 tokens, 3330 bytes): Use this skill to generate, review or refine a programming lab
 - [diagram.skill](https://jncraton.github.io/skills/diagram.skill) [SKILL.md](skills/diagram/SKILL.md) (1034 tokens, 2440 bytes): Create an svg digram or animation
-- [educational-content.skill](https://jncraton.github.io/skills/educational-content.skill) [SKILL.md](skills/educational-content/SKILL.md) (1332 tokens, 5211 bytes): Create, evaluate, or refine an educational lecture, learning activity, talk, or blog post
+- [educational-content.skill](https://jncraton.github.io/skills/educational-content.skill) [SKILL.md](skills/educational-content/SKILL.md) (1258 tokens, 4975 bytes): Create, evaluate, or refine an educational lecture, learning activity, talk, or blog post
 - [instructor-feedback-summarizer.skill](https://jncraton.github.io/skills/instructor-feedback-summarizer.skill) [SKILL.md](skills/instructor-feedback-summarizer/SKILL.md) (299 tokens, 1640 bytes): Transform student course evaluations into professional reports highlighting pedagogical strengths and growth areas.
 - [migrate-uv.skill](https://jncraton.github.io/skills/migrate-uv.skill) [SKILL.md](skills/migrate-uv/SKILL.md) (1398 tokens, 4961 bytes): Migrate Python Package to Modern uv Tooling
 - [objective-questions.skill](https://jncraton.github.io/skills/objective-questions.skill) [SKILL.md](skills/objective-questions/SKILL.md) (375 tokens, 1289 bytes): Generate objective questions
