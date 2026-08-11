@@ -105,16 +105,6 @@ myvar = 42
 15.0
 ```
 
----
-
-> You shall love your neighbor as yourself.
->
-> [Matthew 22:39 ESV](https://www.biblegateway.com/passage/?search=matthew%2022%3A39&version=ESV)
-
----
-
-How can thoughtfully named variables help us demonstrate love for our neighbor?
-
 ## Variable Names
 
 - Should document what the variable is used for
