@@ -1,6 +1,6 @@
 # Skills
 
-[skills.zip](https://jncraton.github.io/skills/skills.zip) | [spec](https://agentskills.io/) | [AGENTS.md](AGENTS.md) (109 tokens, 486 bytes) | [system.md](system.md) (466 tokens, 1745 bytes)
+[skills.zip](https://jncraton.github.io/skills/skills.zip) | [spec](https://agentskills.io/) | [AGENTS.md](AGENTS.md) (109 tokens, 486 bytes) | [system.md](system.md) (382 tokens, 1589 bytes)
 
 - [coding-lab.skill](https://jncraton.github.io/skills/coding-lab.skill) [SKILL.md](skills/coding-lab/SKILL.md) (781 tokens, 3330 bytes): Use this skill to generate, review or refine a programming lab
 - [cs-mini-deck.skill](https://jncraton.github.io/skills/cs-mini-deck.skill) [SKILL.md](skills/cs-mini-deck/SKILL.md) (921 tokens, 3772 bytes): Create, evaluate, or refine a brief 10-20 minute educational activity
