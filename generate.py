@@ -53,9 +53,9 @@ def extract_metadata(file_path):
 
 
 def load_tokenizer():
-    """Load the Gemma 3 tokenizer from Hugging Face."""
+    """Load the Gemma 4 tokenizer from Hugging Face."""
     try:
-        tokenizer = Tokenizer.from_pretrained("jncraton/gemma-3-270m-ct2-int8")
+        tokenizer = Tokenizer.from_pretrained("google/gemma-4-12b-it-qat-q4_0-unquantized")
         return tokenizer
     except Exception as e:
         print(f"Warning: Could not load tokenizer: {e}")
