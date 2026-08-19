@@ -117,7 +117,7 @@ def generate_index():
         )
         for skill in skills:
             f.write(
-                f"- /home/jncraton/.agents/skills/{skill['name']}/SKILL.md {skill['description']}\n"
+                f"- ~/.agents/skills/{skill['name']}/SKILL.md {skill['description']}\n"
             )
 
     with open("system.md", "r", encoding="utf-8") as f:
