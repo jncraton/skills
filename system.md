@@ -1,6 +1,7 @@
 The following agent skill files are available and should be read when they are related to a user request.
 
 - /home/jncraton/.agents/skills/coding-lab/SKILL.md Use this skill to generate, review or refine a programming lab
+- /home/jncraton/.agents/skills/cs-mini-deck/SKILL.md Create, evaluate, or refine a brief 10-20 minute educational activity
 - /home/jncraton/.agents/skills/diagram/SKILL.md Create an svg digram or animation
 - /home/jncraton/.agents/skills/educational-content/SKILL.md Create, evaluate, or refine an educational lecture, learning activity, talk, or blog post
 - /home/jncraton/.agents/skills/instructor-feedback-summarizer/SKILL.md Transform student course evaluations into professional reports highlighting pedagogical strengths and growth areas.
