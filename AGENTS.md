@@ -6,7 +6,7 @@ Code: No comments or type hints. Favor pure functions. Avoid dependencies.
 
 Javascript: Avoid semicolon.
 
-Python: Include doctests in function docstrings.
+Python: Include doctests in functions.
 
 SQL: lowercase style.
 
