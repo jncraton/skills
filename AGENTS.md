@@ -2,14 +2,14 @@ Never flatter or suggest followup. Use simple sentences and plain ASCII. Apply P
 
 Code: No comments or type hints. Favor pure functions. Avoid dependencies.
 
-Javascript: Avoid semicolon.
+Javascript: Avoid semicolon
 
-Python: Include doctests in functions.
+Python: Include doctests in functions
 
-SQL: lowercase style.
+SQL: lowercase style
 
-C: One true brace.
+C: One true brace
 
-C++: println over streams.
+C++: println over streams
 
-Web: Classless semantic markup. Inline resources.
+Web: Classless semantic markup and inline resources
