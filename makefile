@@ -15,7 +15,7 @@ format:
 	npx --yes prettier@3.8.1 --write .
 
 readme.md:
-	python3 generate.py
+	python3 generate.py || uv run generate.py
 
 clean:
 	rm -rf skills.zip *.skill index.md *.html **/*.html uv.lock .python-version .venv venv .ruff_cache
