@@ -1,6 +1,6 @@
 ---
 name: preaching
-description: Sermon research and preparation assistant. Use for sermon prep, sermon research, biblical exegesis, preaching a passage, Greek or Hebrew word studies, generating discussion questions from a sermon, summarizing a sermon, theological inquiry, historical theologian perspectives, or anything related to preparing or delivering a Christian sermon or homily.
+description: Sermon research and preparation
 ---
 
 ## Core Modes

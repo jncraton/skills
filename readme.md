@@ -1,6 +1,6 @@
 # Skills
 
-[skills.zip](https://jncraton.github.io/skills/skills.zip) | [spec](https://agentskills.io/) | [AGENTS.md](AGENTS.md) (79 tokens, 396 bytes) | [system.md](system.md) (381 tokens, 1589 bytes)
+[skills.zip](https://jncraton.github.io/skills/skills.zip) | [spec](https://agentskills.io/) | [AGENTS.md](AGENTS.md) (79 tokens, 396 bytes) | [system.md](system.md) (324 tokens, 1267 bytes)
 
 - [coding-lab.skill](https://jncraton.github.io/skills/coding-lab.skill) [SKILL.md](skills/coding-lab/SKILL.md) (780 tokens, 3330 bytes, 12 description tokens): Use this skill to generate, review or refine a programming lab
 - [cs-mini-deck.skill](https://jncraton.github.io/skills/cs-mini-deck.skill) [SKILL.md](skills/cs-mini-deck/SKILL.md) (920 tokens, 3772 bytes, 17 description tokens): Create, evaluate, or refine a brief 10-20 minute educational activity
@@ -9,7 +9,7 @@
 - [instructor-feedback-summarizer.skill](https://jncraton.github.io/skills/instructor-feedback-summarizer.skill) [SKILL.md](skills/instructor-feedback-summarizer/SKILL.md) (298 tokens, 1640 bytes, 14 description tokens): Transform student course evaluations into professional reports highlighting pedagogical strengths and growth areas.
 - [migrate-uv.skill](https://jncraton.github.io/skills/migrate-uv.skill) [SKILL.md](skills/migrate-uv/SKILL.md) (1397 tokens, 4961 bytes, 9 description tokens): Migrate Python Package to Modern uv Tooling
 - [objective-questions.skill](https://jncraton.github.io/skills/objective-questions.skill) [SKILL.md](skills/objective-questions/SKILL.md) (374 tokens, 1289 bytes, 3 description tokens): Generate objective questions
-- [preaching.skill](https://jncraton.github.io/skills/preaching.skill) [SKILL.md](skills/preaching/SKILL.md) (1403 tokens, 6054 bytes, 63 description tokens): Sermon research and preparation assistant. Use for sermon prep, sermon research, biblical exegesis, preaching a passage, Greek or Hebrew word studies, generating discussion questions from a sermon, summarizing a sermon, theological inquiry, historical theologian perspectives, or anything related to preparing or delivering a Christian sermon or homily.
+- [preaching.skill](https://jncraton.github.io/skills/preaching.skill) [SKILL.md](skills/preaching/SKILL.md) (1346 tokens, 5732 bytes, 6 description tokens): Sermon research and preparation
 - [pyo3-project.skill](https://jncraton.github.io/skills/pyo3-project.skill) [SKILL.md](skills/pyo3-project/SKILL.md) (281 tokens, 1111 bytes, 14 description tokens): Create, refine, or review a pyo3 Python/Rust package
 - [qti.skill](https://jncraton.github.io/skills/qti.skill) [SKILL.md](skills/qti/SKILL.md) (431 tokens, 1511 bytes, 12 description tokens): Generate a quiz or test for an LMS in QTI format
 - [reflecting.skill](https://jncraton.github.io/skills/reflecting.skill) [SKILL.md](skills/reflecting/SKILL.md) (115 tokens, 602 bytes, 3 description tokens): Generate reflection questions
