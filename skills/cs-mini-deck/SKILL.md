@@ -1,6 +1,6 @@
 ---
 name: cs-mini-deck
-description: Create, evaluate, or refine a brief 10-20 minute educational activity
+description: Create or refine a brief computer science educational activity
 ---
 
 Generate a slide deck like a professional who specializes in high quality, engaging undergraduate education.

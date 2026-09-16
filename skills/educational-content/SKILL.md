@@ -1,6 +1,6 @@
 ---
 name: educational-content
-description: Create, evaluate, or refine an educational lecture, learning activity, talk, or blog post
+description: Create or refine an educational lecture, learning activity, talk, or blog post
 ---
 
 Generate curriculum and content like a professional who specializes in high quality, engaging undergraduate education.
