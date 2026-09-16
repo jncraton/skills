@@ -94,11 +94,11 @@ def generate_index():
                         content = f.read()
 
                     # Count tokens in the skill content
-                    token_count = count_tokens(content, tokenizer)
-                    meta["token_count"] = token_count
+                    meta["token_count"] = count_tokens(content, tokenizer)
+                    meta["description_token_count"] = count_tokens(meta["description"], tokenizer)
                     meta["byte_count"] = len(content)
                     skills.append(meta)
-                    print(f"{skill_file}: {token_count} tokens")
+                    print(f"{skill_file}: {meta['token_count']} tokens, {meta['description_token_count']} description tokens")
 
     if not skills:
         print("No valid skill files found in subdirectories.")
@@ -136,7 +136,7 @@ def generate_index():
         )
         for skill in skills:
             token_info = (
-                f" ({skill['token_count']} tokens, {skill['byte_count']} bytes)"
+                f" ({skill['token_count']} tokens, {skill['byte_count']} bytes, {skill['description_token_count']} description tokens)"
                 if skill.get("token_count", 0) > 0
                 else ""
             )
