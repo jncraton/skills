@@ -3,54 +3,45 @@ name: class-deck
 description: Create or refine class session slide deck
 ---
 
-Generate a slide deck like a professional who specializes in high quality, engaging undergraduate education.
+Produce slide deck like a professional who specializes in high quality, engaging undergraduate education.
 
-### Backward Design Framework
+Create clear teaching_goal and measurable learning_objectives saved in markdown file.
 
-Create a clear Teaching Goal and a few measurable learning objectives. Save the teaching_goal and learning_objectives in markdown.
+Complexity should increase through Bloom. Remember -> Understand -> Apply -> Analyze -> Evaluate -> Create
 
-## Pedagogy
+## Formatting
 
-Complexity should increase through Bloom's. Remember -> Understand -> Apply -> Analyze -> Evaluate -> Create
-
-## Slide Deck
-
-Use the following formatting for slide decks.
-
-- Generate markdown for revealjs via pandoc saving the deck to file with md extension
-- Start with `# title` immediately followed by `## subtitle`
-- Separate slides with `## title` for titled slides or `---` for untitled slides. Never use both for one break
+- Generate revealjs markdown saving the deck to file with md extension
+- Begin deck with `# title` immediately followed by `## subtitle`
+- Separate slides with `## title` for titled slides or `---` for untitled slides
 - Titles are three words max and avoid the word "lecture"
-- Hotlink images on their own slide setting height to 540px
+- Hotlink images on their own slide setting height=540px
 - No trailing periods on list items
-- Max twenty words per slide (excluding code)
-- About twenty slides total
 
 ## Structure
 
-- Distribute a few exercises and discussion questions throughout.
-- Discussion questions appear alone with no title or heading.Questions connect to factual information and promote deeper communal exploration. One discussion question should encourage subtle integration of faith practice or redemption of creation
-- Exercise slides begin `## Exercise` and solidify ideas through application and analysis. End with an exercise synthesizing learning and creating something new
+- About twenty slides total
+- Twenty words max per slide, excluding code
+- Distribute some exercises and discussion questions throughout
+- Discussion questions appear alone without title or heading and connect factual information to promote deeper communal exploration
+- Exercise slides begin `## Exercise` and apply ideas
 - No generic "Questions?" or review slides
+- End with exercise synthesizing learning and creating something new
 
 ## Example
 
-Example slide deck saved as `variables.md`
+Example deck saved as `variables.md`
 
 ````markdown
 ---
-teaching_goal: Students will understand the purpose and usage of variables and basic input/output in Python.
+teaching_goal: Students will understand variables and basic input and output.
 learning_objectives:
-  - Define and assign values to variables using descriptive names
-  - Collect and process user input using input() and type conversion functions
-  - Implement a simple program that calculates and displays a result based on user input
+  - Assign values to well named variables
+  - Process input using input() and type conversions
+  - Create program that displays computed result from input
 ---
 
 # Variables
-
-## Named Containers
-
-> One of the most powerful features of a programming language is the ability to manipulate variables.
 
 ## Definition
 
@@ -58,7 +49,7 @@ A variable is a named container for a value
 
 ## Statements
 
-- A statement is a unit of code that the Python interpreter can execute
+- A statement is an entity that the interpreter can execute
 
 `print("Hello, world")`
 
@@ -89,25 +80,31 @@ height = 5
 
 ## Variable Names
 
-- Should document what the variable is used for
 - May include letters and numbers
 - Should be lowercase
 - May not begin with a number
+- Should document what the variable is for
+
+---
+
+> You should name a variable using the same care with which you name a first-born child.
+>
+> Bob Martin
 
 ## Input Statement
 
-- `input(prompt=None)`
-- Accepts user input as an `str` (string)
-- `prompt` will be shown to user if provided
+- `input(prompt)`
+- Accepts user input as a string
+- `prompt` will be shown to user
 
 ## input Example
 
 ```python
-user_msg = input("How may I help you?")
+request = input("May I help?")
 
 print("You want help with:")
-print(user_msg)
-print("I am not able to help with that.")
+print(request)
+print("I am unable to help with that.")
 ```
 
 ## int
@@ -117,14 +114,12 @@ print("I am not able to help with that.")
 ## Examples
 
 ```python
->>> '7'
-'7'
 >>> int("4")
 4
 >>> int("red")
-...ValueError...
->>> int("9.0")
-...ValueError...
+ValueError
+>>> int(".5")
+ValueError
 ```
 
 ## Example Program
@@ -133,7 +128,7 @@ print("I am not able to help with that.")
 base = int(input("Base: "))
 height = int(input("Height: "))
 area = 0.5 * base * height
-print("Area of the triangle:")
+print("Area of triangle:")
 print(area)
 ```
 
