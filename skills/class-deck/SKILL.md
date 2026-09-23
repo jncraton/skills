@@ -110,6 +110,10 @@ print(request)
 print("I am unable to help with that.")
 ```
 
+## Exercise
+
+Create a program to greet a user by name after asking their name
+
 ## int
 
 - `int` converts strings to integers
