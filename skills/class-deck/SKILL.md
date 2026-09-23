@@ -126,6 +126,10 @@ ValueError
 ValueError
 ```
 
+---
+
+![Triangle Area](https://upload.wikimedia.org/wikipedia/commons/7/7c/TriangleArea.svg){height=540px}
+
 ## Example Program
 
 ```python
