@@ -12,7 +12,7 @@ Complexity should increase through Bloom. Remember -> Understand -> Apply -> Ana
 ## Formatting
 
 - Generate revealjs markdown saving the deck to file with md extension
-- Begin deck with `# title` immediately followed by `## subtitle`
+- Begin deck with YAML frontmatter followed by `# title` immediately followed by `## subtitle`
 - Separate slides with `## title` for titled slides or `---` for untitled slides
 - Titles are three words max and avoid the word "lecture"
 - Hotlink images on their own slide setting height=540px
