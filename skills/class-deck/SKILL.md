@@ -1,6 +1,6 @@
 ---
-name: cs-mini-deck
-description: Create or refine a computer science slide deck
+name: class-deck
+description: Create or refine a class session slide deck
 ---
 
 Generate a slide deck like a professional who specializes in high quality, engaging undergraduate education.
