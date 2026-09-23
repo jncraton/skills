@@ -1,40 +1,37 @@
 ---
 name: class-deck
-description: Create or refine a class session slide deck
+description: Create or refine class session slide deck
 ---
 
 Generate a slide deck like a professional who specializes in high quality, engaging undergraduate education.
 
+### Backward Design Framework
+
+Create a clear Teaching Goal and a few measurable learning objectives. Save the teaching_goal and learning_objectives in markdown.
+
 ## Pedagogy
 
-Complexity should generally increase through Bloom's as content progresses (remember -> understand -> apply -> analyze -> evaluate -> create)
-
-### Backward-Design framework (Wiggins & McTighe)
-
-Create a clear Teaching Goal and 2 or 3 measurable Learning Objectives
-
-If generating markdown, save the `teaching_goal` string, and `learning_objectives` list.
+Complexity should increase through Bloom's. Remember -> Understand -> Apply -> Analyze -> Evaluate -> Create
 
 ## Slide Deck
 
 Use the following formatting for slide decks.
 
-- Generate markdown for reveal.js via pandoc
-- If possible, write the deck to a file with a .md extension
-- Separate slides with `## title` or `---`. Use `##` for titled slides and `---` for untitled slides. Never use both for one break
-- Start with `# title` immediately followed by `## subtitle`. Avoid the word "lecture"
-- Titles are three words max
+- Generate markdown for revealjs via pandoc saving the deck to file with md extension
+- Start with `# title` immediately followed by `## subtitle`
+- Separate slides with `## title` for titled slides or `---` for untitled slides. Never use both for one break
+- Titles are three words max and avoid the word "lecture"
 - Hotlink images on their own slide setting height to 540px
-- Max 20 words per slide (excluding code)
 - No trailing periods on list items
-- 15-20 slides total
+- Max twenty words per slide (excluding code)
+- About twenty slides total
 
 ## Structure
 
-- 3-4 discussion questions. Only one question per slide with no title or heading on the slide. Questions should follow and connect to factual information and promote deeper communal exploration. One discussion question should enourage subtle integration of the subject matter to faith practice or redemption of creation.
-- 2-3 exercises. Heading: "## Exercise". Exercises should solidify ideas and require learners to apply and analyze knowledge. End with an exercise synthesizing the learning and creating something new.
-- Distribute exercises and discussion questions throughout.
-- No generic "Questions?" or review slides.
+- Distribute a few exercises and discussion questions throughout.
+- Discussion questions appear alone with no title or heading.Questions connect to factual information and promote deeper communal exploration. One discussion question should encourage subtle integration of faith practice or redemption of creation
+- Exercise slides begin `## Exercise` and solidify ideas through application and analysis. End with an exercise synthesizing learning and creating something new
+- No generic "Questions?" or review slides
 
 ## Example
 
@@ -62,7 +59,8 @@ A variable is a named container for a value
 ## Statements
 
 - A statement is a unit of code that the Python interpreter can execute
-- Example: `print("Hello, world")`
+
+`print("Hello, world")`
 
 ## Assignment Statement
 
@@ -70,7 +68,7 @@ A variable is a named container for a value
 - Gives the variable a value
 
 ```python
-myvar = 42
+height = 5
 ```
 
 ## Usage
@@ -82,11 +80,11 @@ myvar = 42
 ## Example
 
 ```python
->>> base = 5
->>> height = 6
+>>> base = 3
+>>> height = 4
 >>> area = 0.5 * base * height
 >>> area
-15.0
+6.0
 ```
 
 ## Variable Names
@@ -105,11 +103,11 @@ myvar = 42
 ## input Example
 
 ```python
-user_msg = input("I'm an assistant. How may I help you?")
+user_msg = input("How may I help you?")
 
-print("It sounds like you'd like help with the following:")
+print("You want help with:")
 print(user_msg)
-print("I'm not able to help with that.")
+print("I am not able to help with that.")
 ```
 
 ## int
@@ -119,13 +117,13 @@ print("I'm not able to help with that.")
 ## Examples
 
 ```python
->>> '12'
-'12'
->>> int("12")
-12
->>> int("Hello world!")
+>>> '7'
+'7'
+>>> int("4")
+4
+>>> int("red")
 ...ValueError...
->>> int("12.0")
+>>> int("9.0")
 ...ValueError...
 ```
 
