@@ -91,6 +91,10 @@ height = 5
 >
 > Bob Martin
 
+---
+
+Who are variable names for?
+
 ## Input Statement
 
 - `input(prompt)`
