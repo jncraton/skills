@@ -1,9 +1,9 @@
 # Skills
 
-[skills.zip](https://jncraton.github.io/skills/skills.zip) | [spec](https://agentskills.io/) | [AGENTS.md](AGENTS.md) (79 tokens, 396 bytes) | [system.md](system.md) (300 tokens, 1202 bytes)
+[skills.zip](https://jncraton.github.io/skills/skills.zip) | [spec](https://agentskills.io/) | [AGENTS.md](AGENTS.md) (79 tokens, 396 bytes) | [system.md](system.md) (299 tokens, 1186 bytes)
 
 - [coding-lab.skill](https://jncraton.github.io/skills/coding-lab.skill) [SKILL.md](skills/coding-lab/SKILL.md) (776 tokens, 3312 bytes, 8 description tokens): Generate, review or refine a programming lab
-- [cs-mini-deck.skill](https://jncraton.github.io/skills/cs-mini-deck.skill) [SKILL.md](skills/cs-mini-deck/SKILL.md) (912 tokens, 3765 bytes, 9 description tokens): Create or refine a brief computer science educational activity
+- [cs-mini-deck.skill](https://jncraton.github.io/skills/cs-mini-deck.skill) [SKILL.md](skills/cs-mini-deck/SKILL.md) (938 tokens, 3854 bytes, 8 description tokens): Create or refine a computer science slide deck
 - [diagram.skill](https://jncraton.github.io/skills/diagram.skill) [SKILL.md](skills/diagram/SKILL.md) (1033 tokens, 2440 bytes, 7 description tokens): Create an svg digram or animation
 - [educational-content.skill](https://jncraton.github.io/skills/educational-content.skill) [SKILL.md](skills/educational-content/SKILL.md) (1254 tokens, 4964 bytes, 15 description tokens): Create or refine an educational lecture, learning activity, talk, or blog post
 - [instructor-feedback-summarizer.skill](https://jncraton.github.io/skills/instructor-feedback-summarizer.skill) [SKILL.md](skills/instructor-feedback-summarizer/SKILL.md) (298 tokens, 1640 bytes, 14 description tokens): Transform student course evaluations into professional reports highlighting pedagogical strengths and growth areas.
