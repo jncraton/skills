@@ -1,6 +1,6 @@
 ---
 name: cs-mini-deck
-description: Create or refine a brief computer science educational activity
+description: Create or refine a computer science slide deck
 ---
 
 Generate a slide deck like a professional who specializes in high quality, engaging undergraduate education.
@@ -20,6 +20,7 @@ If generating markdown, save the `teaching_goal` string, and `learning_objective
 Use the following formatting for slide decks.
 
 - Generate markdown for reveal.js via pandoc
+- If possible, write the deck to a file with a .md extension
 - Separate slides with `## title` or `---`. Use `##` for titled slides and `---` for untitled slides. Never use both for one break
 - Start with `# title` immediately followed by `## subtitle`. Avoid the word "lecture"
 - Titles are three words max
@@ -36,6 +37,8 @@ Use the following formatting for slide decks.
 - No generic "Questions?" or review slides.
 
 ## Example
+
+Example slide deck saved as `variables.md`
 
 ````markdown
 ---
