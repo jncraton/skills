@@ -1,18 +1,17 @@
 ---
 name: class-deck
-description: Create or refine class session slide deck
+description: Create or refine engaging undergraduate class session slide deck
 ---
 
-Produce slide deck like a professional who specializes in high quality, engaging undergraduate education.
+Begin with teaching_goal and measurable learning_objectives saved in YAML block.
 
-Create clear teaching_goal and measurable learning_objectives saved in markdown file.
+Complexity should generally increase through Bloom: Remember and Understand -> Apply or Analyze -> Evaluate or Create
 
-Complexity should increase through Bloom. Remember -> Understand -> Apply -> Analyze -> Evaluate -> Create
+Save deck as revealjs markdown for pandoc with a .md extension.
 
 ## Formatting
 
-- Generate revealjs markdown saving the deck to file with md extension
-- Begin deck with YAML frontmatter followed by `# title` immediately followed by `## subtitle`
+- Begin deck with `# title` immediately followed by new slide
 - Separate slides with `## title` for titled slides or `---` for untitled slides
 - Titles are three words max and avoid the word "lecture"
 - Hotlink images on their own slide setting height=540px
