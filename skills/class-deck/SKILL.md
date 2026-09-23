@@ -25,7 +25,7 @@ Save deck as revealjs markdown for pandoc with a .md extension.
 - Twenty max words per slide, excluding code
 - Spread applied exercises and communal exploration questions throughout
 - No review or question invitation slides
-- End with exercise synthesizing learning and creating something new
+- End with exercise synthesizing learning
 
 ## Example
 
