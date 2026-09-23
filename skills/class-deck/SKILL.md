@@ -11,20 +11,20 @@ Save deck as revealjs markdown for pandoc with a .md extension.
 
 ## Formatting
 
-- Begin deck with `# title` immediately followed by new slide
-- Separate slides with `## title` for titled slides or `---` for untitled slides
+- Open deck with `# title` immediately followed by new slide
+- Begin slides with `## title` for titled slides or `---` for untitled slides
 - Titles are three words max and avoid the word "lecture"
+- Discussion questions appear alone without title or heading
+- Exercise slides begin `## Exercise` and apply ideas
 - Hotlink images on their own slide setting height=540px
 - No trailing periods on list items
 
 ## Structure
 
 - About twenty slides total
-- Twenty words max per slide, excluding code
-- Distribute some exercises and discussion questions throughout
-- Discussion questions appear alone without title or heading and connect factual information to promote deeper communal exploration
-- Exercise slides begin `## Exercise` and apply ideas
-- No generic "Questions?" or review slides
+- Twenty max words per slide, excluding code
+- Spread applied exercises and communal exploration questions throughout
+- No review or question invitation slides
 - End with exercise synthesizing learning and creating something new
 
 ## Example
