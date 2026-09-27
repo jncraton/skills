@@ -1,6 +1,6 @@
 ---
 name: diagram
-description: Create an svg digram or animation
+description: Create svg diagram or animation
 ---
 
 ## Style
