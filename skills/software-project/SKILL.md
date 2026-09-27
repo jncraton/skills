@@ -1,6 +1,6 @@
 ---
 name: software-project
-description: Create or refine a software project
+description: Create or refine software project
 ---
 
 Use a simple makefile for automation (lint, format, test, clean)
