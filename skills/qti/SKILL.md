@@ -16,9 +16,9 @@ Two files are created based on the base name provided by the user. They must be 
 
 The output json file should be in this format.
 
-1.  **Quiz Title:** The top-level key.
-2.  **Questions:** Keys inside the object.
-3.  **Answers:** A list of strings. **The first answer is always the correct one.**
+1.  Quiz Title: The top-level key.
+2.  Questions: Keys inside the object.
+3.  Answers: A list of strings. The first answer is always the correct one.
 
 ```json
 {
@@ -31,8 +31,8 @@ The output json file should be in this format.
 
 You can include code snippets using markdown-style syntax:
 
-- **Inline Code:** Wrap text in single backticks (\`).
-- **Block Code:** Wrap text in triple backticks (\`\`\`).
+- Inline Code: Wrap text in single backticks (\`).
+- Block Code: Wrap text in triple backticks (\`\`\`).
 
 ````json
 {
