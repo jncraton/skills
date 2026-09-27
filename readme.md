@@ -1,6 +1,6 @@
 # Skills
 
-[skills.zip](https://jncraton.github.io/skills/skills.zip) | [spec](https://agentskills.io/) | [AGENTS.md](AGENTS.md) (79 tokens, 396 bytes) | [system.md](system.md) (162 tokens, 643 bytes)
+[skills.zip](https://jncraton.github.io/skills/skills.zip) | [spec](https://agentskills.io/) | [AGENTS.md](AGENTS.md) (78 tokens, 395 bytes) | [system.md](system.md) (162 tokens, 643 bytes)
 
 - [class-deck.skill](https://jncraton.github.io/skills/class-deck.skill) [SKILL.md](skills/class-deck/SKILL.md) (741 tokens, 3026 bytes, 9 description tokens): Create or refine engaging undergraduate class session slide deck
 - [coding-lab.skill](https://jncraton.github.io/skills/coding-lab.skill) [SKILL.md](skills/coding-lab/SKILL.md) (776 tokens, 3312 bytes, 8 description tokens): Generate, review or refine a programming lab
