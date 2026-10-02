@@ -1,6 +1,6 @@
 ---
 name: pyo3-project
-description: Create or refine a pyo3 Python/Rust package
+description: Craft a pyo3 Python/Rust package
 ---
 
 Use a simple makefile for automation (lint, format, test, clean)

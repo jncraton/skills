@@ -1,6 +1,6 @@
 ---
 name: educational-content
-description: Create or refine educational activity or document
+description: Craft educational activity or document
 ---
 
 Generate curriculum and content like a professional who specializes in high quality, engaging undergraduate education.

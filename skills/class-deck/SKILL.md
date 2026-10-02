@@ -1,6 +1,6 @@
 ---
 name: class-deck
-description: Create or refine engaging undergraduate class session slide deck
+description: Craft class session slide deck
 ---
 
 Begin with teaching_goal and measurable learning_objectives saved in YAML block.
