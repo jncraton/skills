@@ -11,9 +11,9 @@ Save deck as revealjs markdown for pandoc with a .md extension.
 
 ## Formatting
 
-- Open slides with `# title` immediately followed by new slide
-- Begin slides with `## title` for titled slides or `---` for untitled slides
-- Titles are three words max and avoid the word "lecture"
+- Open with `# title` immediately followed by new slide
+- Begin slide with `## title` for titled slides or `---` for untitled slides
+- Titles are three words max and avoid the word lecture
 - Discussion questions appear alone without title or heading
 - Title exercise slides `## Exercise`
 - Hotlink images on their own slide setting height=540px
