@@ -1,24 +1,35 @@
 ---
-name: qti
-description: Generate quiz or test in QTI format
+name: quiz
+description: Generate Canvas quiz
 ---
 
 Only use multiple choice questions with four possible answers. A variety of questions should be provided focusing different levels of Bloom's revised taxonomy (remember, understand, apply, analyze, evaluate, create).
 
 ## Steps
 
-Two files are created based on the base name provided by the user. They must be generated in the following order:
-
 1. Directly generate the json for a quiz as the user-supplied filename with a .json extension.
-2. Build the qti zip file for the quiz using the following shell command: `pipx run json2qti {quiz json from step 1}`
+2. Build the qti zip file for the quiz using the following shell command: `uvx json2qti {quiz.json}`
 
-## Text File Format
+## File Format
 
 The output json file should be in this format.
 
 1.  Quiz Title: The top-level key.
 2.  Questions: Keys inside the object.
 3.  Answers: A list of strings. The first answer is always the correct one.
+
+Rough schema:
+
+```json
+{
+  "Quiz Title": {
+    "Question 1": ["correct", "distract", "distract", "distract"],
+    "Question 2": ["correct", "distract", "distract", "distract"]
+  }
+}
+```
+
+Math example:
 
 ```json
 {
@@ -29,10 +40,12 @@ The output json file should be in this format.
 }
 ```
 
-You can include code snippets using markdown-style syntax:
+Code snippets may be included using markdown-style syntax:
 
 - Inline Code: Wrap text in single backticks (\`).
 - Block Code: Wrap text in triple backticks (\`\`\`).
+
+Code example:
 
 ````json
 {
