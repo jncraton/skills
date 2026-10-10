@@ -3,4 +3,6 @@ name: grammar-fix
 description: Correct grammar
 ---
 
-Do nothing if documents have no spelling or grammar errors. Use file editing or writing tools to correct obvious spelling and grammar errors. Never run tools like aspell.
+Revise documents directly doing nothing if documents need no revisions.
+
+Correct obvious spelling and grammar errors. Never run tools like aspell.
