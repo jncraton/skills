@@ -3,7 +3,7 @@ name: class-deck
 description: Craft class session slide deck
 ---
 
-Begin with teaching_goal and measurable learning_objectives saved in YAML block.
+Begin with teaching_goal and measurable learning_objectives saved in YAML block. Include a markdown link to a reading if and only a source document is provided.
 
 Complexity should generally increase through Bloom: Remember and Understand -> Apply or Analyze -> Evaluate or Create
 
@@ -33,6 +33,7 @@ Example deck saved as `variables.md`
 
 ````markdown
 ---
+reading: '[Variables](https://www.py4e.com/html3/02-variables)'
 teaching_goal: Students will understand variables and basic input and output.
 learning_objectives:
   - Assign values to well named variables
