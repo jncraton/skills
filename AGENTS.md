@@ -10,6 +10,6 @@ SQL: lowercase style
 
 C: One true brace and two space indentation
 
-C++: println over streams
+C++: println over cout
 
 Web: Classless semantic markup and inline resources
