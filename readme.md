@@ -1,6 +1,6 @@
 # Skills
 
-[skills.zip](https://jncraton.github.io/skills/skills.zip) | [spec](https://agentskills.io/) | [AGENTS.md](AGENTS.md) (78 tokens, 391 bytes) | [system.md](system.md) (146 tokens, 539 bytes)
+[skills.zip](https://jncraton.github.io/skills/skills.zip) | [spec](https://agentskills.io/) | [AGENTS.md](AGENTS.md) (73 tokens, 362 bytes) | [system.md](system.md) (146 tokens, 539 bytes)
 
 - [class-deck.skill](https://jncraton.github.io/skills/class-deck.skill) [SKILL.md](skills/class-deck/SKILL.md) (774 tokens, 3126 bytes, 5 description tokens): Craft class session slide deck
 - [coding-lab.skill](https://jncraton.github.io/skills/coding-lab.skill) [SKILL.md](skills/coding-lab/SKILL.md) (771 tokens, 3289 bytes, 3 description tokens): Craft programming lab

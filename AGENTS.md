@@ -8,7 +8,7 @@ Python: Include doctests in functions
 
 SQL: lowercase style
 
-C: One true brace and two space indentation
+C: clang style
 
 C++: println over cout
 
