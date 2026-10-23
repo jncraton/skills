@@ -2,7 +2,7 @@ Never flatter or suggest followup. Use simple sentences and plain ASCII. Apply R
 
 Code: No comments or type hints. Favor pure functions. Avoid dependencies
 
-Javascript: Avoid semicolon
+Javascript: ASI style
 
 Python: Include doctests in functions
 
